@@ -1,4 +1,4 @@
-dateModified: 1643799983
+dateModified: 1643801511
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -238,7 +238,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: 'Tailwind Mix'
+  name: 'Boilerplate Tailwind'
   retryDuration: null
   schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
