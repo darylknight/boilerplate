@@ -1,0 +1,55 @@
+{
+	"require": {
+		"craftcms/cms": "^3.7.26",
+		"vlucas/phpdotenv": "^5.4.0",
+		"craftcms/redactor": "^2.7.0",
+		"misterbk/mix": "1.5.2",
+		"nystudio107/craft-seomatic": "^3.3.22",
+		"putyourlightson/craft-dashboard-begone": "^1.0.1",
+		"putyourlightson/craft-sherlock": "^3.0.0",
+		"sebastianlenz/linkfield": "^1.0.20",
+		"solspace/craft-freeform": "^3.8.0",
+		"verbb/super-table": "^2.2.1",
+		"wbrowar/adminbar": "^3.1.8.1"
+	},
+	"require-dev": {
+		"yiisoft/yii2-shell": "^2.0.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"modules\\": "modules/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"craftcms/plugin-installer": true,
+			"yiisoft/yii2-composer": true
+		},
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "7.2.5"
+		}
+	},
+	"scripts": {
+		"craft-update": [
+			"@php craft install/check && php craft migrate/all --interactive=0 || exit 0",
+			"@php craft install/check && php craft project-config/apply --interactive=0 || exit 0",
+			"@php craft install/check && php craft clear-caches/all --interactive=0 || exit 0"
+		],
+		"deploy-staging": [
+			"composer install --no-interaction --prefer-dist --optimize-autoloader"
+		],
+		"deploy-production": [
+			"composer craft-update"
+		],
+		"post-update-cmd": "@craft-update",
+		"post-install-cmd": "@craft-update",
+		"nuke": [
+			"rm -rf vendor/ || true",
+			"rm composer.lock || true",
+			"composer clear-cache",
+			"composer update"
+		]
+	}
+}

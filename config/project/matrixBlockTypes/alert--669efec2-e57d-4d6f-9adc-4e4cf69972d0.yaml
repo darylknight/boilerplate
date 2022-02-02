@@ -1,0 +1,105 @@
+field: c4fb0464-3077-45aa-9c64-7e0015f54677 # Alert Bar
+fieldLayouts:
+  8c8ced71-5350-44b0-b38c-0d570dde703d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Start Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5 # End Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5afb69df-76c7-42e3-9af4-bc31faefa3d5: # End Date
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: endDate
+    instructions: 'When the alert should stop showing'
+    name: 'End Date'
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '60'
+      showDate: true
+      showTime: true
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: # Start Date
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: startDate
+    instructions: 'When the alert should start showing'
+    name: 'Start Date'
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '60'
+      showDate: true
+      showTime: true
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  60b2f9cd-8e83-49e0-921e-f6d0b325e69d: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: 'The text of the alert bar'
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - f64b113b-a289-48d7-a56f-a9a6de98b93a
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: alert
+name: Alert
+sortOrder: 1

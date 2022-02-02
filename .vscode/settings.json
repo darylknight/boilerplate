@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"config/project": true,
+		"modules": true,
+		"node_modules": true,
+		"public/cpresources": true,
+		"storage": true,
+		"vendor": true
+	}
+}

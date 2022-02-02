@@ -1,0 +1,14 @@
+{# This macro requires an asset and a transform #}
+{% macro image(asset, transform, class) %}
+	{% if asset %}
+		<img data-src="{{ asset.url(transform) }}"
+			src="/assets/images/placeholder.gif"
+			class="lazyload img-fluid {{ class ? class }}"
+			alt="{{ asset.assetAltText }}" />
+	{% endif %}
+{% endmacro %}
+
+{# This macro requires a URL and some button text #}
+{% macro button(url, text, class, target) %}
+	<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">{{ text }}</a>
+{% endmacro %}

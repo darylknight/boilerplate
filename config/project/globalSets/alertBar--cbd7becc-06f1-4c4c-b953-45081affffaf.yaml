@@ -1,0 +1,19 @@
+fieldLayouts:
+  bb12114c-041a-4a0c-a85e-090d88a3fe9b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c4fb0464-3077-45aa-9c64-7e0015f54677 # Alert Bar
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: alertBar
+name: 'Alert Bar'
+sortOrder: 3

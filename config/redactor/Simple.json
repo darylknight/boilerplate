@@ -1,0 +1,6 @@
+{
+	"buttons": ["html", "formatting", "bold", "italic", "link"],
+	"formatting": ["p"],
+	"linkNewTab": true,
+	"toolbarFixed": true
+}

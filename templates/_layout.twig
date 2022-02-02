@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
+	</head>
+
+	<body>
+		{{ adminbar() }}{# Adds the Admin Bar plugin to the page #}
+
+		{% include '_includes/alertBar' %}
+
+		{% block content %}
+
+		{% endblock %}
+		<script src="{{ mix('/js/vendor.js') }}"></script>
+		<script src="{{ mix('/js/app.js') }}"></script>
+	</body>
+</html>

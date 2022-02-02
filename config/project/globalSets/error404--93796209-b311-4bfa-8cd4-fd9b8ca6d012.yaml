@@ -1,0 +1,28 @@
+fieldLayouts:
+  0647ea85-6ad1-48ad-8d63-5524839e47c6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0defd9a0-66bd-4509-aa52-57274feb18d7 # 404 Heading
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0468bb2b-6b23-493c-9867-c8e7fb7f4431 # 404 Text
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: error404
+name: '404 Error'
+sortOrder: 2

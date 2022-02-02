@@ -1,0 +1,29 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 549503cf-e3fa-4dda-89d3-1f2e17735cb3 # Globals
+handle: text404
+instructions: 'This appears on the 404 page, which happens when a page the user is trying to view doesn''t exist'
+name: '404 Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - f64b113b-a289-48d7-a56f-a9a6de98b93a
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

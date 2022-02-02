@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c2434455-665e-4005-81d8-6df1bc63b014: # Tailwind Mix
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: 2
+  uid: 234abe7d-3a21-4669-8e38-239971a35d52
+type: structure

@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: a4d47a90-98af-4c19-9e35-65535ddaebb3 # SEO
+handle: metaData
+instructions: 'This field allows you to override the SEO settings for this entry'
+name: 'Meta Data'
+searchable: false
+settings:
+  elementDisplayPreviewType: google
+  facebookTabEnabled: ''
+  generalEnabledFields:
+    - seoTitle
+    - seoDescription
+    - seoKeywords
+    - seoImage
+    - robots
+  generalTabEnabled: '1'
+  sitemapTabEnabled: ''
+  twitterTabEnabled: ''
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\seomatic\fields\SeoSettings

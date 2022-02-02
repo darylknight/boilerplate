@@ -1,0 +1,41 @@
+field: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
+fieldLayouts:
+  4287605c-0ca2-49db-8eae-1d0656fb9582:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1b16bb99-ac4b-4bc8-85f8-71966c72102e # Video Embed Code
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1b16bb99-ac4b-4bc8-85f8-71966c72102e: # Video Embed Code
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoEmbedCode
+    instructions: 'Enter the embed code of the video from either YouTube or Vimeo'
+    name: 'Video Embed Code'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: '1'
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: '<iframe src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: video
+name: Video
+sortOrder: 4

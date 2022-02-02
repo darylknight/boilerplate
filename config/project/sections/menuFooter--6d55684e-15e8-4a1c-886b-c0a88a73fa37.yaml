@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: menuFooter
+name: 'Menu - Footer'
+propagationMethod: all
+siteSettings:
+  c2434455-665e-4005-81d8-6df1bc63b014: # Tailwind Mix
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 060afb46-fd06-48d8-89cd-2f6787312abc
+type: structure

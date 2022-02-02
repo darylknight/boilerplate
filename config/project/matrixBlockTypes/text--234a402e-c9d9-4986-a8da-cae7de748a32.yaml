@@ -1,0 +1,51 @@
+field: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
+fieldLayouts:
+  085ac208-518d-4e2b-9d15-bf3a68810673:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 41e0b3cc-ad7b-47c5-a503-a5dac4e24af0 # Columns
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: # Columns
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: columns
+    instructions: 'Add up to 3 columns of text'
+    name: Columns
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 76dd902c-6643-4db8-a27c-e2e1b3142fb0 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_4_columns}}'
+      fieldLayout: row
+      maxRows: '3'
+      minRows: '1'
+      placeholderKey: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Add a column'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: text
+name: Text
+sortOrder: 2

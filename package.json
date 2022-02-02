@@ -1,0 +1,31 @@
+{
+	"name": "boilerplate-tailwind",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "mix",
+		"watch": "mix watch",
+		"production": "mix --production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/darylknight/boilerplate-tailwind"
+	},
+	"author": {
+		"email": "daryl@codeknight.co.uk",
+		"name": "Daryl Knight",
+		"url": "https://codeknight.co.uk"
+	},
+	"devDependencies": {
+		"@prettier/plugin-php": "^0.17.2",
+		"autoprefixer": "^10.4.0",
+		"laravel-mix": "^6.0.41",
+		"postcss": "^8.4.4",
+		"prettier": "^2.3.2",
+		"prettier-plugin-twig-melody": "^0.4.6",
+		"tailwindcss": "^3.0.0"
+	},
+	"dependencies": {
+		"@tailwindcss/typography": "^0.4.1",
+		"lazysizes": "^5.3.0"
+	}
+}

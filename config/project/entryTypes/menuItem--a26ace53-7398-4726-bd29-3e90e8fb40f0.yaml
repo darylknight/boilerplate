@@ -1,0 +1,47 @@
+fieldLayouts:
+  b8f9152f-b6e1-4c88-919c-6aa3475c1516:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 460bbc59-2a42-4a11-9d19-64b16596c5ba # Page Target
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Menu Item'
+        sortOrder: 1
+handle: menuItem
+hasTitleField: false
+name: 'Menu Item'
+section: 6d55684e-15e8-4a1c-886b-c0a88a73fa37 # Menu - Footer
+sortOrder: 1
+titleFormat: '{pageTarget.text}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
