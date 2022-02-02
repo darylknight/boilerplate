@@ -37,23 +37,25 @@ All database structure changes are made locally. Those changes are stored in Pro
 
 1. Create a new repository using this one as a template
 2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
-3. Run `npm install` to install the packages from `package.json`
-4. Run `composer install` to install Craft and it's plugins from `composer.json`
-5. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
-6. Generate a new `SECURITY_KEY` by running `./craft setup/security-key`
-7. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment
+3. Enter a `CP_TRIGGER`. This defaults to `control` if left blank
+4. Run `npm install` to install the packages from `package.json`
+5. Run `composer install` to install Craft and it's plugins from `composer.json`
+6. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
+7. Generate a new `SECURITY_KEY` by running `./craft setup/security-key`
+8. Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
 
 ### Setting up an existing site based on this Boilerplate
 
 1. Clone this repository
 2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
-3. Run `npm install` to install the packages from `package.json`
-4. Run `composer install` to install Craft and it's plugins from `composer.json`
-5. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
-6. Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
-7. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment, and the server details
-8. If this site is already in development, import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up Craft Scripts
-9. You can download images from the server either through SSH or by running `scripts/pull_assets.sh` if you set up Craft Scripts
+3. Enter a `CP_TRIGGER`. This defaults to `control` if left blank
+4. Run `npm install` to install the packages from `package.json`
+5. Run `composer install` to install Craft and it's plugins from `composer.json`
+6. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
+7. Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
+8. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment, and the server details
+9. If this site is already in development, import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
+10.   You can download images from the server either through SFTP, SSH, or by running `scripts/pull_assets.sh` if you set up Craft Scripts
 
 ## Code Formatting
 
