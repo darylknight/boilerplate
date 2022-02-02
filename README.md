@@ -31,14 +31,26 @@ This Craft website uses [Project Config](https://craftcms.com/docs/3.x/project-c
 Never overwrite the staging or production database with a local copy.
 All database structure changes are made locally. Those changes are stored in Project Config, and applied to the staging and production databases on deployment. No database changes are permitted on staging or production sites.
 
-### Installing
+## Installation
 
-1. Clone the repository, or create a new repostiory using this one as a template
+### Creating a new site from this Boilerplate
+
+1. Create a new repository using this one as a template
 2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
-3. Using Terminal, navigate to your project and run `npm install`
-4. Using Terminal, navigate to your project and run `composer install`
-5. Generate a new `APP_ID` in `.env` using `./craft setup/app-id`
-6. If this is an existing site, copy the `SECURITY_KEY` from another environment. If it's a new site, run `./craft setup/security-key`
+3. Run `npm install` to install the packages from `package.json`
+4. Run `composer install` to install Craft and it's plugins from `composer.json`
+5. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
+6. Generate a new `SECURITY_KEY` by running `./craft setup/security-key`
+7. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment
+
+### Setting up an existing site based on this Boilerplate
+
+1. Clone this repository
+2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
+3. Run `npm install` to install the packages from `package.json`
+4. Run `composer install` to install Craft and it's plugins from `composer.json`
+5. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
+6. Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
 7. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment, and the server details
 8. If this site is already in development, import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up Craft Scripts
 9. You can download images from the server either through SSH or by running `scripts/pull_assets.sh` if you set up Craft Scripts
