@@ -36,7 +36,8 @@ All database structure changes are made locally. Those changes are stored in Pro
 ### Creating a new site from this Boilerplate
 
 1. Create a new repository using this one as a template
-2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
+2. Duplicate the `.env.example` file as `.env`. Update the Database Configuration, change the `ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL`
+and `BASE_PATH`
 3. Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 4. Run `npm install` to install the packages from `package.json`
 5. Run `composer install` to install Craft and it's plugins from `composer.json`
