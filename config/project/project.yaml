@@ -1,16 +1,16 @@
-dateModified: 1643804232
+dateModified: 1643805206
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
   replyToEmail: null
   template: ''
   transportSettings:
-    encryptionMethod: tls
+    encryptionMethod: $EMAIL_ENCRYPTION
     host: $EMAIL_HOST
     password: $EMAIL_PASSWORD
     port: $EMAIL_PORT
     timeout: '10'
-    useAuthentication: '1'
+    useAuthentication: $EMAIL_AUTH
     username: $EMAIL_USERNAME
   transportType: craft\mail\transportadapters\Smtp
 meta:
