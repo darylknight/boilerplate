@@ -1,4 +1,4 @@
-dateModified: 1643805206
+dateModified: 1646302216
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -237,7 +237,7 @@ plugins:
     schemaVersion: 1.0.0
 system:
   edition: pro
-  live: true
+  live: $SYSTEM_STATUS
   name: 'Boilerplate Tailwind'
   retryDuration: null
   schemaVersion: 3.7.8
