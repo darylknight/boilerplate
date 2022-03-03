@@ -117,7 +117,3 @@ We use [Git](https://git-scm.com) for versioning.
 ## Authors
 
 -  [CodeKnight](https://codeknight.co.uk)
-
-## TODO
-
--  Set up [Prettier Tailwind Plugin](https://www.npmjs.com/package/prettier-plugin-tailwind)
