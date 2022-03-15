@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		{# Stylesheet#}
+		<link rel="stylesheet" href="{{ mix('/css/app.css') }}"/>
+
+		{# Alpine.js #}
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 
 	<body>
-		{{ adminbar() }}{# Adds the Admin Bar plugin to the page #}
+		{{ adminbar() }}
+		{# Adds the Admin Bar plugin to the page #}
 
 		{% include '_includes/alertBar' %}
 
-		{% block content %}
-
-		{% endblock %}
+		{% block content %}{% endblock %}
 		<script src="{{ mix('/js/vendor.js') }}"></script>
 		<script src="{{ mix('/js/app.js') }}"></script>
 		{% include '_includes/klaro' %}
