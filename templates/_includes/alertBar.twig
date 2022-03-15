@@ -1,10 +1,8 @@
-{# TODO: Update this with Tailwind front end #}
-
 {% if alertBar.alertBar|length %}
 	{# If there are alerts scheduled, cycle through them #}
 	{% for alert in alertBar.alertBar.all() %}
 		{% if alert.startDate < now and alert.endDate > now %}
-			<div class="text-center bg-red-700 text-white py-2">
+			<div class="text-center bg-primary text-white py-2">
 				{{ alert.text }}
 			</div>
 		{% endif %}
