@@ -1,4 +1,4 @@
-dateModified: 1646302216
+dateModified: 1647363057
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -35,6 +35,7 @@ meta:
     41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: Columns # Columns
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: Text # Text
     76dd902c-6643-4db8-a27c-e2e1b3142fb0: Text # Text
+    84e8844d-cd9e-4e53-81f5-005891a59e8d: Button # Button
     87b794fa-7c3f-43aa-818e-433587a2c54d: 'Menu Item' # Menu Item
     87e23d73-06c0-42d0-859f-8ae90ac61e88: 'Asset - Alt Text' # Asset - Alt Text
     234a402e-c9d9-4986-a8da-cae7de748a32: Text # Text
@@ -52,6 +53,7 @@ meta:
     138367f7-dc97-47dc-b20f-5db11ef457b3: 'Text + Image' # Text + Image
     549503cf-e3fa-4dda-89d3-1f2e17735cb3: Globals # Globals
     93796209-b311-4bfa-8cd4-fd9b8ca6d012: '404 Error' # 404 Error
+    a4ad7370-4914-43ff-8442-2dc59bb5ac3c: Heading # Heading
     a4d47a90-98af-4c19-9e35-65535ddaebb3: SEO # SEO
     a5e83d06-7ec6-4498-bb8d-53746387cc28: 'User Photos' # User Photos
     a26ace53-7398-4726-bd29-3e90e8fb40f0: 'Menu Item' # Menu Item
@@ -84,7 +86,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: GKHZ54GBHSA7RFB48772UGDH
-    schemaVersion: 3.5.1
+    schemaVersion: 3.6.3
     settings:
       ajaxByDefault: '1'
       alertNotificationRecipients: null
@@ -240,5 +242,5 @@ system:
   live: $SYSTEM_STATUS
   name: 'Boilerplate Tailwind'
   retryDuration: null
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.33
   timeZone: America/Los_Angeles

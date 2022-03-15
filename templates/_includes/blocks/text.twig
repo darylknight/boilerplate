@@ -1,1 +1,34 @@
-{# TODO: Build this #}
+{% import '_includes/macros' as macros %}
+
+{% set cols = block.columns %}
+
+{% switch cols|length %}
+{% case 1 %}
+	{% set containerClasses = 'grid-cols-1 lg:grid-cols-1 gap-8 2xl:w-2/3 mx-auto' %}
+{% case 2 %}
+	{% set containerClasses = 'grid-cols-1 lg:grid-cols-2 gap-8' %}
+{% case 3 %}
+	{% set containerClasses = 'grid-cols-1 lg:grid-cols-3 gap-8' %}
+{% endswitch %}
+
+<div class="py-10">
+	<div class="container px-4 3xl:px-8">
+		{% if block.heading %}
+			<h2 class="text-center mb-10 text-xl">
+				{{ block.heading }}
+			</h2>
+		{% endif %}
+		<div class="grid {{ containerClasses }}">
+			{% for col in cols.all() %}
+				<div class="{{ not loop.last ? 'mb-5 lg:mb-0' }}">
+					{{ col.text }}
+
+					{% if col.button.url %}
+						<div class="mb-10"></div>
+						{{ macros.button(col.button.url, col.button.text, 'button classes', col.button.target) }}
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
