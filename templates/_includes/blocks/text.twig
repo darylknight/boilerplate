@@ -24,8 +24,14 @@
 					{{ col.text }}
 
 					{% if col.button.url %}
-						<div class="mb-10"></div>
-						{{ macros.button(col.button.url, col.button.text, 'button classes', col.button.target) }}
+						{{
+							macros.button(
+								col.button.url,
+								col.button.text,
+								'bg-primary inline-block text-white px-4 py-1 rounded text-center uppercase',
+								col.button.target
+							)
+						}}
 					{% endif %}
 				</div>
 			{% endfor %}

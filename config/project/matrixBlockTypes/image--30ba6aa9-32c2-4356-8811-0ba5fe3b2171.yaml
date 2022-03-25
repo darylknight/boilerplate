@@ -1,0 +1,56 @@
+field: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
+fieldLayouts:
+  6b8a5bf3-93ba-4dcc-a120-cfbd5079af8a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 63092641-8191-4272-9d2b-870c0e7aa674 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  63092641-8191-4272-9d2b-870c0e7aa674: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: 'To edit the alt text, credit the photographer or edit the image, double click on it.'
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: image
+name: Image
+sortOrder: 2

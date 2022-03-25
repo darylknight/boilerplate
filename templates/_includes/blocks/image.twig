@@ -1,0 +1,16 @@
+{% import '_includes/macros' as macros %}
+
+{% set asset = block.image.one %}
+
+{% set transform = {
+	width: 1920
+} %}
+
+<div class="container px-4 3xl:px-8 py-10">
+	{{ macros.image(asset, transform, '') }}
+	{% if asset.assetPhotoCredit %}
+		<p class="text-center pt-2">
+			{{ asset.assetPhotoCredit }}
+		</p>
+	{% endif %}
+</div>

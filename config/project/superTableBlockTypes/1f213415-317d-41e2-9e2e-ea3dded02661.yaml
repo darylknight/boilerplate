@@ -36,7 +36,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -55,7 +54,7 @@ fields:
     translationMethod: none
     type: craft\redactor\Field
   84e8844d-cd9e-4e53-81f5-005891a59e8d: # Button
-    columnSuffix: glnvjtxu
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: button

@@ -38,4 +38,4 @@ fields:
     type: craft\fields\PlainText
 handle: video
 name: Video
-sortOrder: 4
+sortOrder: 5

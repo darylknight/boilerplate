@@ -43,6 +43,13 @@ fields:
                 -
                   - width
                   - ''
+          -
+            - 84e8844d-cd9e-4e53-81f5-005891a59e8d # Button
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
       contentTable: '{{%stc_4_columns}}'
       fieldLayout: row
       maxRows: '3'
@@ -77,4 +84,4 @@ fields:
     type: craft\fields\PlainText
 handle: text
 name: Text
-sortOrder: 2
+sortOrder: 3

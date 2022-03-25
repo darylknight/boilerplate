@@ -35,6 +35,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: d55b8864-3ed0-46c2-9796-902e5fdafb40 # Asset - Photo Credit
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Asset
         sortOrder: 1
 handle: images
@@ -44,6 +53,6 @@ settings:
   path: '@webroot/uploads/images'
 sortOrder: 1
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
 type: craft\volumes\Local
 url: '@web/uploads/images'

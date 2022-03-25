@@ -116,7 +116,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: ''
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -136,4 +135,4 @@ fields:
     type: craft\redactor\Field
 handle: textImage
 name: 'Text + Image'
-sortOrder: 3
+sortOrder: 4

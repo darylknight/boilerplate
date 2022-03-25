@@ -1,4 +1,4 @@
-dateModified: 1647363168
+dateModified: 1648200844
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -31,6 +31,7 @@ meta:
     17b216fe-faa2-4aed-b927-03b84406a9fc: Text # Text
     17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Start Date' # Start Date
     24bf3782-f6ee-4ede-be36-2374c6331dfa: Caption # Caption
+    30ba6aa9-32c2-4356-8811-0ba5fe3b2171: Image # Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
     41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: Columns # Columns
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: Text # Text
@@ -52,6 +53,7 @@ meta:
     67840ae5-eb64-4d49-a47f-3bdf0458a447: Content # Content
     138367f7-dc97-47dc-b20f-5db11ef457b3: 'Text + Image' # Text + Image
     549503cf-e3fa-4dda-89d3-1f2e17735cb3: Globals # Globals
+    63092641-8191-4272-9d2b-870c0e7aa674: Image # Image
     93796209-b311-4bfa-8cd4-fd9b8ca6d012: '404 Error' # 404 Error
     a4ad7370-4914-43ff-8442-2dc59bb5ac3c: Heading # Heading
     a4d47a90-98af-4c19-9e35-65535ddaebb3: SEO # SEO
@@ -66,6 +68,7 @@ meta:
     cbd7becc-06f1-4c4c-b953-45081affffaf: 'Alert Bar' # Alert Bar
     cc626e87-09aa-4a14-80e4-d44dbd87d144: Video # Video
     d2c56410-5eb0-4ddf-a3dc-00036cbef8c0: 'Meta Data' # Meta Data
+    d55b8864-3ed0-46c2-9796-902e5fdafb40: 'Asset - Photo Credit' # Asset - Photo Credit
     d738c390-8d55-4719-a22c-15c3927411a2: Default # Default
     e48df75a-1eb4-4f41-ae54-3712790af8ce: Keywords # Keywords
     e72fcb39-677a-4ffd-ae05-3064e47f7215: Form # Form
