@@ -3,7 +3,7 @@
 		"config/project": true,
 		"modules": true,
 		"node_modules": true,
-		"public/cpresources": true,
+		"public": true,
 		"storage": true,
 		"vendor": true
 	}
