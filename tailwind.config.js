@@ -1,8 +1,9 @@
 module.exports = {
 	content: ['./templates/**/*.twig', './src/**/*.{html,vue,ts,pcss,js}'],
+	safelist: ['py-3'], // freeform uses py-3 in input fields
 	theme: {
 		colors: {
-			blue: '#3C6C94',
+			blue: '#336699',
 			white: '#fff',
 			gray: '#b8b8b8',
 			black: '#000',

@@ -1,1 +1,19 @@
-{# TODO: Build this #}
+{% import '_includes/macros' as macros %}
+
+<div class="container mx-auto px-4 3xl:px-8 py-5 lg:py-10">
+	{% if block.text %}
+		{{ macros.text(block.text) }}
+	{% endif %}
+
+	{% if block.form|length %}
+		{{
+			craft.freeform.form(
+				block.form.handle,
+				{
+					id: block.form.handle,
+					useRequiredAttribute: true
+				}
+			).render()
+		}}
+	{% endif %}
+</div>
