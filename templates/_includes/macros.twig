@@ -2,7 +2,7 @@
 {% macro image(asset, transform, class) %}
 	{% if asset %}
 		<img data-src="{{ asset.url(transform) }}"
-			src="/assets/images/placeholder.gif"
+			src="/dist/images/placeholder.gif"
 			class="lazyload img-fluid {{ class ? class }}"
 			alt="{{ asset.assetAltText }}" />
 	{% endif %}
@@ -11,4 +11,71 @@
 {# This macro requires a URL and some button text #}
 {% macro button(url, text, class, target) %}
 	<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">{{ text }}</a>
+{% endmacro %}
+
+{# This macro uses Retcon to add Tailwind classes to Redactor fields #}
+{% macro text(fieldHandle, classes, psize) %}
+	{{
+		fieldHandle
+			|retconAttr(
+				'h1',
+				{
+					class: (classes|default('')) ~ ''
+				}
+			)
+			|retconAttr(
+				'h2',
+				{
+					class: (classes|default('')) ~ ''
+				}
+			)
+			|retconAttr(
+				'h3',
+				{
+					class: (classes|default('')) ~ ''
+				}
+			)
+			|retconAttr(
+				'h4',
+				{
+					class: (classes|default('')) ~ ''
+				}
+			)
+			|retconAttr(
+				'p',
+				{
+					class: (classes|default('')) ~ ' mb-5 last:mb-0'
+				}
+			)
+			|retconAttr(
+				'ul',
+				{
+					class: (classes|default('')) ~ ' list-disc pl-8'
+				}
+			)
+			|retconAttr(
+				'li',
+				{
+					class: (classes|default('')) ~ ' pl-2'
+				}
+			)
+			|retconAttr(
+				'blockquote',
+				{
+					class: (classes|default('')) ~ ' pl-4 mb-8 last:mb-0'
+				}
+			)
+			|retconAttr(
+				'strong',
+				{
+					class: 'font-bold'
+				}
+			)
+			|retconAttr(
+				'a',
+				{
+					class: 'underline focus:outline-none'
+				}
+			)
+	}}
 {% endmacro %}
