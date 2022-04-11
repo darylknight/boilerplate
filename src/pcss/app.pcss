@@ -8,3 +8,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply py-2 px-10 border-2 inline-block;
+	}
+	h1,
+	.h1 {
+		@apply text-4xl mb-[0.5em];
+	}
+	h2,
+	.h2 {
+		@apply text-3xl mb-[0.5em];
+	}
+	h3,
+	.h3 {
+		@apply text-2xl mb-[0.5em];
+	}
+	h4,
+	.h4 {
+		@apply text-xl mb-[0.5em];
+	}
+	p strong {
+		@apply font-bold;
+	}
+}
