@@ -1,4 +1,4 @@
-dateModified: 1648200844
+dateModified: 1649661716
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -48,6 +48,7 @@ meta:
     669efec2-e57d-4d6f-9adc-4e4cf69972d0: Alert # Alert
     929a1c10-6bba-4747-a328-fe6e9cbd4bad: Text # Text
     6975e64f-9cc5-4116-bee9-1458fdfedaeb: 'Public Schema' # Public Schema
+    9922d29b-82a6-4555-96b9-6928042c087b: Button # Button
     22495aea-1ee3-41b8-9e04-206260f630a6: Layout # Layout
     56371b8f-300e-443b-b33a-c161122a03e2: Text # Text
     67840ae5-eb64-4d49-a47f-3bdf0458a447: Content # Content
@@ -101,6 +102,7 @@ plugins:
       blockedIpAddresses: ''
       blockedKeywords: ''
       blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
       clientDigestFrequency: 1
       clientDigestRecipients: null
       customErrorMessage: ''
@@ -113,6 +115,7 @@ plugins:
       displayFeed: true
       emailTemplateDirectory: null
       emailTemplateStorage: db
+      exportLabels: false
       fieldDisplayOrder: name
       fillWithGet: ''
       footerScripts: false
@@ -159,11 +162,12 @@ plugins:
       sessionEntryTTL: 10800
       showErrorsForBlockedEmails: ''
       showErrorsForBlockedKeywords: ''
-      showTutorial: '1'
+      showTutorial: false
       spamFolderEnabled: '1'
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: ''
       submissionThrottlingTimeFrame: m
+      successTemplateDirectory: null
       twigInHtml: '1'
       twigInHtmlIsolatedMode: '1'
       updateSearchIndexes: '1'
@@ -178,6 +182,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true

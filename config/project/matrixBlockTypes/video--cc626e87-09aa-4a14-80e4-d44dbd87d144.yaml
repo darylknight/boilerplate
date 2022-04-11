@@ -21,7 +21,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: videoEmbedCode
-    instructions: 'Enter the embed code of the video from either YouTube or Vimeo'
+    instructions: "Enter the embed code of the video from either YouTube or Vimeo\r\nIMPORTANT: You must removed the \"width=\"\" and height=\"\" attributes from the code to make it display correctly"
     name: 'Video Embed Code'
     searchable: false
     settings:
