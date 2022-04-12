@@ -1,6 +1,12 @@
 module.exports = {
+	// The content key tells tailwind to scan all these files, to build the CSS from
 	content: ['./templates/**/*.twig', './src/**/*.{html,vue,ts,pcss,js}'],
-	safelist: ['py-3', 'px-3'], // freeform uses py-3 in input fields
+
+	// Set classes here that should always be included. Freeform uses py-3 and px-3
+	safelist: ['py-3', 'px-3'],
+
+	// Adding things to the theme key overwrites tailwind's default setup - like replacing the colours
+	// Use the extend key to add to the config rather than replacing it
 	theme: {
 		colors: {
 			blue: '#336699',
