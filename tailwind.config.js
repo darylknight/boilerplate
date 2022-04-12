@@ -20,7 +20,7 @@ module.exports = {
 		extend: {
 			// ? The 'extend' key adds to the config instead of replacing it
 			screens: {
-				// '3xl': '1690px', // ? add a huge breakpoint to match design
+				// '3xl': '1690px', // ? You can extend the breakpoints here to match design
 			},
 		},
 	},

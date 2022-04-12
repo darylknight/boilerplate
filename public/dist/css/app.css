@@ -513,8 +513,14 @@ h4, .h4{
 p strong{
 	font-weight: 700;
 }
+.absolute{
+	position: absolute;
+}
 .col-span-12{
 	grid-column: span 12 / span 12;
+}
+.-m-1{
+	margin: -0.25rem;
 }
 .mx-auto{
 	margin-left: auto;
@@ -556,6 +562,12 @@ p strong{
 .aspect-video{
 	aspect-ratio: 16 / 9;
 }
+.h-0{
+	height: 0px;
+}
+.w-0{
+	width: 0px;
+}
 .w-full{
 	width: 100%;
 }
@@ -574,8 +586,17 @@ p strong{
 .gap-8{
 	gap: 2rem;
 }
+.overflow-hidden{
+	overflow: hidden;
+}
+.whitespace-nowrap{
+	white-space: nowrap;
+}
 .rounded{
 	border-radius: 0.25rem;
+}
+.border-0{
+	border-width: 0px;
 }
 .border-2{
 	border-width: 2px;
@@ -583,6 +604,13 @@ p strong{
 .bg-blue{
 	--tw-bg-opacity: 1;
 	background-color: rgb(51 102 153 / var(--tw-bg-opacity));
+}
+.bg-black{
+	--tw-bg-opacity: 1;
+	background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.p-0{
+	padding: 0px;
 }
 .py-3{
 	padding-top: 0.75rem;
@@ -664,6 +692,34 @@ p strong{
 
 .last\:mb-0:last-child{
 	margin-bottom: 0px;
+}
+
+.focus\:relative:focus{
+	position: relative;
+}
+
+.focus\:m-0:focus{
+	margin: 0px;
+}
+
+.focus\:block:focus{
+	display: block;
+}
+
+.focus\:h-auto:focus{
+	height: auto;
+}
+
+.focus\:w-auto:focus{
+	width: auto;
+}
+
+.focus\:w-full:focus{
+	width: 100%;
+}
+
+.focus\:p-2:focus{
+	padding: 0.5rem;
 }
 
 .focus\:outline-none:focus{

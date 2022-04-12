@@ -9,15 +9,26 @@
 	</head>
 
 	<body>
-		{{ adminbar() }}
-		{# Adds the Admin Bar plugin to the page #}
+		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden whitespace-nowrap border-0 focus:relative focus:p-2 focus:w-full focus:block bg-black text-white text-center focus:h-auto focus:m-0"
+			href="#main">
+			<span>Skip to main content</span>
+		</a>
+
+		{{ adminbar() }}{# Adds the Admin Bar plugin to the page #}
 
 		{% include '_includes/alertBar' %}
 
-		{% block content %}
-		{% endblock %}
+		<div role="main" id="main">
+			{% block content %}
+
+			{% endblock %}
+		</div>
+
 		<script src="{{ mix('/js/vendor.js') }}"></script>
 		<script src="{{ mix('/js/app.js') }}"></script>
+
 		{% include '_includes/klaro' %}
 	</body>
-</html>
+</html>.visually-hidden, .visually-hidden-focusable:not(:focus):not(:focus-within) {
+
+}
