@@ -68,7 +68,7 @@ Reference: Using [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/g
 ## Front End CSS (Tailwind)
 
 -  This project uses [Tailwind CSS](https://tailwindcss.com)
--  Tailwind can be configured with the `tailwind.config.js` file in the project root
+-  Tailwind can be configured with the `tailwind.config.js` file in the project root, for things like setting the default font, or adding brand colours
 -  Tailwind uses PostCSS. This can be configured with the `postcss.config.js` file in the project root
 
 ## Front End Build Process (Laravel Mix)
@@ -108,7 +108,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 -  [Craft CMS 3](https://craftcms.com)
 -  [Tailwind CSS](https://tailwindcss.com)
--  [Larave Mix](https://laravel-mix.com/)
+-  [Laravel Mix](https://laravel-mix.com/)
 
 ## Versioning
 
