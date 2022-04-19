@@ -37,6 +37,14 @@ return [
 			'useShapes' => true,
 		],
 
+		// Add an SVG-only option to Asset fields
+		'extraFileKinds' => [
+			'svg' => [
+				'label' => 'SVG',
+				'extensions' => ['svg'],
+			],
+		],
+
 		// This uses values from .env
 		'aliases' => [
 			'@web' => getenv('PRIMARY_SITE_URL'),
