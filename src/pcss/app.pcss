@@ -9,27 +9,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	html {
+		/* ? Replace the base font family: https://tailwindcss.com/docs/font-family#customizing-the-default-font */
+		/* font-family: theme('fontFamily.garamond'); */
+	}
+	.h1 {
+		@apply text-5xl lg:text-6xl mb-[0.5em] last:mb-0;
+	}
+	.h2 {
+		@apply text-4xl lg:text-5xl mb-[0.5em] last:mb-0;
+	}
+	.h3 {
+		@apply text-3xl lg:text-4xl mb-[0.5em] last:mb-0;
+	}
+	.h4 {
+		@apply text-xl lg:text-2xl mb-[0.5em] last:mb-0;
+	}
+	.h5 {
+		@apply mb-[0.5em] last:mb-0;
+	}
+	.p {
+		@apply text-xl mb-4 last:mb-0;
+	}
+}
+
 @layer components {
 	.btn {
 		@apply py-2 px-10 border-2 inline-block;
-	}
-	h1,
-	.h1 {
-		@apply text-4xl mb-[0.5em];
-	}
-	h2,
-	.h2 {
-		@apply text-3xl mb-[0.5em];
-	}
-	h3,
-	.h3 {
-		@apply text-2xl mb-[0.5em];
-	}
-	h4,
-	.h4 {
-		@apply text-xl mb-[0.5em];
-	}
-	p strong {
-		@apply font-bold;
 	}
 }
