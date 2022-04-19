@@ -1,6 +1,7 @@
-# Craft / Craft Scripts ENV files
+# Craft
 .env.sh
 .env
+config/license.key
 
 # COMPOSER
 /vendor
