@@ -1,4 +1,4 @@
-dateModified: 1649661716
+dateModified: 1650961286
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -176,7 +176,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
     settings:
-      assetPath: dist
+      assetPath: assets
       publicPath: public
   redactor:
     edition: standard

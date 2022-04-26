@@ -5,7 +5,8 @@
 	{# https://heyklaro.com/docs/ #}
 	{# ? In case they break the link again: https://heyklaro.com/docs/integration/annotated-configuration #}
 
-	{# Link to the Klaro config file. You must update the cookieDomain there #}<script defer src="/dist/js/klaro-config.js"> </script>
+	{# Link to the Klaro config file. You must update the cookieDomain there #}
+	<script defer src="/assets/js/klaro-config.js"></script>
 
 	{# Example Google Analytics #}
 	{# <script async
@@ -14,7 +15,12 @@
 		data-src=""
 		data-name="googleAnalytics"></script> #}
 
-	{# Link to the Klaro JS #}<script defer data-config="klaroConfig" type="application/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.12/klaro.js"> </script>
+	{# Link to the Klaro JS #}
+	<script
+		defer
+		data-config="klaroConfig"
+		type="application/javascript"
+		src="https://cdn.kiprotect.com/klaro/v0.7.12/klaro.js"> </script>
 
 	{% js %}
 	// When someone clicks the Klaro button in the footer, open modal

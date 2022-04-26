@@ -2,7 +2,7 @@
 {% macro image(asset, transform, class) %}
 	{% if asset %}
 		<img data-src="{{ asset.url(transform) }}"
-			src="/dist/images/placeholder.gif"
+			src="/assets/images/placeholder.gif"
 			class="lazyload img-fluid {{ class ? class }}"
 			alt="{{ asset.assetAltText }}" />
 	{% endif %}
