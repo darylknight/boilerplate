@@ -1,5 +1,16 @@
 {# ? |replace the iframe width="[0-9+]" and height="[0-9+]" so the aspect-ratio class works #}
 
-<div class="container mx-auto px-4 3xl:px-8 py-5 lg:py-10 video-container">
-	{{ block.videoEmbedCode|replace('/width="[0-9]+"/', '')|replace('/height="[0-9]+"/', '')|raw }}
+<div class="container mx-auto px-4 3xl:px-8 py-5 lg:py-10">
+	{{
+		block.videoEmbedCode
+			|retconAttr(
+				'iframe',
+				{
+					class: 'w-full aspect-video',
+					width: false,
+					height: false
+				}
+			)
+			|raw
+	}}
 </div>

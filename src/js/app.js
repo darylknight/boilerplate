@@ -5,13 +5,6 @@ Alpine.start()
 //
 
 document.addEventListener('DOMContentLoaded', function () {
-	// ? Videos
-	// Loop through all video blocks and add an aspect ratio class
-	const videos = document.querySelectorAll('.video-container iframe')
-	for (const row of videos) {
-		row.classList.add('w-full', 'aspect-video')
-	}
-
 	// ? Freeform
 	// Use JS to remove and add the right button classes to Freeform submit button
 	// Yes, it's hacky - but the alternative is maintaining a Freeform template
