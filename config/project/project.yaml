@@ -1,4 +1,4 @@
-dateModified: 1650961286
+dateModified: 1651914048
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -78,10 +78,6 @@ meta:
     fa97b4d1-33c1-4819-a6c4-c441f301ec4f: Image # Image
     ff17f800-7774-4a64-848b-f3abe5d77ee4: Heading # Heading
 plugins:
-  admin-bar:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.1.0
   dashboard-begone:
     edition: standard
     enabled: true
@@ -171,13 +167,6 @@ plugins:
       twigInHtml: '1'
       twigInHtmlIsolatedMode: '1'
       updateSearchIndexes: '1'
-  mix:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      assetPath: assets
-      publicPath: public
   redactor:
     edition: standard
     enabled: true

@@ -53,6 +53,6 @@ settings:
   path: '@webroot/uploads/images'
 sortOrder: 1
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@web/uploads/images'

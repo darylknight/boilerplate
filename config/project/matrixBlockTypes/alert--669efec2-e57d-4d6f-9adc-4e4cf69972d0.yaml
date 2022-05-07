@@ -82,7 +82,6 @@ fields:
       availableTransforms: '*'
       availableVolumes:
         - f64b113b-a289-48d7-a56f-a9a6de98b93a
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
