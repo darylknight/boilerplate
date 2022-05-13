@@ -1,4 +1,4 @@
-dateModified: 1651914048
+dateModified: 1652440791
 email:
   fromEmail: $EMAIL_SYSTEM_ADDRESS
   fromName: $EMAIL_SENDER
@@ -229,6 +229,328 @@ plugins:
     edition: lite
     enabled: true
     schemaVersion: 3.1.3
+    settings:
+      apiKey: wrmmophihkrapgprdodcnzyosjevkteh
+      blowfishHashCost:
+        __assoc__:
+          -
+            - threshold
+            - 13
+      contentSecurityPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      contentSecurityPolicySettings:
+        __assoc__:
+          -
+            - enabled
+            - ''
+          -
+            - enforce
+            - ''
+          -
+            - header
+            - '1'
+          -
+            - directives
+            -
+              -
+                - '1'
+                - default-src
+                - '''self'''
+      cooldownDuration:
+        __assoc__:
+          -
+            - threshold
+            - 300
+      cors:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      craftFilePermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFolderPermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFoldersAboveWebRoot:
+        __assoc__:
+          -
+            - canFail
+            - true
+      criticalCraftUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      criticalPluginUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      defaultDirMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 509
+      defaultFileMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 436
+      defaultTokenDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      devMode:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      elevatedSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 300
+      enableCsrfProtection:
+        __assoc__:
+          -
+            - canFail
+            - true
+      expectCT:
+        __assoc__:
+          -
+            - canFail
+            - true
+      headerProtectionSettings:
+        __assoc__:
+          -
+            - enabled
+            - '1'
+          -
+            - headers
+            -
+              -
+                - '1'
+                - Strict-Transport-Security
+                - max-age=31536000
+              -
+                - '1'
+                - X-Content-Type-Options
+                - nosniff
+              -
+                - '1'
+                - X-Frame-Options
+                - SAMEORIGIN
+              -
+                - '1'
+                - X-Xss-Protection
+                - '1; mode=block'
+      highSecurityLevel: ''
+      httpsControlPanel:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      httpsFrontEnd:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      integrationSettings:
+        __assoc__:
+          -
+            - putyourlightson\sherlock\integrations\BugsnagIntegration
+            -
+              __assoc__:
+                -
+                  - apiKey
+                  - ''
+          -
+            - putyourlightson\sherlock\integrations\RollbarIntegration
+            -
+              __assoc__:
+                -
+                  - accessToken
+                  - ''
+          -
+            - putyourlightson\sherlock\integrations\SentryIntegration
+            -
+              __assoc__:
+                -
+                  - dsn
+                  - ''
+                -
+                  - tracesSampleRate
+                  - ''
+      invalidLoginWindowDuration:
+        __assoc__:
+          -
+            - threshold
+            - 3600
+      maxInvalidLogins:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 5
+      monitor: false
+      notificationEmailAddresses: $EMAIL_SYSTEM_ADDRESS
+      phpComposerVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+      phpVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - thresholds
+            -
+              __assoc__:
+                -
+                  - '5.0'
+                  - '2005-09-05'
+                -
+                  - '5.1'
+                  - '2006-07-24'
+                -
+                  - '5.2'
+                  - '2011-01-06'
+                -
+                  - '5.3'
+                  - '2014-07-14'
+                -
+                  - '5.4'
+                  - '2015-09-03'
+                -
+                  - '5.5'
+                  - '2016-07-10'
+                -
+                  - '5.6'
+                  - '2018-12-31'
+                -
+                  - '7.0'
+                  - '2018-12-03'
+                -
+                  - '7.1'
+                  - '2019-12-01'
+                -
+                  - '7.2'
+                  - '2020-11-30'
+                -
+                  - '7.3'
+                  - '2021-12-06'
+                -
+                  - '7.4'
+                  - '2022-11-28'
+                -
+                  - '8.0'
+                  - '2023-11-26'
+      preventUserEnumeration:
+        __assoc__:
+          -
+            - canFail
+            - true
+      referrerPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      rememberedUserSessionDuration:
+        __assoc__:
+          -
+            - threshold
+            - 12096004
+      requireEmailVerification:
+        __assoc__:
+          -
+            - canFail
+            - true
+      sanitizeSvgUploads:
+        __assoc__:
+          -
+            - canFail
+            - true
+      strictTransportSecurity:
+        __assoc__:
+          -
+            - canFail
+            - true
+      testToEmailAddress:
+        __assoc__:
+          -
+            - canFail
+            - true
+      translationDebugOutput:
+        __assoc__:
+          -
+            - canFail
+            - true
+      useSecureCookies:
+        __assoc__:
+          -
+            - canFail
+            - true
+      userSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 3600
+      verificationCodeDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      webAliasInSiteBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      webAliasInVolumeBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      xContentTypeOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      xFrameOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
   super-table:
     edition: standard
     enabled: true
