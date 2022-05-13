@@ -21,19 +21,19 @@
  * have different settings groups for each environment, just as you do for 'general.php'
  */
 
-return array(
-    // ADMIN BAR
-   //  'additionalLinks' => [],
-   //  'customCss' => '',
-   //  'displayGreeting' => true,
-    'displayDashboardLink' => false,
-    'displayDefaultEditSection' => false,
-   //  'displaySettingsLink' => true,
-   //  'displayLogout' => true,
-   //  'enableMobileMenu' => true,
+return [
+	// ADMIN BAR
+	'additionalLinks' => [],
+	'customCss' => '',
+	'displayGreeting' => true,
+	'displayDashboardLink' => true,
+	'displayDefaultEditSection' => true,
+	'displaySettingsLink' => true,
+	'displayLogout' => true,
+	'enableMobileMenu' => true,
 
-    // EDIT LINKS
-   //  'displayEditDate' => true,
-   //  'displayEditAuthor' => true,
-   //  'displayRevisionNote' => true,
-);
+	// EDIT LINKS
+	'displayEditDate' => true,
+	'displayEditAuthor' => true,
+	'displayRevisionNote' => true,
+];
