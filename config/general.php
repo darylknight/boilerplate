@@ -31,6 +31,7 @@ return [
 		'devMode' => !$isProd, // Enable devMode in local and staging, but not production
 		'allowUpdates' => $isDev, // Prevent auto updates on staging and production
 		'enableTemplateCaching' => $isProd, // Only allow template caching on production
+		'limitAutoSlugsToAscii' => true, // https://craftcms.com/docs/3.x/config/config-settings.html#limitautoslugstoascii
 
 		// Set default accessibility options for everyone
 		'accessibilityDefaults' => [
