@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		{# Stylesheet #}
-		<link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
+		{{ craft.twigpack.includeCssModule('/css/app.css') }}
 
 		{# TODO: Add favicon here #}
 	</head>
@@ -16,7 +16,7 @@
 			<span>Skip to main content</span>
 		</a>
 
-		{{ adminbar() }}{# Adds the Admin Bar plugin to the page #}
+		{{ adminbar() }} {# Adds the Admin Bar plugin to the page #}
 
 		{% include '_includes/alertBar' %}
 
@@ -26,8 +26,8 @@
 			{% endblock %}
 		</div>
 
-		<script src="{{ mix('/js/vendor.js') }}"></script>
-		<script src="{{ mix('/js/app.js') }}"></script>
+		{{ craft.twigpack.includeJsModule('/js/vendor.js') }}
+		{{ craft.twigpack.includeJsModule('/js/app.js') }}
 
 		{% include '_includes/klaro' %}
 	</body>
