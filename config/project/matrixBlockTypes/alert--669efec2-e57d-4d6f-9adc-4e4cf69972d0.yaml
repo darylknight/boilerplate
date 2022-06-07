@@ -11,6 +11,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9ed88d6a-2e36-4fbb-8c70-363482a71128
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 01edc326-d60d-4208-ad74-544e7e2ba829
             warning: null
             width: 100
           -
@@ -29,10 +31,11 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4fc773dd-ab18-4abb-b268-c93a8ab01e9c
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3c098591-b8b9-4bab-b64d-09659b251c76
 fields:
   5afb69df-76c7-42e3-9af4-bc31faefa3d5: # End Date
     columnSuffix: null
@@ -45,7 +48,7 @@ fields:
     settings:
       max: null
       min: null
-      minuteIncrement: '60'
+      minuteIncrement: 60
       showDate: true
       showTime: true
       showTimeZone: false
@@ -63,7 +66,7 @@ fields:
     settings:
       max: null
       min: null
-      minuteIncrement: '60'
+      minuteIncrement: 60
       showDate: true
       showTime: true
       showTimeZone: false
@@ -86,13 +89,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

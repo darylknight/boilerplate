@@ -24,9 +24,10 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 2fc9507b-ac5e-436f-a5b1-8cab7ec4c969
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 2fe7003a-f825-4290-bd45-b9ff6042eead
 handle: keywords
 name: Keywords

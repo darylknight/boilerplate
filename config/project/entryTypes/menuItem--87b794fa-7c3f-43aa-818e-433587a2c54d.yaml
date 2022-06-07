@@ -24,19 +24,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5f8d5f15-f675-4bda-b442-a9d8f3885856
             warning: null
             width: 100
           -
             fieldUid: 460bbc59-2a42-4a11-9d19-64b16596c5ba # Page Target
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0db8c2b9-bb73-4d33-9d26-b790373989af
             warning: null
             width: 100
         name: 'Menu Item'
-        sortOrder: 1
+        uid: b4339661-2121-483f-bcbc-3fec14dc274f
 handle: menuItem
 hasTitleField: false
 name: 'Menu Item'

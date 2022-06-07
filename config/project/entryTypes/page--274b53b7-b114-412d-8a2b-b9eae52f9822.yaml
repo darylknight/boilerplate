@@ -24,19 +24,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1ef86e1e-e03c-40d3-94b8-2db58896ec0d
             warning: null
             width: 100
           -
             fieldUid: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ff008eeb-693e-49d2-b011-73c36e45f793
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 4db9a164-d1b3-4b72-b7ce-8c7b309bb0b0
       -
         elements:
           -
@@ -46,10 +48,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 33ec22f4-1108-4a8a-81ff-279497766cc8
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 4fc8a576-820b-452e-9fc4-69fcd6698bc9
 handle: page
 hasTitleField: true
 name: Page

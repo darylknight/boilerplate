@@ -7,22 +7,24 @@ fieldLayouts:
             fieldUid: 0defd9a0-66bd-4509-aa52-57274feb18d7 # 404 Heading
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9a52d592-806c-4803-b0e3-343287617c8f
             warning: null
             width: 100
           -
             fieldUid: 0468bb2b-6b23-493c-9867-c8e7fb7f4431 # 404 Text
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9a0f2b63-1bc1-43fd-9f64-17565bbe0b19
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 772352b9-f4fd-4f06-b4dd-2ff5a7c41ee9
 handle: error404
 name: '404 Error'
 sortOrder: 2

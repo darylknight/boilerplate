@@ -7,8 +7,8 @@ name: 'Alert Bar'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_alertbar}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

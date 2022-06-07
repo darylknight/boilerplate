@@ -1,111 +1,63 @@
 columnSuffix: null
-contentColumnType: text
+contentColumnType: string
 fieldGroup: 631f7883-af4d-4cd9-8811-62ba70b2ae77 # Navigation
 handle: pageTarget
 instructions: "Select an Entry or External URL to link to.\r\nThe link text will default to the entry title, but can changed with the **Custom link text** field"
 name: 'Page Target'
 searchable: false
 settings:
-  allowCustomText: '1'
-  allowTarget: '1'
-  allowedLinkNames:
-    3: entry
-    9: url
-  autoNoReferrer: ''
+  allowCustomText: true
+  allowTarget: true
+  autoNoReferrer: false
+  customTextMaxLength: 0
+  customTextRequired: false
   defaultLinkName: entry
   defaultText: ''
-  enableAriaLabel: ''
-  enableTitle: ''
+  enableAllLinkTypes: false
+  enableAriaLabel: false
+  enableElementCache: false
+  enableTitle: false
   typeSettings:
-    __assoc__:
-      -
-        - asset
-        -
-          __assoc__:
-            -
-              - sources
-              - '*'
-            -
-              - allowCustomQuery
-              - ''
-      -
-        - category
-        -
-          __assoc__:
-            -
-              - sources
-              - '*'
-            -
-              - allowCustomQuery
-              - ''
-      -
-        - entry
-        -
-          __assoc__:
-            -
-              - sources
-              -
-                - 'section:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-            -
-              - allowCustomQuery
-              - ''
-      -
-        - site
-        -
-          __assoc__:
-            -
-              - sites
-              - '*'
-      -
-        - user
-        -
-          __assoc__:
-            -
-              - sources
-              - '*'
-            -
-              - allowCustomQuery
-              - ''
-      -
-        - custom
-        -
-          __assoc__:
-            -
-              - disableValidation
-              - ''
-            -
-              - allowAliases
-              - ''
-      -
-        - email
-        -
-          __assoc__:
-            -
-              - disableValidation
-              - ''
-            -
-              - allowAliases
-              - ''
-      -
-        - tel
-        -
-          __assoc__:
-            -
-              - disableValidation
-              - ''
-            -
-              - allowAliases
-              - ''
-      -
-        - url
-        -
-          __assoc__:
-            -
-              - disableValidation
-              - ''
-            -
-              - allowAliases
-              - ''
+    asset:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    category:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    custom:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    email:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    entry:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: true
+      sources:
+        - 'section:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+    site:
+      enabled: false
+      sites: '*'
+    tel:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    url:
+      allowAliases: false
+      disableValidation: false
+      enabled: true
+    user:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
 translationKeyFormat: null
 translationMethod: none
-type: typedlinkfield\fields\LinkField
+type: lenz\linkfield\fields\LinkField

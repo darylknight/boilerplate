@@ -24,15 +24,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 0e0eaf98-8206-41ee-aa20-b8d1c3bdf719
             warning: null
             width: 100
           -
             fieldUid: 87e23d73-06c0-42d0-859f-8ae90ac61e88 # Asset - Alt Text
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 43c88f37-59ea-4796-b9b8-6912e8dabb04
             warning: null
             width: 100
           -
@@ -42,15 +44,16 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a7170a90-7cf9-410b-ac6d-eb0a50e97713
             warning: null
             width: 100
         name: Asset
-        sortOrder: 1
+        uid: ae73c5e3-e8cb-47f9-b5e0-f87cc9ff0715
 fs: images
 handle: images
-hasUrls: true
 name: Images
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-url: '@web/uploads/images'
+transformFs: null
+transformSubpath: ''

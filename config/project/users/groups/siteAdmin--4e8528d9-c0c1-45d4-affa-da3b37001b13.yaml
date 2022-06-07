@@ -11,18 +11,25 @@ permissions:
   - 'createentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'createentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'createentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'createfolders:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'createfolders:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'deleteassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'deleteassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'deleteentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deleteentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deleteentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'deletepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'deletepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'deletepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deletepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deletepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'deletepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'deletepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'deletepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - deleteusers
   - 'editglobalset:93796209-b311-4bfa-8cd4-fd9b8ca6d012' # 404 Error
   - 'editglobalset:cbd7becc-06f1-4c4c-b953-45081affffaf' # Alert Bar
+  - 'editimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'editimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'editpeerimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'editpeerimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - editusers
   - freeform-access-quick-export
   - freeform-dashboardaccess
@@ -36,9 +43,10 @@ permissions:
   - freeform-formsmanageindividual
   - freeform-notificationsaccess
   - freeform-notificationsmanage
+  - freeform-pro-exportnotificationsaccess
+  - freeform-pro-exportnotificationsmanage
   - freeform-pro-exportprofilesaccess
   - freeform-pro-exportprofilesmanage
-  - freeform-resources
   - freeform-settingsaccess
   - freeform-submissionsaccess
   - freeform-submissionsmanage
@@ -49,6 +57,20 @@ permissions:
   - freeform-submissionsreadindividual
   - moderateusers
   - registerusers
+  - 'replacefiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'replacefiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'replacepeerfiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'replacepeerfiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'saveassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'saveassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'saveentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'saveentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'saveentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'savepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'savepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'savepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'savepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'savepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'seomatic:dashboard'
   - 'seomatic:global-meta'
   - 'seomatic:global-meta:ads'
@@ -65,42 +87,12 @@ permissions:
   - 'seomatic:site-settings:sitemap'
   - 'seomatic:site-settings:social'
   - 'viewassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'saveassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'deleteassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'replacefiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'editimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'viewpeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'savepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'replacepeerfiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'deletepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'editpeerimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'createfolders:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
   - 'viewassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'saveassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'deleteassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'replacefiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'editimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'viewpeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'savepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'replacepeerfiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'deletepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'editpeerimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'createfolders:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'viewentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'saveentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'viewpeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'savepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'viewpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'savepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'viewentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'saveentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'viewpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'savepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'viewpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'savepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'viewentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'saveentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'viewpeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'savepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'viewentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'viewpeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'viewpeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'viewpeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'savepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'viewpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
