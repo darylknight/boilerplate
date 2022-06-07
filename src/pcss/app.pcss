@@ -1,36 +1,39 @@
 @import './klaro.pcss';
 
-/* x-cloak stops elements flashing in before Alpine.js loads */
-[x-cloak] {
-	display: none;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ? See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer for details on why these are split into base/components/utilities */
+/* ? Useful: If you include classes inside the @layers, they will automatically be removed from compiled CSS if they aren't used in the HTML */
+
 @layer base {
+	/* x-cloak stops elements flashing in before Alpine.js loads */
+	[x-cloak] {
+		display: none;
+	}
+
 	html {
 		/* ? Replace the base font family: https://tailwindcss.com/docs/font-family#customizing-the-default-font */
 		/* font-family: theme('fontFamily.garamond'); */
 	}
 	.h1 {
-		@apply text-5xl lg:text-6xl mb-[0.5em] last:mb-0;
+		@apply text-5xl lg:text-6xl mb-[0.5em];
 	}
 	.h2 {
-		@apply text-4xl lg:text-5xl mb-[0.5em] last:mb-0;
+		@apply text-4xl lg:text-5xl mb-[0.5em];
 	}
 	.h3 {
-		@apply text-3xl lg:text-4xl mb-[0.5em] last:mb-0;
+		@apply text-3xl lg:text-4xl mb-[0.5em];
 	}
 	.h4 {
-		@apply text-xl lg:text-2xl mb-[0.5em] last:mb-0;
+		@apply text-xl lg:text-2xl mb-[0.5em];
 	}
 	.h5 {
-		@apply mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em];
 	}
 	.p {
-		@apply text-xl mb-4 last:mb-0;
+		@apply text-xl mb-4;
 	}
 }
 

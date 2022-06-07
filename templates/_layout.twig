@@ -11,12 +11,12 @@
 	</head>
 
 	<body>
-		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden whitespace-nowrap border-0 focus:relative focus:p-2 focus:w-full focus:block bg-black text-white text-center focus:h-auto focus:m-0"
+		{{ adminbar() }} {# Adds the Admin Bar plugin to the page #}
+
+		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden border-0 focus:relative focus:p-2 focus:w-full focus:block bg-black text-white text-center focus:h-auto focus:m-0"
 			href="#main">
 			<span>Skip to main content</span>
 		</a>
-
-		{{ adminbar() }} {# Adds the Admin Bar plugin to the page #}
 
 		{% include '_includes/alertBar' %}
 

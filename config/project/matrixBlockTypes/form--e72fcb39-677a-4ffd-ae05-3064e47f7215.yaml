@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 44b127c2-42f2-40ec-9f23-8219ed214d34
             warning: null
             width: 100
           -
@@ -20,10 +21,11 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ed0f1f68-a013-4497-bf6c-267b5bdbcebf
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f6d65961-c80a-4896-972d-9ec8dd995341
 fields:
   1edd02fb-b01b-4fc9-90fb-0b111094ab5f: # Form
     columnSuffix: null
@@ -51,13 +53,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

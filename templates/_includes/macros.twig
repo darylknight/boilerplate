@@ -4,6 +4,7 @@
 		<img data-src="{{ asset.url(transform) }}"
 			src="/assets/images/placeholder.gif"
 			class="lazyload img-fluid {{ class ? class }}"
+			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
 			alt="{{ asset.assetAltText }}" />
 	{% endif %}
 {% endmacro %}
@@ -20,25 +21,25 @@
 			|retconAttr(
 				'h1',
 				{
-					class: (classes|default('')) ~ ''
+					class: (classes|default('')) ~ ' h1'
 				}
 			)
 			|retconAttr(
 				'h2',
 				{
-					class: (classes|default('')) ~ ''
+					class: (classes|default('')) ~ ' h2'
 				}
 			)
 			|retconAttr(
 				'h3',
 				{
-					class: (classes|default('')) ~ ''
+					class: (classes|default('')) ~ ' h3'
 				}
 			)
 			|retconAttr(
 				'h4',
 				{
-					class: (classes|default('')) ~ ''
+					class: (classes|default('')) ~ ' h4'
 				}
 			)
 			|retconAttr(

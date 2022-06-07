@@ -6,23 +6,25 @@ This repository is for the Boilerplate website at [insertdomainhere].
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
--  The site is built with [Craft CMS 3](https://craftcms.com)
--  This site uses a multi-environment config (https://docs.craftcms.com/v3/config/environments.html) to set details for local, staging and production
--  See https://docs.craftcms.com/v3/config/config-settings.html for general config settings.
+-  The site is built with [Craft CMS 4](https://craftcms.com)
+-  For general configuration settings, see `config/general.php`
+-  See the [Craft docs](https://craftcms.com/docs/4.x/config/config-settings.html) for available config settings
 
 ### Prerequisites
 
-Craft CMS is built on PHP, so it needs a local environment to run it. This project should run in multiple environments, but it assumes [Laravel Valet](https://laravel-mix.com) by default.
+Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [Laravel Valet](https://laravel-mix.com) by default. To run this site locally, you will need:
 
--  Composer 2
--  Apache / Nginx
--  PHP 8.0+
--  MySQL or MariaDB
+-  Composer 2.x
+-  Apache or Nginx
+-  PHP 8.1+
+-  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
+-  512MB+ of memory allocated to PHP
+-  200MB+ of free disk space
 -  This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
 
 ## Project Config
 
-This Craft website uses [Project Config](https://craftcms.com/docs/3.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
+This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
 
 1. Whenever you start work on a project, check for changes in the remote branch. If there are, pull these down and run `composer install`. This will also run the scripts at the bottom of `composer.json`, which will run Project Config migrations on your local database.
 2. If there are Project Config merge conflicts, it normally just means the `dateModifed` in `project.yaml` has changed, but please check you're not deleting files another developer has set up.
@@ -108,7 +110,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 -  [Craft CMS 3](https://craftcms.com)
 -  [Tailwind CSS](https://tailwindcss.com)
--  [Laravel Mix](https://laravel-mix.com/)
+-  [Laravel Mix](https://laravel-mix.com)
 
 ## Versioning
 

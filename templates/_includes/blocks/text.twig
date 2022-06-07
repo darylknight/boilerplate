@@ -1,6 +1,6 @@
 {% import '_includes/macros' as macros %}
 
-{% set cols = block.columns %}
+{% set cols = block.columns.all() %}
 
 {% switch cols|length %}
 {% case 1 %}
@@ -9,6 +9,8 @@
 	{% set containerClasses = 'grid-cols-1 lg:grid-cols-2 gap-8' %}
 {% case 3 %}
 	{% set containerClasses = 'grid-cols-1 lg:grid-cols-3 gap-8' %}
+{% default %}
+	{% set containerClasses = 'grid-cols-1 lg:grid-cols-1 gap-8 2xl:w-2/3 mx-auto' %}
 {% endswitch %}
 
 <div class="container mx-auto px-4 3xl:px-8 py-5 lg:py-10">
@@ -18,7 +20,7 @@
 		</h2>
 	{% endif %}
 	<div class="grid {{ containerClasses }}">
-		{% for col in cols.all() %}
+		{% for col in cols %}
 			<div class="{{ not loop.last ? 'mb-5 lg:mb-0' }}">
 				{{ macros.text(col.text) }}
 

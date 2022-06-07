@@ -8,43 +8,21 @@ permissions:
   - accessplugin-seomatic
   - accesssitewhensystemisoff
   - 'assignusergroup:4e8528d9-c0c1-45d4-affa-da3b37001b13' # Site Admin
-  - assignusergroups
   - 'createentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'createentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'createentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'createfoldersinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'createfoldersinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'deleteentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deleteentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deleteentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'deletefilesandfoldersinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'deletefilesandfoldersinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'deletepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deletepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deletepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'deletepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deletepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deletepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'deletepeerfilesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'deletepeerfilesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - deleteusers
-  - 'editentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'editentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'editentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'editglobalset:93796209-b311-4bfa-8cd4-fd9b8ca6d012' # 404 Error
   - 'editglobalset:cbd7becc-06f1-4c4c-b953-45081affffaf' # Alert Bar
-  - 'editimagesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'editimagesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'editpeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'editpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'editpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'editpeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'editpeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'editpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'editpeerfilesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'editpeerfilesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'editpeerimagesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'editpeerimagesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - editusers
   - freeform-access-quick-export
   - freeform-dashboardaccess
@@ -70,22 +48,7 @@ permissions:
   - 'freeform-submissionsread:1'
   - freeform-submissionsreadindividual
   - moderateusers
-  - 'publishentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'publishentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'publishentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'publishpeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'publishpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'publishpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'publishpeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-  - 'publishpeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
-  - 'publishpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - registerusers
-  - 'replacefilesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'replacefilesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'replacepeerfilesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'replacepeerfilesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'saveassetinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'saveassetinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'seomatic:dashboard'
   - 'seomatic:global-meta'
   - 'seomatic:global-meta:ads'
@@ -101,7 +64,43 @@ permissions:
   - 'seomatic:site-settings:miscellaneous'
   - 'seomatic:site-settings:sitemap'
   - 'seomatic:site-settings:social'
-  - 'viewpeerfilesinvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'viewpeerfilesinvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
-  - 'viewvolume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-  - 'viewvolume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'viewassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'saveassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'deleteassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'replacefiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'editimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'viewpeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'savepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'replacepeerfiles:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'deletepeerassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'editpeerimages:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'createfolders:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
+  - 'viewassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'saveassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'deleteassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'replacefiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'editimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'viewpeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'savepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'replacepeerfiles:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'deletepeerassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'editpeerimages:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'createfolders:33af4157-ab80-44a3-b036-006aac36eacf' # Images
+  - 'viewentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'saveentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewpeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'savepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'savepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'saveentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'viewpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'savepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'viewpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'savepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'viewentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'saveentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'viewpeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'savepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'viewpeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'savepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header

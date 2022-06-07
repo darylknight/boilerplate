@@ -7,8 +7,8 @@ name: 'Content Matrix'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_contentmatrix}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

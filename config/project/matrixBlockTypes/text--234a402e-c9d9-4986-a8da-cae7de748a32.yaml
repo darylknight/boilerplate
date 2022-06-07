@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6a68f455-06f7-4572-a60e-fa6223442376
             warning: null
             width: 100
           -
@@ -20,10 +21,11 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e7558004-ab81-4452-87ee-2cf8cfff52c6
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 9fc7f30a-ba9d-47d1-aab2-016a6faf3eee
 fields:
   41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: # Columns
     columnSuffix: null
@@ -52,13 +54,12 @@ fields:
                   - ''
       contentTable: '{{%stc_4_columns}}'
       fieldLayout: row
-      maxRows: '3'
-      minRows: '1'
-      placeholderKey: null
+      maxRows: 3
+      minRows: 1
       propagationKeyFormat: null
       propagationMethod: all
       selectionLabel: 'Add a column'
-      staticField: ''
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
@@ -73,10 +74,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

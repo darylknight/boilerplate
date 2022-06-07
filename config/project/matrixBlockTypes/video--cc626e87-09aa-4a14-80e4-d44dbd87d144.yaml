@@ -11,10 +11,11 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ff245f38-7b68-4deb-8ca0-d978e23565ff
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 73d84bf2-af78-4597-a4ce-06fc4d4ca5a2
 fields:
   1b16bb99-ac4b-4bc8-85f8-71966c72102e: # Video Embed Code
     columnSuffix: null
@@ -27,10 +28,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: '1'
+      code: true
       columnType: null
-      initialRows: '2'
-      multiline: '1'
+      initialRows: 2
+      multiline: true
       placeholder: '<iframe src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       uiMode: normal
     translationKeyFormat: null
