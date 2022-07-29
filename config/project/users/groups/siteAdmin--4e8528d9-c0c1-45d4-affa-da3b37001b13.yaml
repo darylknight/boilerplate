@@ -23,6 +23,9 @@ permissions:
   - 'deletepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'deletepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'deletepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'deletepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'deletepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'deletepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - deleteusers
   - 'editglobalset:93796209-b311-4bfa-8cd4-fd9b8ca6d012' # 404 Error
   - 'editglobalset:cbd7becc-06f1-4c4c-b953-45081affffaf' # Alert Bar
@@ -39,7 +42,6 @@ permissions:
   - freeform-formscreate
   - freeform-formsdelete
   - freeform-formsmanage
-  - 'freeform-formsmanage:1'
   - freeform-formsmanageindividual
   - freeform-notificationsaccess
   - freeform-notificationsmanage
@@ -50,10 +52,8 @@ permissions:
   - freeform-settingsaccess
   - freeform-submissionsaccess
   - freeform-submissionsmanage
-  - 'freeform-submissionsmanage:1'
   - freeform-submissionsmanageindividual
   - freeform-submissionsread
-  - 'freeform-submissionsread:1'
   - freeform-submissionsreadindividual
   - moderateusers
   - registerusers
@@ -71,6 +71,9 @@ permissions:
   - 'savepeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'savepeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'savepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'savepeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'savepeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'savepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'seomatic:dashboard'
   - 'seomatic:global-meta'
   - 'seomatic:global-meta:ads'
@@ -96,3 +99,6 @@ permissions:
   - 'viewpeerentries:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
   - 'viewpeerentries:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
   - 'viewpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - 'viewpeerentrydrafts:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+  - 'viewpeerentrydrafts:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+  - 'viewpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
