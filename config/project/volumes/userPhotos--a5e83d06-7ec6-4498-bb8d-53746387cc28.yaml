@@ -2,6 +2,7 @@ fieldLayouts:
   9b51f130-54e3-4503-9a73-9527b1f8fab1:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,15 +27,52 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
             uid: 608369a3-c6c5-45ee-a427-9a8f8368b16b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 875d0b26-4dc0-4140-b1cd-e115d50f02f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d55b8864-3ed0-46c2-9796-902e5fdafb40 # Asset - Photo Credit
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 968e648d-183c-4eeb-b927-830538cb0c70
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 02ef9582-02f8-4e39-8b57-33d39e8dadaf
+        userCondition: null
 fs: userPhotos
 handle: userPhotos
 name: 'User Photos'
 sortOrder: 4
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: null
+transformFs: ''
 transformSubpath: ''

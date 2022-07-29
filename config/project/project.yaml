@@ -1,4 +1,4 @@
-dateModified: 1659082367
+dateModified: 1659083699
 elementSources:
   craft\elements\Asset:
     -
@@ -112,7 +112,7 @@ email:
     host: $EMAIL_HOST
     password: $EMAIL_PASSWORD
     port: $EMAIL_PORT
-    timeout: '10'
+    timeout: '30'
     useAuthentication: $EMAIL_AUTH
     username: $EMAIL_USERNAME
   transportType: craft\mail\transportadapters\Smtp
@@ -170,7 +170,6 @@ meta:
     76dd902c-6643-4db8-a27c-e2e1b3142fb0: Text # Text
     84e8844d-cd9e-4e53-81f5-005891a59e8d: Button # Button
     87b794fa-7c3f-43aa-818e-433587a2c54d: 'Menu Item' # Menu Item
-    87e23d73-06c0-42d0-859f-8ae90ac61e88: 'Asset - Alt Text' # Asset - Alt Text
     234a402e-c9d9-4986-a8da-cae7de748a32: Text # Text
     272b080b-33ab-4e23-ab30-47ae14667b77: 'Menu - Header' # Menu - Header
     274b53b7-b114-412d-8a2b-b9eae52f9822: Page # Page

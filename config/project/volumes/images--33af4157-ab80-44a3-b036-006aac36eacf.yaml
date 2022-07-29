@@ -2,6 +2,7 @@ fieldLayouts:
   c1b71ef2-a350-46de-9849-95952c39ea5a:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,19 +27,34 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
             uid: 0e0eaf98-8206-41ee-aa20-b8d1c3bdf719
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 87e23d73-06c0-42d0-859f-8ae90ac61e88 # Asset - Alt Text
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
             instructions: null
             label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
             required: false
+            rows: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 43c88f37-59ea-4796-b9b8-6912e8dabb04
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: ecd3e728-7fe1-450b-8a29-8b31d77ae1a0
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d55b8864-3ed0-46c2-9796-902e5fdafb40 # Asset - Photo Credit
             instructions: null
             label: null
@@ -45,15 +62,17 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a7170a90-7cf9-410b-ac6d-eb0a50e97713
+            userCondition: null
             warning: null
             width: 100
-        name: Asset
+        name: Content
         uid: ae73c5e3-e8cb-47f9-b5e0-f87cc9ff0715
+        userCondition: null
 fs: images
 handle: images
 name: Images
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: null
+transformFs: ''
 transformSubpath: ''
