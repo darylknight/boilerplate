@@ -29,7 +29,7 @@ return [
 		'disallowRobots' => !$isProd, // Stop robots crawling the site if it's not production
 		'allowAdminChanges' => $isDev, // Don't allow administrative changes on staging or production
 		'devMode' => !$isProd, // Enable devMode in local and staging, but not production
-		'allowUpdates' => false, // Never allow auto updates. Do that from Composer
+		'allowUpdates' => $isDev, // Allow plugin installs and updates on local, but not staging or production
 		'enableTemplateCaching' => $isProd, // Only allow template caching on production
 		'limitAutoSlugsToAscii' => true, // https://craftcms.com/docs/3.x/config/config-settings.html#limitautoslugstoascii
 
