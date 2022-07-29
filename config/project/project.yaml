@@ -1,4 +1,4 @@
-dateModified: 1659083832
+dateModified: 1659083862
 elementSources:
   craft\elements\Asset:
     -
@@ -153,12 +153,12 @@ fs:
     type: craft\fs\Local
     url: '@web/uploads/seo'
   userPhotos:
-    hasUrls: false
+    hasUrls: true
     name: 'User Photos'
     settings:
       path: '@webroot/uploads/users'
     type: craft\fs\Local
-    url: null
+    url: '@web/uploads/users'
 meta:
   __names__:
     0defd9a0-66bd-4509-aa52-57274feb18d7: '404 Heading' # 404 Heading
