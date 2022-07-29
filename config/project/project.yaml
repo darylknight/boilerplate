@@ -1,4 +1,4 @@
-dateModified: 1654599435
+dateModified: 1659082367
 elementSources:
   craft\elements\Asset:
     -
@@ -245,7 +245,10 @@ plugins:
       digestOnlyOnProduction: false
       digestRecipients: null
       displayFeed: true
-      emailTemplateDirectory: null
+      emailTemplateDefault: database
+      emailTemplateDirectory: ''
+      emailTemplateStorageType: database
+      exportHandlesAsNames: false
       exportLabels: false
       fieldDisplayOrder: name
       fillWithGet: ''
