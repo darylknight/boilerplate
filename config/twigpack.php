@@ -64,13 +64,4 @@ return [
 			'criticalSuffix' => '_critical.min.css',
 		],
 	],
-	// Live (production) environment
-	'live' => [],
-	// Staging (pre-production) environment
-	'staging' => [],
-	// Development environment
-	'dev' => [
-		// If `devMode` is on, use webpack-dev-server to all for HMR (hot module reloading)
-		// 'useDevServer' => true,
-	],
 ];
