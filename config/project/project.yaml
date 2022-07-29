@@ -1,45 +1,53 @@
-dateModified: 1659083759
+dateModified: 1659083832
 elementSources:
   craft\elements\Asset:
     -
       heading: Images
       type: heading
     -
-      key: 'folder:d17ce091-559d-4f64-b7d7-1b3fb98da637'
+      disabled: false
+      key: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
       tableAttributes:
         - filename
         - size
         - dateModified
+        - imageSize
+        - link
       type: native
     -
       heading: Documents
       type: heading
     -
-      key: 'folder:b740f612-a4f7-46ad-ba76-2edbf91db49a'
+      disabled: false
+      key: 'volume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
       tableAttributes:
         - filename
         - size
         - dateModified
+        - link
       type: native
     -
       heading: System
       type: heading
     -
-      key: 'folder:8bf2a340-f3fa-4289-95d2-efb3aec5fd88'
+      disabled: false
+      key: 'volume:6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd' # SEO
       tableAttributes:
         - filename
         - size
         - dateModified
       type: native
     -
-      key: 'folder:ae43b44f-dead-4910-9a1e-0d090662c138'
+      disabled: false
+      key: 'volume:a5e83d06-7ec6-4498-bb8d-53746387cc28' # User Photos
       tableAttributes:
         - filename
         - size
         - dateModified
       type: native
     -
-      key: 'folder:d41e5187-eff7-4173-987b-63298d7dd240'
+      disabled: false
+      key: 'folder:fc88dfeb-55e5-4dfb-b654-0f188695dfa2'
       tableAttributes:
         - filename
         - size
@@ -50,6 +58,7 @@ elementSources:
       heading: 'Site Pages'
       type: heading
     -
+      disabled: false
       key: 'section:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
       tableAttributes:
         - type
@@ -60,18 +69,23 @@ elementSources:
       heading: Navigation
       type: heading
     -
+      disabled: false
       key: 'section:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
+      tableAttributes: '-'
       type: native
     -
+      disabled: false
       key: 'section:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+      tableAttributes: '-'
       type: native
     -
       heading: Everything
       type: heading
     -
+      disabled: false
       key: '*'
       tableAttributes:
-        - link
+        - section
         - dateUpdated
       type: native
   craft\elements\User:
