@@ -109,7 +109,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 ## Built With
 
--  [Craft CMS 3](https://craftcms.com)
+-  [Craft CMS 4](https://craftcms.com)
 -  [Tailwind CSS](https://tailwindcss.com)
 -  [Laravel Mix](https://laravel-mix.com)
 
