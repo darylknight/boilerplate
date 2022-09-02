@@ -42,8 +42,9 @@ All database structure changes are made locally. Those changes are stored in Pro
 3. Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 4. Run `npm install` to install the packages from `package.json`
 5. Run `composer install` to install Craft and it's plugins from `composer.json`
-6. Run `./craft setup`
-7. Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
+6. Create an empty database for the site
+7. Run `./craft setup`
+8. Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
 
 ### Setting up an existing site based on this Boilerplate
 
