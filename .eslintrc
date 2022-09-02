@@ -1,0 +1,14 @@
+{
+	// Config for eslint-plugin-tailwindcss
+	"plugins": ["tailwindcss"],
+	"extends": ["plugin:tailwindcss/recommended"],
+
+	// Allows you to use const in JS
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+
+	"env": {
+		"es6": true
+	}
+}
