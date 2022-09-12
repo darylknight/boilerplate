@@ -45,6 +45,7 @@ All database structure changes are made locally. Those changes are stored in Pro
 6. Create an empty database for the site
 7. Run `./craft setup`
 8. Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
+9. Update the details in `package.json`
 
 ### Setting up an existing site based on this Boilerplate
 
