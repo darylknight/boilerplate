@@ -1,9 +1,9 @@
 {# This macro requires an asset and a transform #}
 {% macro image(asset, transform, class) %}
 	{% if asset %}
-		<img data-src="{{ asset.url(transform) }}"
-			src="/assets/images/placeholder.gif"
-			class="lazyload img-fluid {{ class ? class }}"
+		<img src="{{ asset.url(transform) }}"
+			class="{{ class ? class }}"
+			loading="lazy"
 			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
 			alt="{{ asset.alt }}" />
 	{% endif %}

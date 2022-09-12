@@ -29,7 +29,6 @@
 		"tailwindcss": "^3.0.18"
 	},
 	"dependencies": {
-		"alpinejs": "^3.9.6",
-		"lazysizes": "^5.3.0"
+		"alpinejs": "^3.9.6"
 	}
 }

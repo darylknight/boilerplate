@@ -3,13 +3,6 @@ const baseUrl = process.env.PRIMARY_SITE_URL // Get value from .env to use as Br
 
 mix.setPublicPath('./public/assets')
 
-	.combine(
-		[
-			'node_modules/lazysizes/lazysizes.js', // Used for lazy loading images
-		],
-		'public/assets/js/vendor.js'
-	)
-
 	.js('src/js/app.js', 'public/assets/js')
 	.postCss('src/pcss/app.pcss', 'public/assets/css', [require('tailwindcss')])
 

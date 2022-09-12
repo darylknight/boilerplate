@@ -13,7 +13,7 @@
 	<body>
 		{{ adminbar() }} {# Adds the Admin Bar plugin to the page #}
 
-		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden border-0 focus:relative focus:p-2 focus:w-full focus:block bg-black text-white text-center focus:h-auto focus:m-0"
+		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden text-center text-white bg-black border-0 focus:relative focus:p-2 focus:w-full focus:block focus:h-auto focus:m-0"
 			href="#main">
 			<span>Skip to main content</span>
 		</a>
@@ -26,7 +26,6 @@
 			{% endblock %}
 		</div>
 
-		{{ craft.twigpack.includeJsModule('/js/vendor.js') }}
 		{{ craft.twigpack.includeJsModule('/js/app.js') }}
 
 		{% include '_includes/klaro' %}
