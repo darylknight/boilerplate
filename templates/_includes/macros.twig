@@ -11,7 +11,9 @@
 
 {# This macro requires a URL and some button text #}
 {% macro button(url, text, class, target) %}
-	<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">{{ text }}</a>
+	{% if url %}
+		<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">{{ text }}</a>
+	{% endif %}
 {% endmacro %}
 
 {# This macro uses Retcon to add Tailwind classes to Redactor fields #}
