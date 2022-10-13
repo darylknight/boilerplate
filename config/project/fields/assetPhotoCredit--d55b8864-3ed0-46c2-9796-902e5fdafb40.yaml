@@ -2,7 +2,7 @@ columnSuffix: owjgfjad
 contentColumnType: text
 fieldGroup: 5e6ccb6c-d6eb-446b-8ce9-aa8bb3fcf575 # Assets
 handle: assetPhotoCredit
-instructions: 'This appears in several places when the image shown. Can be used to credit the photographer or describe the image'
+instructions: 'This appears in several places when the image is shown on the front end. Can be used to credit the photographer'
 name: 'Asset - Photo Credit'
 searchable: false
 settings:
