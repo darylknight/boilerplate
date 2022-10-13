@@ -3,8 +3,10 @@ fieldLayouts:
   4287605c-0ca2-49db-8eae-1d0656fb9582:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 1b16bb99-ac4b-4bc8-85f8-71966c72102e # Video Embed Code
             instructions: null
             label: null
@@ -12,17 +14,19 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: ff245f38-7b68-4deb-8ca0-d978e23565ff
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 73d84bf2-af78-4597-a4ce-06fc4d4ca5a2
+        userCondition: null
 fields:
   1b16bb99-ac4b-4bc8-85f8-71966c72102e: # Video Embed Code
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: videoEmbedCode
-    instructions: "Enter the embed code of the video from either YouTube or Vimeo\r\nIMPORTANT: You must removed the \"width=\"\" and height=\"\" attributes from the code to make it display correctly"
+    instructions: 'Enter the embed code of the video from either YouTube or Vimeo'
     name: 'Video Embed Code'
     searchable: false
     settings:
