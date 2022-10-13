@@ -3,8 +3,10 @@ fieldLayouts:
   085ac208-518d-4e2b-9d15-bf3a68810673:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: a4ad7370-4914-43ff-8442-2dc59bb5ac3c # Heading
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 6a68f455-06f7-4572-a60e-fa6223442376
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 41e0b3cc-ad7b-47c5-a503-a5dac4e24af0 # Columns
             instructions: null
             label: null
@@ -22,10 +26,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: e7558004-ab81-4452-87ee-2cf8cfff52c6
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 9fc7f30a-ba9d-47d1-aab2-016a6faf3eee
+        userCondition: null
 fields:
   41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: # Columns
     columnSuffix: null
@@ -36,6 +42,8 @@ fields:
     name: Columns
     searchable: false
     settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1528288937
       columns:
         __assoc__:
           -
@@ -52,7 +60,7 @@ fields:
                 -
                   - width
                   - ''
-      contentTable: '{{%stc_4_columns}}'
+      contentTable: '{{%stc_3_columns}}'
       fieldLayout: row
       maxRows: 3
       minRows: 1
