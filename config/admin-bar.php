@@ -26,9 +26,9 @@ return [
 	'additionalLinks' => [],
 	'customCss' => '',
 	'displayGreeting' => true,
-	'displayDashboardLink' => true,
-	'displayDefaultEditSection' => true,
-	'displaySettingsLink' => true,
+	'displayDashboardLink' => false,
+	'displayDefaultEditSection' => false,
+	'displaySettingsLink' => false,
 	'displayLogout' => true,
 	'enableMobileMenu' => true,
 
