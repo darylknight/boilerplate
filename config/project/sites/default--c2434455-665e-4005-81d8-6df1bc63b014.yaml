@@ -1,6 +1,6 @@
 baseUrl: '@web'
 enabled: true
-handle: boilerplate
+handle: default
 hasUrls: true
 language: en-US
 name: Boilerplate
