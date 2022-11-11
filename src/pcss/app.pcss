@@ -35,6 +35,8 @@
 
 @layer components {
 	.btn {
-		@apply py-2 px-10 border-2 inline-block;
+		@apply py-2 px-10 border-2 inline-block focus:outline-none;
 	}
+	/* Remember to use focus-visible: for states instead of focus: */
+	/* This means once you click on a button, it doesn't keep the :focus state */
 }
