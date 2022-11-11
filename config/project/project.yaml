@@ -1,4 +1,4 @@
-dateModified: 1665658705
+dateModified: 1668153393
 elementSources:
   craft\elements\Asset:
     -
@@ -93,7 +93,11 @@ elementSources:
       heading: Users
       type: heading
     -
-      key: admins
+      defaultSort:
+        - email
+        - asc
+      disabled: false
+      key: 'group:4e8528d9-c0c1-45d4-affa-da3b37001b13' # Site Admin
       tableAttributes:
         - email
         - lastLoginDate
@@ -102,16 +106,47 @@ elementSources:
       heading: Developers
       type: heading
     -
-      key: 'group:4e8528d9-c0c1-45d4-affa-da3b37001b13' # Site Admin
+      defaultSort:
+        - email
+        - asc
+      disabled: false
+      key: admins
       tableAttributes:
         - email
         - lastLoginDate
       type: native
     -
-      heading: Groups
+      heading: Everyone
       type: heading
     -
+      defaultSort:
+        - email
+        - asc
+      disabled: false
       key: '*'
+      tableAttributes:
+        - email
+        - lastLoginDate
+      type: native
+    -
+      heading: Other
+      type: heading
+    -
+      defaultSort:
+        - email
+        - asc
+      disabled: true
+      key: credentialed
+      tableAttributes:
+        - email
+        - lastLoginDate
+      type: native
+    -
+      defaultSort:
+        - email
+        - asc
+      disabled: true
+      key: inactive
       tableAttributes:
         - email
         - lastLoginDate
