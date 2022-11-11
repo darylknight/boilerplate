@@ -16,7 +16,7 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 
 -  Composer 2.x
 -  Apache or Nginx
--  PHP 8.1+
+-  PHP 8.0+
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
 -  512MB+ of memory allocated to PHP
 -  200MB+ of free disk space
@@ -48,19 +48,22 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  Run `./craft setup`
 -  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
 -  Update the details in `package.json`
+-  Update the site details in this README.md file
 
 ### Setting up an existing site based on this Boilerplate
 
-1. Clone this repository
-2. Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
-3. Enter a `CP_TRIGGER`. This defaults to `control` if left blank
-4. Run `npm install` to install the packages from `package.json`
-5. Run `composer install` to install Craft and it's plugins from `composer.json`
-6. Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
-7. Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
-8. Duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment, and the server details
-9. If this site is already in development, import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
-10.   You can download images from the server either through SFTP, SSH, or by running `scripts/pull_assets.sh` if you set up Craft Scripts
+-  Clone this repository
+-  Create an empty database for the site
+-  Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
+-  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
+-  Enter `on` for `SYSTEM_STATUS`
+-  Run `npm update` to install the latest packages from `package.json`
+-  Run `composer install` to install Craft and it's plugins from `composer.json`
+-  Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
+-  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
+-  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
+-  Import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
+-  You can download images from the server either through SFTP, SSH, or by running `scripts/pull_assets.sh` if you set up Craft Scripts
 
 ## Code Formatting
 
@@ -102,7 +105,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 ## Server & Hosting
 
--  The site is hosted on [DigitalOcean](https://cloud.digitalocean.com) under the client's own account.
+-  The site is hosted on [UpCloud](https://upcloud.com/) under the client's own account.
 -  The server is provisioned with [Ploi](https://ploi.io) which handles deployment, security updates, databases & SSL.
 
 ### Deployment
