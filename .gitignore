@@ -1,7 +1,6 @@
 # CRAFT
 .env
 .env.sh
-/public/cpresources
 /config/license.key
 
 # IMAGER
