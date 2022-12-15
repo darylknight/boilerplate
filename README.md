@@ -50,7 +50,7 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  Update the details in `package.json`
 -  Update the site details in this README.md file
 
-### Setting up an existing site based on this Boilerplate
+### Setting up an existing site based on this repository
 
 -  Clone this repository
 -  Create an empty database for the site
