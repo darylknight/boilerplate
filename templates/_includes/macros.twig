@@ -17,7 +17,7 @@
 {% endmacro %}
 
 {# This macro uses Retcon to add Tailwind classes to Redactor fields #}
-{% macro text(fieldHandle, classes, psize) %}
+{% macro text(fieldHandle, classes) %}
 	{{
 		fieldHandle
 			|retconAttr(
@@ -84,6 +84,24 @@
 				'a',
 				{
 					class: 'underline focus:outline-none'
+				}
+			)
+			|retconAttr(
+				'table',
+				{
+					class: 'table-auto w-full border-t mb-10'
+				}
+			)
+			|retconAttr(
+				'table tr',
+				{
+					class: 'border-b border-l border-r'
+				}
+			)
+			|retconAttr(
+				'table td',
+				{
+					class: 'px-2 py-1 border-r'
 				}
 			)
 	}}
