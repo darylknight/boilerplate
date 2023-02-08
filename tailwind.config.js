@@ -23,11 +23,13 @@ module.exports = {
 			// medium: 'avant-garde-medium',
 		},
 
-		extend: {
-			// ? The 'extend' key adds to the config instead of replacing it
-			screens: {
-				// '3xl': '1690px', // ? You can extend the breakpoints here to match design
-			},
+		// Screen sizes straight from Tailwind, for reference
+		screens: {
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+			xl: '1280px',
+			'2xl': '1536px',
 		},
 	},
 }
