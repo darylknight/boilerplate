@@ -20,7 +20,8 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
 -  512MB+ of memory allocated to PHP
 -  200MB+ of free disk space
--  This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
+
+This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
 
 ## Project Config
 
@@ -105,8 +106,8 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 ## Server & Hosting
 
--  The site is hosted on [UpCloud](https://upcloud.com/) under the client's own account.
--  The server is provisioned with [Ploi](https://ploi.io) which handles deployment, security updates, databases & SSL.
+-  The site is hosted on [UpCloud](https://upcloud.com/) under the client's own account
+-  The server is provisioned with [Ploi](https://ploi.io) which handles deployment, security updates, databases & SSL
 
 ### Deployment
 
