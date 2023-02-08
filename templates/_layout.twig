@@ -19,12 +19,14 @@
 		</a>
 
 		{% include '_includes/alertBar' %}
+		{% include '_includes/header' %}
 
 		<div role="main" id="main">
 			{% block content %}
 
 			{% endblock %}
 		</div>
+		{% include '_includes/footer' %}
 
 		{{ craft.twigpack.includeJsModule('/js/app.js') }}
 
