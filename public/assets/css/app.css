@@ -23,7 +23,7 @@ span.cm-list-title {
 }
 
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -50,6 +50,7 @@ span.cm-list-title {
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -59,6 +60,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
 }
 
 /*
@@ -190,6 +192,7 @@ select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
   color: inherit; /* 1 */
   margin: 0; /* 2 */
@@ -343,11 +346,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   color: #9ca3af; /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
@@ -399,9 +397,7 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
+/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
@@ -413,15 +409,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 		display: none;
 	}
 
-html {
-		/* ? Replace the base font family: https://tailwindcss.com/docs/font-family#customizing-the-default-font */
-		/* font-family: theme('fontFamily.garamond'); */
-	}
-
 .h1{
   margin-bottom: 0.5em;
   font-size: 3rem;
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h1:last-child{
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1024px){
@@ -436,6 +433,12 @@ html {
   margin-bottom: 0.5em;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h2:last-child{
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1024px){
@@ -450,6 +453,12 @@ html {
   margin-bottom: 0.5em;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h3:last-child{
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1024px){
@@ -464,6 +473,12 @@ html {
   margin-bottom: 0.5em;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h4:last-child{
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1024px){
@@ -476,15 +491,76 @@ html {
 
 .h5{
   margin-bottom: 0.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h5:last-child{
+  margin-bottom: 0px;
 }
 
 .p{
   margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.p:last-child{
+  margin-bottom: 0px;
 }
 
 *, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -568,7 +644,15 @@ html {
   padding-bottom: 0.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+.btn:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+/* Remember to use focus-visible: for states instead of focus: */
+/* This means once you click on a button, it doesn't keep the :focus state */
 .absolute{
   position: absolute;
 }
@@ -582,8 +666,11 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.mb-5{
-  margin-bottom: 1.25rem;
+.mb-4{
+  margin-bottom: 1rem;
+}
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 .mb-8{
   margin-bottom: 2rem;
@@ -591,8 +678,8 @@ html {
 .mb-10{
   margin-bottom: 2.5rem;
 }
-.mb-4{
-  margin-bottom: 1rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 .mr-2{
   margin-right: 0.5rem;
@@ -603,6 +690,9 @@ html {
 .mb-2{
   margin-bottom: 0.5rem;
 }
+.mb-\[0\.5em\]{
+  margin-bottom: 0.5em;
+}
 .block{
   display: block;
 }
@@ -611,6 +701,9 @@ html {
 }
 .flex{
   display: flex;
+}
+.table{
+  display: table;
 }
 .grid{
   display: grid;
@@ -627,11 +720,17 @@ html {
 .w-full{
   width: 100%;
 }
+.table-auto{
+  table-layout: auto;
+}
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .list-disc{
   list-style-type: disc;
+}
+.list-decimal{
+  list-style-type: decimal;
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -654,6 +753,18 @@ html {
 .border-2{
   border-width: 2px;
 }
+.border-t{
+  border-top-width: 1px;
+}
+.border-b{
+  border-bottom-width: 1px;
+}
+.border-l{
+  border-left-width: 1px;
+}
+.border-r{
+  border-right-width: 1px;
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -662,8 +773,14 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(51 102 153 / var(--tw-bg-opacity));
 }
+.p-5{
+  padding: 1.25rem;
+}
 .p-0{
   padding: 0px;
+}
+.p-4{
+  padding: 1rem;
 }
 .py-3{
   padding-top: 0.75rem;
@@ -673,25 +790,25 @@ html {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .px-10{
   padding-left: 2.5rem;
@@ -739,8 +856,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ? See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer for details on why these are split into base/components/utilities */
@@ -815,6 +935,11 @@ html {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:py-10{
