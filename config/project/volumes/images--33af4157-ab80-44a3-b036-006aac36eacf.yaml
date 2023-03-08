@@ -53,18 +53,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: d55b8864-3ed0-46c2-9796-902e5fdafb40 # Asset - Photo Credit
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a7170a90-7cf9-410b-ac6d-eb0a50e97713
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: ae73c5e3-e8cb-47f9-b5e0-f87cc9ff0715
         userCondition: null

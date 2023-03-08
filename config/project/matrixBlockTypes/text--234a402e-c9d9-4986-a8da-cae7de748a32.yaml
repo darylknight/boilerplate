@@ -43,18 +43,11 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1528288937
+      changedFieldIndicator: 1019615869
       columns:
         __assoc__:
           -
             - 76dd902c-6643-4db8-a27c-e2e1b3142fb0 # Text
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
-          -
-            - 84e8844d-cd9e-4e53-81f5-005891a59e8d # Button
             -
               __assoc__:
                 -
@@ -69,7 +62,7 @@ fields:
       selectionLabel: 'Add a column'
       staticField: null
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: verbb\supertable\fields\SuperTableField
   a4ad7370-4914-43ff-8442-2dc59bb5ac3c: # Heading
     columnSuffix: null

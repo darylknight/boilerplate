@@ -1,3 +1,4 @@
+changedFieldIndicator: null
 field: 41e0b3cc-ad7b-47c5-a503-a5dac4e24af0 # Columns
 fieldLayouts:
   618a3532-44ec-4808-9f99-6efa2826ae36:
@@ -17,18 +18,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 84e8844d-cd9e-4e53-81f5-005891a59e8d # Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b57cc99e-2d77-4aa0-a6ce-c5466323c762
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: f07b63c9-5f4a-489b-b7dd-ee01dc2e2dea
         userCondition: null
@@ -42,7 +31,7 @@ fields:
     name: Text
     searchable: false
     settings:
-      availableTransforms: '*'
+      availableTransforms: ''
       availableVolumes: '*'
       columnType: text
       configSelectionMode: choose
@@ -61,68 +50,3 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-  84e8844d-cd9e-4e53-81f5-005891a59e8d: # Button
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: button
-    instructions: Optional
-    name: Button
-    searchable: false
-    settings:
-      allowCustomText: true
-      allowTarget: true
-      autoNoReferrer: true
-      customTextMaxLength: 0
-      customTextRequired: false
-      defaultLinkName: entry
-      defaultText: ''
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: false
-      typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources:
-            - 'volume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources:
-            - 'section:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-    translationKeyFormat: null
-    translationMethod: none
-    type: lenz\linkfield\fields\LinkField

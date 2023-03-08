@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: menuFooter
-name: 'Menu - Footer'
+handle: menuHeader
+name: 'Menu - Header'
 propagationMethod: all
 siteSettings:
   c2434455-665e-4005-81d8-6df1bc63b014: # Boilerplate
@@ -11,5 +11,5 @@ siteSettings:
     uriFormat: null
 structure:
   maxLevels: 1
-  uid: 060afb46-fd06-48d8-89cd-2f6787312abc
+  uid: a5f933ad-7307-401f-aa04-bda5def8fa6e
 type: structure

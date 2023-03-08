@@ -19,18 +19,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9922d29b-82a6-4555-96b9-6928042c087b # Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e9266f40-ed7e-48a0-9c7f-9a68067272ac
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 1af14c33-3650-456a-964e-6c3b36535689 # Image
             instructions: null
             label: null
@@ -106,69 +94,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  9922d29b-82a6-4555-96b9-6928042c087b: # Button
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: button
-    instructions: null
-    name: Button
-    searchable: false
-    settings:
-      allowCustomText: true
-      allowTarget: false
-      autoNoReferrer: false
-      customTextMaxLength: 0
-      customTextRequired: false
-      defaultLinkName: entry
-      defaultText: ''
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: false
-      typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-    translationKeyFormat: null
-    translationMethod: none
-    type: lenz\linkfield\fields\LinkField
   22495aea-1ee3-41b8-9e04-206260f630a6: # Layout
     columnSuffix: null
     contentColumnType: string
@@ -213,7 +138,7 @@ fields:
     name: Text
     searchable: false
     settings:
-      availableTransforms: '*'
+      availableTransforms: ''
       availableVolumes: ''
       columnType: text
       configSelectionMode: choose

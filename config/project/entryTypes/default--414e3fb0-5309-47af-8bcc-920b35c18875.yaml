@@ -1,7 +1,8 @@
 fieldLayouts:
-  d4f767be-c51f-4279-9f34-31f6574ac54c:
+  414f5591-4c22-4b53-92b7-a0c508eb4a87:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,25 +26,29 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 5f8d5f15-f675-4bda-b442-a9d8f3885856
+            uid: 5c776efe-39b9-4d67-a441-a5ba8d9a19b4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 460bbc59-2a42-4a11-9d19-64b16596c5ba # Page Target
+            elementCondition: null
+            fieldUid: f984d80e-8891-459f-aea7-a7d6df67e010 # Page Target
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0db8c2b9-bb73-4d33-9d26-b790373989af
+            uid: 777d7ca0-36c1-4432-9788-a7e1f1272065
+            userCondition: null
             warning: null
             width: 100
-        name: 'Menu Item'
-        uid: b4339661-2121-483f-bcbc-3fec14dc274f
-handle: menuItem
+        name: Content
+        uid: 9848f732-a6eb-413f-993f-c47d65389512
+        userCondition: null
+handle: default
 hasTitleField: false
-name: 'Menu Item'
-section: 272b080b-33ab-4e23-ab30-47ae14667b77 # Menu - Header
+name: Default
+section: b5705248-eb29-4714-bfa8-40499641ca95 # Menu - Header
 sortOrder: 1
 titleFormat: '{pageTarget.text}'
 titleTranslationKeyFormat: null

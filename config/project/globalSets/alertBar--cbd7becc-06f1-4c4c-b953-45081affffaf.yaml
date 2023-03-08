@@ -2,8 +2,10 @@ fieldLayouts:
   bb12114c-041a-4a0c-a85e-090d88a3fe9b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c4fb0464-3077-45aa-9c64-7e0015f54677 # Alert Bar
             instructions: null
             label: null
@@ -11,10 +13,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: ad39ccbf-d33d-4982-ab84-b060e9099678
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: d71cb39a-1664-46e1-8e6e-4fddfba65f37
+        userCondition: null
 handle: alertBar
 name: 'Alert Bar'
 sortOrder: 3

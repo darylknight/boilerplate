@@ -24,7 +24,8 @@
 return [
 	// ADMIN BAR
 	'additionalLinks' => [],
-	'customCss' => '',
+	'customCss' =>
+		'body { padding-bottom: 49px; } #adminbar { position: fixed; top: auto; bottom: 0; }',
 	'displayGreeting' => true,
 	'displayDashboardLink' => false,
 	'displayDefaultEditSection' => false,

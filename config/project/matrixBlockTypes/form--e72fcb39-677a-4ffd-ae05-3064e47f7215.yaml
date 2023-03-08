@@ -35,15 +35,27 @@ fieldLayouts:
 fields:
   1edd02fb-b01b-4fc9-90fb-0b111094ab5f: # Form
     columnSuffix: null
-    contentColumnType: integer
+    contentColumnType: string
     fieldGroup: null
     handle: form
     instructions: 'Select a form to include on the page. Forms can be created and edited from the **Freeform** option in the sidebar on the left.'
     name: Form
     searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: 1
+      selectionLabel: null
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
     translationKeyFormat: null
-    translationMethod: none
-    type: Solspace\Freeform\FieldTypes\FormFieldType
+    translationMethod: site
+    type: verbb\formie\fields\Forms
   04d471b6-495e-4558-b583-c7c366635c98: # Text
     columnSuffix: null
     contentColumnType: text
@@ -53,7 +65,7 @@ fields:
     name: Text
     searchable: false
     settings:
-      availableTransforms: '*'
+      availableTransforms: ''
       availableVolumes: '*'
       columnType: text
       configSelectionMode: choose

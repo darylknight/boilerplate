@@ -1,10 +1,13 @@
-dateModified: 1668153393
+dateModified: 1678274626
 elementSources:
   craft\elements\Asset:
     -
       heading: Images
       type: heading
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
       key: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
       tableAttributes:
@@ -18,6 +21,9 @@ elementSources:
       heading: Documents
       type: heading
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
       key: 'volume:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
       tableAttributes:
@@ -30,6 +36,9 @@ elementSources:
       heading: System
       type: heading
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
       key: 'volume:6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd' # SEO
       tableAttributes:
@@ -38,6 +47,9 @@ elementSources:
         - dateModified
       type: native
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
       key: 'volume:a5e83d06-7ec6-4498-bb8d-53746387cc28' # User Photos
       tableAttributes:
@@ -46,18 +58,27 @@ elementSources:
         - dateModified
       type: native
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
-      key: 'folder:fc88dfeb-55e5-4dfb-b654-0f188695dfa2'
+      key: 'folder:d14a5685-9f9b-4cad-8ad3-f4424c556c9e'
       tableAttributes:
         - filename
         - size
         - dateModified
       type: native
+    -
+      heading: ''
+      type: heading
   craft\elements\Entry:
     -
       heading: 'Site Pages'
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
       disabled: false
       key: 'section:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
       tableAttributes:
@@ -69,13 +90,11 @@ elementSources:
       heading: Navigation
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
       disabled: false
-      key: 'section:272b080b-33ab-4e23-ab30-47ae14667b77' # Menu - Header
-      tableAttributes: '-'
-      type: native
-    -
-      disabled: false
-      key: 'section:6d55684e-15e8-4a1c-886b-c0a88a73fa37' # Menu - Footer
+      key: 'section:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
       tableAttributes: '-'
       type: native
     -
@@ -197,6 +216,7 @@ fs:
 meta:
   __names__:
     0defd9a0-66bd-4509-aa52-57274feb18d7: '404 Heading' # 404 Heading
+    0f57cf4e-d77d-4b47-bc2c-46a7aeb51e24: New # New
     0f821582-b0f9-4517-9422-53b6ce1325ac: 'Content Matrix' # Content Matrix
     1af14c33-3650-456a-964e-6c3b36535689: Image # Image
     1b16bb99-ac4b-4bc8-85f8-71966c72102e: 'Video Embed Code' # Video Embed Code
@@ -205,8 +225,8 @@ meta:
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'End Date' # End Date
     5e6ccb6c-d6eb-446b-8ce9-aa8bb3fcf575: Assets # Assets
+    5ede9260-316e-439e-ab9c-5b6fba5514fc: 'Contact Form' # Contact Form
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
-    6d55684e-15e8-4a1c-886b-c0a88a73fa37: 'Menu - Footer' # Menu - Footer
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
     9c3f09c1-dd31-4a39-8fd5-a5c28c95ad98: Button # Button
     17b216fe-faa2-4aed-b927-03b84406a9fc: Text # Text
@@ -218,11 +238,9 @@ meta:
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: Text # Text
     76dd902c-6643-4db8-a27c-e2e1b3142fb0: Text # Text
     84e8844d-cd9e-4e53-81f5-005891a59e8d: Button # Button
-    87b794fa-7c3f-43aa-818e-433587a2c54d: 'Menu Item' # Menu Item
     234a402e-c9d9-4986-a8da-cae7de748a32: Text # Text
-    272b080b-33ab-4e23-ab30-47ae14667b77: 'Menu - Header' # Menu - Header
     274b53b7-b114-412d-8a2b-b9eae52f9822: Page # Page
-    460bbc59-2a42-4a11-9d19-64b16596c5ba: 'Page Target' # Page Target
+    414e3fb0-5309-47af-8bcc-920b35c18875: Default # Default
     0468bb2b-6b23-493c-9867-c8e7fb7f4431: '404 Text' # 404 Text
     631f7883-af4d-4cd9-8811-62ba70b2ae77: Navigation # Navigation
     669efec2-e57d-4d6f-9adc-4e4cf69972d0: Alert # Alert
@@ -239,22 +257,23 @@ meta:
     a4ad7370-4914-43ff-8442-2dc59bb5ac3c: Heading # Heading
     a4d47a90-98af-4c19-9e35-65535ddaebb3: SEO # SEO
     a5e83d06-7ec6-4498-bb8d-53746387cc28: 'User Photos' # User Photos
-    a26ace53-7398-4726-bd29-3e90e8fb40f0: 'Menu Item' # Menu Item
     a7056238-d6aa-44ea-b45a-c079ea6053e7: Button # Button
     ad52075d-406a-4f0b-a05f-4605f97944e7: 'Video Intro' # Video Intro
     b1b58943-2b7b-479b-8caf-59ecaad36651: Default # Default
     b7de99ca-42a6-47d5-a87c-7543f84e639c: Pages # Pages
+    b5705248-eb29-4714-bfa8-40499641ca95: 'Menu - Header' # Menu - Header
     c4fb0464-3077-45aa-9c64-7e0015f54677: 'Alert Bar' # Alert Bar
     c2434455-665e-4005-81d8-6df1bc63b014: Boilerplate # Boilerplate
     cbd7becc-06f1-4c4c-b953-45081affffaf: 'Alert Bar' # Alert Bar
     cc626e87-09aa-4a14-80e4-d44dbd87d144: Video # Video
+    d1c70998-f4bf-4681-922e-921e2a526697: 'Contact Form' # Contact Form
     d2c56410-5eb0-4ddf-a3dc-00036cbef8c0: 'Meta Data' # Meta Data
-    d55b8864-3ed0-46c2-9796-902e5fdafb40: 'Asset - Photo Credit' # Asset - Photo Credit
     d738c390-8d55-4719-a22c-15c3927411a2: Default # Default
-    e48df75a-1eb4-4f41-ae54-3712790af8ce: Keywords # Keywords
     e72fcb39-677a-4ffd-ae05-3064e47f7215: Form # Form
     eac1b272-bafe-43df-a0f6-fa48ac37a670: Buttons # Buttons
+    ee562e2c-1f30-4b0a-bef2-1cdf2fe20dd7: New # New
     f873c1df-d476-417a-b57c-26e7c609c183: 'Image Size' # Image Size
+    f984d80e-8891-459f-aea7-a7d6df67e010: 'Page Target' # Page Target
     fa97b4d1-33c1-4819-a6c4-c441f301ec4f: Image # Image
     ff17f800-7774-4a64-848b-f3abe5d77ee4: Heading # Heading
 plugins:
@@ -266,93 +285,189 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  freeform:
-    edition: lite
+  formie:
+    edition: standard
     enabled: true
-    licenseKey: GKHZ54GBHSA7RFB48772UGDH
-    schemaVersion: 4.2.2
+    licenseKey: G7YOOPUFWCTIXB7OCU346QL9
+    schemaVersion: 2.0.10
     settings:
-      ajaxByDefault: '1'
-      alertNotificationRecipients: null
-      autoScroll: '1'
-      autoScrollToErrors: '1'
-      badgeType: errors
-      blockedEmails: ''
-      blockedEmailsError: 'Invalid Email Address'
-      blockedIpAddresses: ''
-      blockedKeywords: ''
-      blockedKeywordsError: 'Invalid Entry Data'
-      bypassSpamCheckOnLoggedInUsers: false
-      clientDigestFrequency: 1
-      clientDigestRecipients: null
-      customErrorMessage: ''
-      customHoneypotName: ''
-      defaultTemplates: '1'
-      defaultView: dashboard
-      digestFrequency: 1
-      digestOnlyOnProduction: false
-      digestRecipients: null
-      displayFeed: true
-      emailTemplateDefault: database
-      emailTemplateDirectory: ''
-      emailTemplateStorageType: database
-      exportHandlesAsNames: false
-      exportLabels: false
-      fieldDisplayOrder: name
-      fillWithGet: ''
-      footerScripts: false
-      formFieldShowOnlyAllowedForms: ''
-      formSubmitDisable: '1'
-      formSubmitExpiration: ''
-      formTemplateDirectory: null
-      formattingTemplate: tailwind-1.twig
-      freeformHoneypot: '1'
-      freeformHoneypotEnhancement: '1'
-      hideBannerDemo: '1'
-      hideBannerOldFreeform: false
-      minimumSubmitTime: ''
-      pluginName: null
-      purgableSpamAgeInDays: '14'
-      purgableSubmissionAgeInDays: null
-      purgableUnfinalizedAssetAgeInMinutes: 180
-      recaptchaBehaviour: display_error
-      recaptchaEnabled: false
-      recaptchaErrorMessage: 'Please verify that you are not a robot.'
-      recaptchaKey: null
-      recaptchaLazyLoad: false
-      recaptchaMinScore: 0.5
-      recaptchaSecret: null
-      recaptchaSize: normal
-      recaptchaTheme: light
-      recaptchaType: v2_checkbox
-      rememberPageSubmitOrder: '1'
-      removeNewlines: ''
-      renderFormHtmlInCpViews: '1'
-      salesforce_client_id: null
-      salesforce_client_secret: null
-      salesforce_password: null
-      salesforce_username: null
-      saveFormSessionLimit: 10
-      saveFormTtl: 30
-      scriptInsertLocation: footer
-      scriptInsertType: pointers
-      sessionContext: payload
-      sessionContextCount: '100'
-      sessionContextSecret: ''
-      sessionContextTimeToLiveMinutes: '180'
-      sessionEntryMaxCount: 50
-      sessionEntryTTL: 10800
-      showErrorsForBlockedEmails: ''
-      showErrorsForBlockedKeywords: ''
-      showTutorial: false
-      spamFolderEnabled: '1'
-      spamProtectionBehaviour: simulate_success
-      submissionThrottlingCount: ''
-      submissionThrottlingTimeFrame: m
-      successTemplateDirectory: null
-      twigInHtml: '1'
-      twigInHtmlIsolatedMode: '1'
-      updateSearchIndexes: '1'
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - $FORMIE_CAPTCHA_RECAPTCHA
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - $FORMIE_CAPTCHA_HCAPTCHA
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - hcaptcha
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - $FORMIE_CAPTCHA_DUPLICATE
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - $FORMIE_CAPTCHA_HONEYPOT
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - $FORMIE_CAPTCHA_JAVASCRIPT
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Forms
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: $PLUGIN_HYPER
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
@@ -364,7 +479,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: IBI1JHBIMM8INDF9M20L80MA
+    licenseKey: $PLUGIN_SEOMATIC
     schemaVersion: 3.0.11
     settings:
       addHrefLang: true
@@ -743,10 +858,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  typedlinkfield:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
 system:
   edition: pro
   live: $SYSTEM_STATUS
