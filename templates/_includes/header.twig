@@ -1,0 +1,3 @@
+{% for entry in craft.entries.section('menuHeader').all() %}
+	<a href="{{ entry.pageTarget.url }}" target="{{ entry.pageTarget.target }}">{{ entry.pageTarget.text }}</a>
+{% endfor %}
