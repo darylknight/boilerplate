@@ -14,9 +14,9 @@
 		<div class="col-span-12 lg:col-span-4 {{ block.layout == 'textImage' ? '' : 'lg:col-start-9' }}">
 			{{ macros.text(block.text) }}
 
-			{% if block.button.url %}
+			{% if block.button|length %}
 				<div class="mb-10"></div>
-				{{ macros.button(block.button.url, block.button.text, btnClasses, block.button.target) }}
+				{{ macros.button(block.button.url, block.button.text, 'btn', block.button.target) }}
 			{% endif %}
 		</div>
 	</div>

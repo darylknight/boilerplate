@@ -1,7 +1,7 @@
 {
 	"require": {
+		"craftcms/ckeditor": "^3.1.0",
 		"craftcms/cms": "^4.0.0",
-		"craftcms/redactor": "^3.0.0",
 		"mmikkel/retcon": "^2.4.2",
 		"nystudio107/craft-seomatic": "^4.0.0",
 		"nystudio107/craft-twigpack": "^4.0.0-beta.4",
@@ -29,7 +29,7 @@
 		"sort-packages": true,
 		"optimize-autoloader": true,
 		"platform": {
-			"php": "8.0.16"
+			"php": "8.0.28"
 		}
 	},
 	"scripts": {

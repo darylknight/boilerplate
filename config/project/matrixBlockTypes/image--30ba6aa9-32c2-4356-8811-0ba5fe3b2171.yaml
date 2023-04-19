@@ -32,12 +32,14 @@ fields:
     settings:
       allowSelfRelations: false
       allowSubfolders: false
-      allowUploads: true
+      allowUploads: false
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
       defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
       maxRelations: 1
       minRelations: null
       previewMode: full
@@ -61,7 +63,6 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources:
         - 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
       targetSiteId: null

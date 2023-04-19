@@ -1,4 +1,4 @@
-dateModified: 1678346923
+dateModified: 1681883114
 elementSources:
   craft\elements\Asset:
     -
@@ -221,12 +221,14 @@ meta:
     1af14c33-3650-456a-964e-6c3b36535689: Image # Image
     1b16bb99-ac4b-4bc8-85f8-71966c72102e: 'Video Embed Code' # Video Embed Code
     1edd02fb-b01b-4fc9-90fb-0b111094ab5f: Form # Form
+    3c62ae9b-e6d3-4100-a0d1-1c5abab96be2: Simple # Simple
     04d471b6-495e-4558-b583-c7c366635c98: Text # Text
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'End Date' # End Date
     5e6ccb6c-d6eb-446b-8ce9-aa8bb3fcf575: Assets # Assets
     5ede9260-316e-439e-ab9c-5b6fba5514fc: 'Contact Form' # Contact Form
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
+    7d02b3f6-61ac-492a-9508-03dabf8c93e2: Button # Button
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
     9c3f09c1-dd31-4a39-8fd5-a5c28c95ad98: Button # Button
     17b216fe-faa2-4aed-b927-03b84406a9fc: Text # Text
@@ -234,7 +236,7 @@ meta:
     24bf3782-f6ee-4ede-be36-2374c6331dfa: Caption # Caption
     30ba6aa9-32c2-4356-8811-0ba5fe3b2171: Image # Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
-    41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: Columns # Columns
+    41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: Text # Text
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: Text # Text
     76dd902c-6643-4db8-a27c-e2e1b3142fb0: Text # Text
     84e8844d-cd9e-4e53-81f5-005891a59e8d: Button # Button
@@ -281,6 +283,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.1.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   dashboard-begone:
     edition: standard
     enabled: true
@@ -288,7 +294,7 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    licenseKey: G7YOOPUFWCTIXB7OCU346QL9
+    licenseKey: $PLUGIN_FORMIE
     schemaVersion: 2.0.10
     settings:
       ajaxTimeout: 10
@@ -468,10 +474,6 @@ plugins:
     enabled: true
     licenseKey: $PLUGIN_HYPER
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   retcon:
     edition: standard
     enabled: true
