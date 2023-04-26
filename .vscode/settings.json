@@ -3,7 +3,7 @@
 		"config/project": true,
 		"modules": true,
 		"node_modules": true,
-		"public": true,
+		"web": true,
 		"storage": true,
 		"vendor": true
 	}

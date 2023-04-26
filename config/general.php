@@ -20,7 +20,7 @@ return [
 		'cpTrigger' => App::env('CP_TRIGGER') ?: 'control', // The URI segment that tells Craft to load the control panel
 		'securityKey' => App::env('SECURITY_KEY'), // The secure key Craft will use for hashing and encrypting data
 		'addTrailingSlashesToUrls' => false, // Don't add trailing slashes
-		'sendPoweredByHeader' => false, // Don't tell the public this site uses Craft
+		'sendPoweredByHeader' => false, // Don't tell the world that this site uses Craft
 		'maxUploadFileSize' => 100000000, // 100mb upload limit
 		'useEmailAsUsername' => true, // Uses email instead of username
 		'preventUserEnumeration' => true, // Stop Craft from confirming if a username exists on the forgot password screen

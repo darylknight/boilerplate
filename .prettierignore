@@ -4,8 +4,8 @@
 # CRAFT STORAGE
 /storage/*
 
-# Public
-/public/*
+# Document root
+/web/*
 
 # BUILD FILES
 /bower_components/*
