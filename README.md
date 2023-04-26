@@ -21,7 +21,7 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  512MB+ of memory allocated to PHP
 -  200MB+ of free disk space
 
-This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
+This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`
 
 ## Project Config
 
@@ -54,7 +54,6 @@ All database structure changes are made locally. Those changes are stored in Pro
 ### Setting up an existing site based on this repository
 
 -  Clone this repository
--  Create an empty database for the site
 -  Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
@@ -69,24 +68,26 @@ All database structure changes are made locally. Those changes are stored in Pro
 ## Code Formatting
 
 -  This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier for Melody](https://github.com/trivago/prettier-plugin-twig-melody) plugin to make it work with Twig files. This is an opinionated way to format code which keeps spacing consistent between developers
--  The configuration for Prettier in this project is defined in `.prettierrc.json`
+-  The configuration for Prettier in this project is defined in `.prettierrc`
 -  To ignore certain files or paths, add them to `.prettierignore`
--  It's easiest to set up Prettier to format automatically on save (you can do this with Visual Studio Code). You can also run Prettier on an individual file by running `npx prettier --write "templates/path/filename.twig"`
+-  It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code).
+
+   [TODO] Add prettier class ordering
 
 Reference: Using [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
 
 ## Front End CSS (Tailwind)
 
 -  This project uses [Tailwind CSS](https://tailwindcss.com)
--  Tailwind can be configured with the `tailwind.config.js` file in the project root, for things like setting the default font, or adding brand colours
+-  Tailwind can be configured with the `tailwind.config.js` file in the project root
 -  Tailwind uses PostCSS. This can be configured with the `postcss.config.js` file in the project root
 
-## Front End Build Process (Laravel Mix)
+## Front End Build Process (Vite)
 
-Assets are compiled with [Laravel Mix](https://laravel-mix.com).
+Front end resources are compiled with [Laravel Vite](https://laravel.com/docs/10.x/vite) using nystudio107's [Vite plugin](https://nystudio107.com/docs/vite/).
 
 -  NPM scripts are in the `package.json` file in the root
--  To watch files and refresh the page after a front end file changes, run `npm run watch`. This will open a browserSync tab at http://localhost:3000 which refreshes every time a file changes as defined under 'files' in `webpack.mix.js`. This is a proxy of the domain under 'proxy' in the browserSync settings in that file
+-  To start the dev server, run `npm run dev`. This will give you a list of IP addresses. Ignore them, and access the site as usual on your normal dev domain (depending on whether you're using DDEV or Valet). When you save CSS, JS or Twig files, the page will refresh or HMR automatically
 -  To compile the project, run `npm run development`
 -  To compile the project and minify files for production, run `npm run production`
 -  Laravel Mix can be configured in `webpack.mix.js` in the root of the repository
@@ -118,7 +119,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 -  [Craft CMS 4](https://craftcms.com)
 -  [Tailwind CSS](https://tailwindcss.com)
--  [Laravel Mix](https://laravel-mix.com)
+-  [Laravel Vite](https://laravel.com/docs/10.x/vite)
 
 ## Versioning
 

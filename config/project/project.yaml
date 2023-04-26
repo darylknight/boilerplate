@@ -1,4 +1,4 @@
-dateModified: 1681883114
+dateModified: 1682314896
 elementSources:
   craft\elements\Asset:
     -
@@ -856,7 +856,7 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
-  twigpack:
+  vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

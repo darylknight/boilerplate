@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "647ccffb57605382634d940bb81ae680",
+    "content-hash": "638a92dee77e4f339d1a5420684c2c62",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -678,16 +678,16 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "3.1.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "ab793557c35bd8f75f6d686397d4a263e445e926"
+                "reference": "5315a525255c8e577a8018459cfd1af868a61a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/ab793557c35bd8f75f6d686397d4a263e445e926",
-                "reference": "ab793557c35bd8f75f6d686397d4a263e445e926",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/5315a525255c8e577a8018459cfd1af868a61a7d",
+                "reference": "5315a525255c8e577a8018459cfd1af868a61a7d",
                 "shasum": ""
             },
             "require": {
@@ -737,7 +737,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2023-04-17T18:14:16+00:00"
+            "time": "2023-04-23T20:33:02+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -860,16 +860,16 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/html-field.git",
-                "reference": "3030f7878335b8c7163b1db354fdc22c083d131c"
+                "reference": "7ecccab102b4e86abb5526411e96594f430f2bb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/3030f7878335b8c7163b1db354fdc22c083d131c",
-                "reference": "3030f7878335b8c7163b1db354fdc22c083d131c",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/7ecccab102b4e86abb5526411e96594f430f2bb5",
+                "reference": "7ecccab102b4e86abb5526411e96594f430f2bb5",
                 "shasum": ""
             },
             "require": {
@@ -905,7 +905,7 @@
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom",
                 "source": "https://github.com/craftcms/html-field"
             },
-            "time": "2022-11-16T11:13:37+00:00"
+            "time": "2023-04-21T16:52:18+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1914,16 +1914,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.9",
+            "version": "8.13.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "7cb665df423d453a1fd8e3af50cd4df55ed31c94"
+                "reference": "5b5a467a322d3a23706c729e28b88e3cc73df74f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/7cb665df423d453a1fd8e3af50cd4df55ed31c94",
-                "reference": "7cb665df423d453a1fd8e3af50cd4df55ed31c94",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/5b5a467a322d3a23706c729e28b88e3cc73df74f",
+                "reference": "5b5a467a322d3a23706c729e28b88e3cc73df74f",
                 "shasum": ""
             },
             "require": {
@@ -1982,7 +1982,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2023-04-11T13:48:23+00:00"
+            "time": "2023-04-19T12:13:30+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -3154,16 +3154,16 @@
         },
         {
             "name": "mikehaertl/php-shellcommand",
-            "version": "1.6.4",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikehaertl/php-shellcommand.git",
-                "reference": "3488d7803df1e8f1a343d3d0ca452d527ad8d5e5"
+                "reference": "e79ea528be155ffdec6f3bf1a4a46307bb49e545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/3488d7803df1e8f1a343d3d0ca452d527ad8d5e5",
-                "reference": "3488d7803df1e8f1a343d3d0ca452d527ad8d5e5",
+                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/e79ea528be155ffdec6f3bf1a4a46307bb49e545",
+                "reference": "e79ea528be155ffdec6f3bf1a4a46307bb49e545",
                 "shasum": ""
             },
             "require": {
@@ -3194,9 +3194,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mikehaertl/php-shellcommand/issues",
-                "source": "https://github.com/mikehaertl/php-shellcommand/tree/1.6.4"
+                "source": "https://github.com/mikehaertl/php-shellcommand/tree/1.7.0"
             },
-            "time": "2021-03-17T06:54:33+00:00"
+            "time": "2023-04-19T08:25:22+00:00"
         },
         {
             "name": "ml/iri",
@@ -3757,31 +3757,32 @@
             "time": "2023-03-27T23:49:47+00:00"
         },
         {
-            "name": "nystudio107/craft-twigpack",
-            "version": "4.0.0-beta.4",
+            "name": "nystudio107/craft-vite",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "ef13b43aaa7d40ae2d656681dc02ec5cd61365d9"
+                "url": "https://github.com/nystudio107/craft-vite.git",
+                "reference": "0af5c6d38670fc5bfe69e62c5c52915762e4ee73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/ef13b43aaa7d40ae2d656681dc02ec5cd61365d9",
-                "reference": "ef13b43aaa7d40ae2d656681dc02ec5cd61365d9",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/0af5c6d38670fc5bfe69e62c5c52915762e4ee73",
+                "reference": "0af5c6d38670fc5bfe69e62c5c52915762e4ee73",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-beta.1"
+                "craftcms/cms": "^4.0.0",
+                "nystudio107/craft-plugin-vite": "^4.0.8"
             },
             "type": "craft-plugin",
             "extra": {
-                "class": "nystudio107\\twigpack\\Twigpack",
-                "handle": "twigpack",
-                "name": "Twigpack"
+                "class": "nystudio107\\vite\\Vite",
+                "handle": "vite",
+                "name": "Vite"
             },
             "autoload": {
                 "psr-4": {
-                    "nystudio107\\twigpack\\": "src/"
+                    "nystudio107\\vite\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3791,23 +3792,21 @@
             "authors": [
                 {
                     "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
+                    "homepage": "https://nystudio107.com"
                 }
             ],
-            "description": "Twigpack is a bridge between Twig and webpack, with manifest.json & webpack-dev-server HMR support",
+            "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
             "keywords": [
+                "Craft",
+                "cms",
                 "craft-plugin",
                 "craftcms",
-                "hmr-support",
-                "manifest-json",
-                "twig",
-                "webpack",
-                "webpack-dev-server"
+                "vite"
             ],
             "support": {
-                "docs": "https://nystudio107.com/docs/twigpack/",
-                "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack"
+                "docs": "https://nystudio107.com/docs/vite/",
+                "issues": "https://nystudio107.com/plugins/vite/support",
+                "source": "https://github.com/nystudio107/craft-vite"
             },
             "funding": [
                 {
@@ -3815,7 +3814,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-26T15:19:38+00:00"
+            "time": "2023-01-25T21:39:17+00:00"
         },
         {
             "name": "oscarotero/html-parser",
@@ -4312,16 +4311,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.19.1",
+            "version": "1.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "f545fc30978190a056832aa7ed995e36a66267f3"
+                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/f545fc30978190a056832aa7ed995e36a66267f3",
-                "reference": "f545fc30978190a056832aa7ed995e36a66267f3",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/90490bd8fd8530a272043c4950c180b6d0cf5f81",
+                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81",
                 "shasum": ""
             },
             "require": {
@@ -4351,9 +4350,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.19.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.2"
             },
-            "time": "2023-04-18T11:30:56+00:00"
+            "time": "2023-04-22T12:59:35+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -8029,16 +8028,16 @@
         },
         {
             "name": "verbb/formie",
-            "version": "2.0.27",
+            "version": "2.0.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/formie.git",
-                "reference": "e5ed1d8a2bbd6829a7a9cebe1f4926502b36220d"
+                "reference": "d8e2920472d11959d04819619adfc7cca2e60f38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/e5ed1d8a2bbd6829a7a9cebe1f4926502b36220d",
-                "reference": "e5ed1d8a2bbd6829a7a9cebe1f4926502b36220d",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/d8e2920472d11959d04819619adfc7cca2e60f38",
+                "reference": "d8e2920472d11959d04819619adfc7cca2e60f38",
                 "shasum": ""
             },
             "require": {
@@ -8099,7 +8098,7 @@
                 "rss": "https://github.com/verbb/formie/commits/v2.atom",
                 "source": "https://github.com/verbb/formie"
             },
-            "time": "2023-04-19T01:47:29+00:00"
+            "time": "2023-04-19T20:47:02+00:00"
         },
         {
             "name": "verbb/hyper",
@@ -9816,7 +9815,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "nystudio107/craft-twigpack": 10,
         "verbb/super-table": 10
     },
     "prefer-stable": false,
@@ -9826,5 +9824,5 @@
     "platform-overrides": {
         "php": "8.0.28"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

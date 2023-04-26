@@ -4,9 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		{# Stylesheet #}
-		{{ craft.twigpack.includeCssModule('/css/app.css') }}
-
 		{# TODO: Add favicon here #}
 	</head>
 
@@ -28,7 +25,8 @@
 		</div>
 		{% include '_includes/footer' %}
 
-		{{ craft.twigpack.includeJsModule('/js/app.js') }}
+		{# Adds JS and CSS processed with Vite #}
+		{{ craft.vite.script('src/js/app.js') }}
 
 		{% include '_includes/klaro' %}
 	</body>

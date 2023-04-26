@@ -1,23 +1,25 @@
-# CRAFT
-.env
+# CRAFT ENVIRONMENT
+.env.php
 .env.sh
-/config/license.key
-
-# IMAGER
-/public/imager/*
-
-# SERVER
-/public/.htaccess
+.env
 
 # COMPOSER
 /vendor
 
-# UPLOADS
+# ASSETS
 /public/uploads/*
+/web/uploads/*
 
-# Build
+# UPLOADS
+/web/uploads/*
+
+# BUILD FILES
+/bower_components/*
 /node_modules/*
+/build/*
+/yarn-error.log
 
-# System
+# MISC FILES
 .cache
 .DS_Store
+/config/license.key
