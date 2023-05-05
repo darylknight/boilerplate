@@ -4,6 +4,8 @@
 		<img src="{{ asset.url(transform) }}"
 			class="{{ class ? class }}"
 			loading="lazy"
+			width="{{ asset.width }}"
+			height="{{ asset.height }}"
 			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
 			alt="{{ asset.alt }}" />
 	{% endif %}
