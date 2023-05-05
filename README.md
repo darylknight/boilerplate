@@ -1,6 +1,6 @@
 # Boilerplate Website
 
-This repository is for the Boilerplate website at [insertdomainhere].
+This repository is for the Boilerplate website at [insertdomainhere](https://insertdomainhere).
 
 ## Getting Started
 
@@ -21,7 +21,11 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  512MB+ of memory allocated to PHP
 -  200MB+ of free disk space
 
-This repository was built using Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`
+This repository has been tested with both DDEV and Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`.
+
+## DDEV + Vite Notes
+
+I never got static assets working correctly with Vite, so I've added a post-start hook to DDEV (at the bottom of config.yaml) that will run `npm run build` whenever the DDEV container starts. This will copy static assets like fonts from `src/public` into `web/dist` on build, so those files will be available when running npm run dev. This is also why @font-face rules are defined in `\_includes/fonts.twig` instead of in CSS, because there was no way to get the font URLs resolving during `npm run dev` AND `npm run build`.
 
 ## Project Config
 
@@ -70,11 +74,11 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier for Melody](https://github.com/trivago/prettier-plugin-twig-melody) plugin to make it work with Twig files. This is an opinionated way to format code which keeps spacing consistent between developers
 -  The configuration for Prettier in this project is defined in `.prettierrc`
 -  To ignore certain files or paths, add them to `.prettierignore`
--  It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code).
+-  It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code). To do this, follow [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
 
-   [TODO] Add prettier class ordering
+### Prettier & Tailwind class sorting
 
-Reference: Using [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
+The `prettier-plugin-tailwindcss` plugin is now compatible with `prettier-plugin-twig-melody`, so this project will now automatically sort Tailwind classes in the markup whenever the document is formatted. This was made possible by manually defining the pluing order in `.prettierrc`. See [Enabling Tailwind class sorting in Twig with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier) for details.
 
 ## Front End CSS (Tailwind)
 
@@ -87,10 +91,9 @@ Reference: Using [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/g
 Front end resources are compiled with [Laravel Vite](https://laravel.com/docs/10.x/vite) using nystudio107's [Vite plugin](https://nystudio107.com/docs/vite/).
 
 -  NPM scripts are in the `package.json` file in the root
--  To start the dev server, run `npm run dev`. This will give you a list of IP addresses. Ignore them, and access the site as usual on your normal dev domain (depending on whether you're using DDEV or Valet). When you save CSS, JS or Twig files, the page will refresh or HMR automatically
--  To compile the project, run `npm run development`
--  To compile the project and minify files for production, run `npm run production`
--  Laravel Mix can be configured in `webpack.mix.js` in the root of the repository
+-  To start the dev server, run `npm run serve`. This will give you a list of IP addresses. Ignore them, and access the site as usual on your normal dev domain (depending on whether you're using DDEV or Valet). When you save Twig files, the page will refresh. When you save CSS or JS files, the page will reload those resources via Hot Module Replacement
+-  To build front end assets for the production server, run `npm run build`
+-  Vite can be configured in `vite.config.js` in the root of the repository
 
 ## Composer Scripts
 

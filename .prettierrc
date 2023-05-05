@@ -11,5 +11,7 @@
 		"ifchildren,endifchildren",
 		"cache,endcache",
 		"js,endjs"
-	]
+	],
+	"pluginSearchDirs": false,
+	"plugins": ["prettier-plugin-twig-melody", "prettier-plugin-tailwindcss"]
 }

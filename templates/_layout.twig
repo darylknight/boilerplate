@@ -4,13 +4,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		{# Adds JS and CSS processed with Vite #}
+		{{ craft.vite.script('src/js/app.js') }}
+
 		{# TODO: Add favicon here #}
+
+		{% include '_includes/fonts' %}
 	</head>
 
 	<body>
 		{{ adminbar() }} {# Adds the Admin Bar plugin to the page #}
 
-		<a class="absolute w-0 h-0 p-0 -m-1 overflow-hidden text-center text-white bg-black border-0 focus:relative focus:p-2 focus:w-full focus:block focus:h-auto focus:m-0"
+		<a class="absolute -m-1 h-0 w-0 overflow-hidden border-0 bg-black p-0 text-center text-white focus:relative focus:m-0 focus:block focus:h-auto focus:w-full focus:p-2"
 			href="#main">
 			<span>Skip to main content</span>
 		</a>
@@ -24,10 +29,5 @@
 			{% endblock %}
 		</div>
 		{% include '_includes/footer' %}
-
-		{# Adds JS and CSS processed with Vite #}
-		{{ craft.vite.script('src/js/app.js') }}
-
-		{% include '_includes/klaro' %}
 	</body>
 </html>
