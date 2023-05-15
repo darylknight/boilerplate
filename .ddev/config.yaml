@@ -1,22 +1,26 @@
 name: boilerplate
 type: craftcms
 docroot: web
-php_version: '8.0'
+php_version: "8.0"
 webserver_type: nginx-fpm
-router_http_port: '80'
-router_https_port: '443'
+router_http_port: "80"
+router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
-   type: mariadb
-   version: '10.4'
+    type: mariadb
+    version: "10.4"
 nfs_mount_enabled: false
 mutagen_enabled: false
+hooks:
+    post-start:
+        - exec: npm run build
+        - exec: composer install
 use_dns_when_possible: true
-composer_version: '2'
+composer_version: "2"
 web_environment: []
-nodejs_version: '16'
+nodejs_version: "16"
 
 # Key features of ddev's config.yaml:
 
@@ -255,8 +259,3 @@ nodejs_version: '16'
 # information on the commands that can be extended and the tasks you can define
 # for them. Example:
 #hooks:
-
-# This post-start hook makes sure that static assets are copied into /web/dist whenever the container starts
-hooks:
-   post-start:
-      - exec: 'npm run build'

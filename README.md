@@ -25,7 +25,8 @@ This repository has been tested with both DDEV and Laravel Valet as a local envi
 
 ## DDEV + Vite Notes
 
-I never got static assets working correctly with Vite, so I've added a post-start hook to DDEV (at the bottom of config.yaml) that will run `npm run build` whenever the DDEV container starts. This will copy static assets like fonts from `src/public` into `web/dist` on build, so those files will be available when running npm run dev. This is also why @font-face rules are defined in `\_includes/fonts.twig` instead of in CSS, because there was no way to get the font URLs resolving during `npm run dev` AND `npm run build`.
+I never got static assets working correctly with Vite, so I've added a post-start hook to DDEV (in config.yaml) that will run `npm run build` whenever the DDEV container starts. This will copy static assets like fonts from `src/public` into `web/dist` on build, so those files will be available when running npm run dev. This is also why @font-face rules are defined in `_includes/fonts.twig` instead of in CSS, because there was no way to get the font URLs resolving during `npm run dev` AND `npm run build`.
+In addition, it will also run `composer install` to make sure local packages are in sync with the repo (assuming you pulled down first)
 
 ## Project Config
 
