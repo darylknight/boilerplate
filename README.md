@@ -117,7 +117,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 ### Deployment
 
 -  The staging site is deployed automatically when you push to the `main` branch
--  The production site is deployed manually by logging into Ploi > Servers > staging.yourproject.co.uk > Production > "Deploy to production"
+-  The production site is deployed manually by logging into Ploi > Servers > server-name > sitename.com > "Deploy to production"
 
 ## Built With
 
