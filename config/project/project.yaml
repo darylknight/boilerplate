@@ -1,4 +1,4 @@
-dateModified: 1683620537
+dateModified: 1687410661
 elementSources:
   craft\elements\Asset:
     -
@@ -467,8 +467,8 @@ plugins:
       spamEmailNotifications: false
       spamKeywords: ''
       spamLimit: 500
-      useQueueForIntegrations: true
-      useQueueForNotifications: true
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
   hyper:
     edition: standard
     enabled: true
