@@ -3,9 +3,9 @@
 	{% if asset %}
 		<img src="{{ asset.url(transform) }}"
 			class="{{ class ? class }}"
+			width="{{ transform ? transform.width|default('auto') }}"
+			height="{{ transform ? transform.height|default('auto') }}"
 			loading="lazy"
-			width="{{ asset.width }}"
-			height="{{ asset.height }}"
 			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
 			alt="{{ asset.alt }}" />
 	{% endif %}
