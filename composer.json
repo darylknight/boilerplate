@@ -34,8 +34,8 @@
 	},
 	"scripts": {
 		"craft-update": [
-			"@php install/check && php craft up --interactive=0 || exit 0",
-			"@php install/check && php craft clear-caches/all --interactive=0 || exit 0"
+			"@php craft install/check && php craft up --interactive=0 || exit 0",
+			"@php craft install/check && php craft clear-caches/all --interactive=0 || exit 0"
 		],
 		"deploy-staging": [
 			"composer install --no-interaction --prefer-dist --optimize-autoloader"
