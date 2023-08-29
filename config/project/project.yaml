@@ -1,4 +1,4 @@
-dateModified: 1687410661
+dateModified: 1693325753
 elementSources:
   craft\elements\Asset:
     -
@@ -482,7 +482,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_SEOMATIC
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -865,5 +865,5 @@ system:
   live: $SYSTEM_STATUS
   name: 'Boilerplate Tailwind'
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.0.3
   timeZone: America/Los_Angeles
