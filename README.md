@@ -68,7 +68,7 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
 -  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
 -  Import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
--  You can download images from the server either through SFTP, SSH, or by running `scripts/pull_assets.sh` if you set up Craft Scripts
+-  You can download user-uploaded assets from the server by running this command from the project root: `rsync -rtP --delete SERVERUSERNAME@SERV.IP.ADD.RESS:/home/SITEUSERNAME/MYWEBSITE.com/web/uploads/ web/uploads/`
 
 ## Code Formatting
 
