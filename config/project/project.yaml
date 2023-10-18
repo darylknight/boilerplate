@@ -1,4 +1,4 @@
-dateModified: 1693325753
+dateModified: 1697615953
 elementSources:
   craft\elements\Asset:
     -
@@ -294,7 +294,7 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    licenseKey: $PLUGIN_FORMIE
+    licenseKey: NWHSZ9879SFNILSER8VMNN2N
     schemaVersion: 2.0.10
     settings:
       ajaxTimeout: 10
@@ -472,7 +472,7 @@ plugins:
   hyper:
     edition: standard
     enabled: true
-    licenseKey: $PLUGIN_HYPER
+    licenseKey: TBE5EF1NZMVLXBLOK1YD3C0W
     schemaVersion: 1.0.0
   retcon:
     edition: standard
@@ -481,7 +481,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: $PLUGIN_SEOMATIC
+    licenseKey: ECF4UA8CZTXS4UAR4GFR7TP8
     schemaVersion: 3.0.12
     settings:
       addHrefLang: true
@@ -865,5 +865,5 @@ system:
   live: $SYSTEM_STATUS
   name: 'Boilerplate Tailwind'
   retryDuration: null
-  schemaVersion: 4.5.0.3
+  schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
