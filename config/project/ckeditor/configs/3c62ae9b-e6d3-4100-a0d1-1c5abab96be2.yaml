@@ -1,12 +1,21 @@
 headingLevels:
-  - 1
   - 2
   - 3
   - 4
-name: Simple
+listPlugin: DocumentList
+name: Standard
+options:
+  alignment:
+    options:
+      - left
+      - center
 toolbar:
   - heading
   - '|'
   - bold
   - italic
   - link
+  - alignment
+  - bulletedList
+  - numberedList
+  - horizontalLine
