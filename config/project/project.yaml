@@ -1,4 +1,4 @@
-dateModified: 1697615953
+dateModified: 1697618112
 elementSources:
   craft\elements\Asset:
     -
@@ -221,7 +221,7 @@ meta:
     1af14c33-3650-456a-964e-6c3b36535689: Image # Image
     1b16bb99-ac4b-4bc8-85f8-71966c72102e: 'Video Embed Code' # Video Embed Code
     1edd02fb-b01b-4fc9-90fb-0b111094ab5f: Form # Form
-    3c62ae9b-e6d3-4100-a0d1-1c5abab96be2: Simple # Simple
+    3c62ae9b-e6d3-4100-a0d1-1c5abab96be2: Standard # Standard
     04d471b6-495e-4558-b583-c7c366635c98: Text # Text
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'End Date' # End Date
@@ -450,7 +450,7 @@ plugins:
       enableBackSubmission: true
       enableCsrfValidationForGuests: true
       enableLargeFieldStorage: false
-      enableUnloadWarning: true
+      enableUnloadWarning: false
       includeDraftElementUsage: false
       includeRevisionElementUsage: false
       maxIncompleteSubmissionAge: 30
@@ -469,6 +469,7 @@ plugins:
       spamLimit: 500
       useQueueForIntegrations: false
       useQueueForNotifications: false
+      validateCustomTemplates: true
   hyper:
     edition: standard
     enabled: true
