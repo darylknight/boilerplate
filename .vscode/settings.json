@@ -1,5 +1,6 @@
 {
 	"files.exclude": {
+		".ddev": true,
 		"config/project": true,
 		"modules": true,
 		"node_modules": true,

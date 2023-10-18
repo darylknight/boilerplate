@@ -46,7 +46,7 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  Create a new repository using this one as a template
 -  Clone the site
 -  Create an empty database for the site
--  Duplicate the `.env.example` file as `.env`. Update the Database Configuration, change the `ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
+-  Duplicate the `.env.example` file as `.env`. Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
 -  Run `npm update` to install the latest packages from `package.json`
