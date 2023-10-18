@@ -9,9 +9,16 @@ module.exports = {
 	// Use the extend key to add to the config rather than replacing it
 	theme: {
 		colors: {
-			blue: '#336699',
+			red: '#dc2626', // form error
+			blue: '#369',
 			white: '#fff',
-			gray: '#b8b8b8',
+
+			gray: {
+				DEFAULT: '#666',
+				light: '#eee',
+				dark: '#444',
+			},
+
 			black: '#000',
 			transparent: 'transparent',
 		},
@@ -20,7 +27,6 @@ module.exports = {
 		fontFamily: {
 			// sans: 'avant-garde-book', // ? overrides the default font
 			// bold: 'avant-garde-bold',
-			// medium: 'avant-garde-medium',
 		},
 
 		// Screen sizes straight from Tailwind, for reference
