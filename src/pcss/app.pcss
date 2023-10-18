@@ -12,28 +12,28 @@
 	}
 
 	.h1 {
-		@apply antialiased text-5xl lg:text-6xl mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em] text-5xl antialiased last:mb-0 lg:text-6xl;
 	}
 	.h2 {
-		@apply antialiased text-4xl lg:text-5xl mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em] text-4xl antialiased last:mb-0 lg:text-5xl;
 	}
 	.h3 {
-		@apply antialiased text-3xl lg:text-4xl mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em] text-3xl antialiased last:mb-0 lg:text-4xl;
 	}
 	.h4 {
-		@apply antialiased text-xl lg:text-2xl mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em] text-xl antialiased last:mb-0 lg:text-2xl;
 	}
 	.h5 {
-		@apply antialiased mb-[0.5em] last:mb-0;
+		@apply mb-[0.5em] antialiased last:mb-0;
 	}
 	.p {
-		@apply antialiased text-xl mb-4 last:mb-0;
+		@apply mb-4 text-xl antialiased last:mb-0;
 	}
 }
 
 @layer components {
 	.btn {
-		@apply py-2 px-10 antialiased border-2 inline-block focus:outline-none whitespace-nowrap;
+		@apply inline-block rounded-md border-2 px-10 py-2 antialiased hover:bg-black hover:text-white focus:outline-none focus-visible:bg-black focus-visible:text-white;
 	}
 	/* Remember to use focus-visible: for states instead of focus: */
 	/* This means once you click on a button, it doesn't keep the :focus state */
