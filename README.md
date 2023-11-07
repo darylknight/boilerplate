@@ -41,6 +41,20 @@ All database structure changes are made locally. Those changes are stored in Pro
 
 ## Installation
 
+### DDEV Setup
+
+If you're using DDEV, note the post-start hooks in config.yaml:
+
+```
+hooks:
+   post-start:
+      - exec: npm install // install npm packages so the build process can run
+      - exec: npm run build // build the project and make sure assets have been copied from src/public to web/dist/
+      - exec: composer install // install Craft + plugins, run migrations
+```
+
+These will run every time the container starts to make sure you have the same packages installed as any other developer working on the site.
+
 ### Creating a new site from this Boilerplate
 
 -  Create a new repository using this one as a template
@@ -68,7 +82,13 @@ All database structure changes are made locally. Those changes are stored in Pro
 -  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
 -  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
 -  Import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
--  You can download user-uploaded assets from the server by running this command from the project root: `rsync -rtP --delete SERVERUSERNAME@SERV.IP.ADD.RESS:/home/SITEUSERNAME/MYWEBSITE.com/web/uploads/ web/uploads/`
+-  Copy `config/license.key` from the server, as this isn't stored in the repository
+-  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below
+
+### Syncing assets
+
+-  Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
+-  Production to local:`rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
 
 ## Code Formatting
 
