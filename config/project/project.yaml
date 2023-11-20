@@ -1,4 +1,4 @@
-dateModified: 1697618112
+dateModified: 1700486219
 elementSources:
   craft\elements\Asset:
     -
@@ -475,6 +475,10 @@ plugins:
     enabled: true
     licenseKey: TBE5EF1NZMVLXBLOK1YD3C0W
     schemaVersion: 1.0.0
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   retcon:
     edition: standard
     enabled: true
