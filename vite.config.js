@@ -13,9 +13,6 @@ export default defineConfig(({ command }) => ({
 			input: {
 				app: 'src/js/app.js',
 			},
-			output: {
-				sourcemap: true,
-			},
 		},
 	},
 
