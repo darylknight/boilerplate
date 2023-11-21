@@ -6,7 +6,7 @@ This repository is for the Boilerplate website at [insertdomainhere](https://ins
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
--  The site is built with [Craft CMS 4](https://craftcms.com)
+-  The site is built with [Craft CMS](https://craftcms.com)
 -  For general configuration settings, see `config/general.php`
 -  See the [Craft docs](https://craftcms.com/docs/4.x/config/config-settings.html) for available config settings
 
@@ -16,10 +16,8 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 
 -  Composer 2.x
 -  Apache or Nginx
--  PHP 8.0+
+-  PHP 8.2+
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
--  512MB+ of memory allocated to PHP
--  200MB+ of free disk space
 
 This repository has been tested with both DDEV and Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`.
 
@@ -73,6 +71,7 @@ These will run every time the container starts to make sure you have the same pa
 ### Setting up an existing site based on this repository
 
 -  Clone this repository
+-  Create an empty database for the site
 -  Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
@@ -141,7 +140,7 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 ## Built With
 
--  [Craft CMS 4](https://craftcms.com)
+-  [Craft CMS](https://craftcms.com)
 -  [Tailwind CSS](https://tailwindcss.com)
 -  [Laravel Vite](https://laravel.com/docs/10.x/vite)
 
