@@ -1,6 +1,6 @@
 # Boilerplate Website
 
-This repository is for the Boilerplate website at [insertdomainhere](https://insertdomainhere).
+This repository is for the Boilerplate website at [boilerplate.com](https://boilerplate.com).
 
 ## Getting Started
 
@@ -23,48 +23,51 @@ This repository has been tested with both DDEV and Laravel Valet as a local envi
 
 ## DDEV + Vite Notes
 
-I never got static assets working correctly with Vite, so I've added a post-start hook to DDEV (in config.yaml) that will run `npm run build` whenever the DDEV container starts. This will copy static assets like fonts from `src/public` into `web/dist` on build, so those files will be available when running npm run dev. This is also why @font-face rules are defined in `_includes/fonts.twig` instead of in CSS, because there was no way to get the font URLs resolving during `npm run dev` AND `npm run build`.
-In addition, it will also run `composer install` to make sure local packages are in sync with the repo (assuming you pulled down first)
+When referring to static assets in CSS like fonts and images, refer to them relative to the src/public folder. So fonts will be at /fonts/
 
-## Project Config
-
-This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
-
-1. Whenever you start work on a project, check for changes in the remote branch. If there are, pull these down and run `composer install`. This will also run the scripts at the bottom of `composer.json`, which will run Project Config migrations on your local database.
-2. If there are Project Config merge conflicts, it normally just means the `dateModifed` in `project.yaml` has changed, but please check you're not deleting files another developer has set up.
-3. Make sure that when you deploy to the server, it runs `composer install --no-interaction`. This will also run the scripts listed at the bottom of `composer.json`.
-
-Never overwrite the staging or production database with a local copy.
-All database structure changes are made locally. Those changes are stored in Project Config, and applied to the staging and production databases on deployment. No database changes are permitted on staging or production sites.
-
-## Installation
-
-### DDEV Setup
+### DDEV Hooks
 
 If you're using DDEV, note the post-start hooks in config.yaml:
 
 ```
 hooks:
    post-start:
-      - exec: npm install // install npm packages so the build process can run
-      - exec: npm run build // build the project and make sure assets have been copied from src/public to web/dist/
-      - exec: composer install // install Craft + plugins, run migrations
+      - exec: npm install
+      - exec: npm run build
+      - exec: composer install
 ```
 
+These will:
+
+-  Install npm packages so the build process can run
+-  Build the project and copy static assets from src/public to web/dist
+-  Install Craft + plugins, then run migrations (see "Composer Scripts" below for explanation)
+
 These will run every time the container starts to make sure you have the same packages installed as any other developer working on the site.
+
+## Project Config
+
+This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
+
+-  Whenever you start work on a project, check for changes in the remote branch. If there are any, pull these down and run `composer install`. This will also run the scripts at the bottom of `composer.json`, which will run Project Config migrations on your local database.
+-  If there are Project Config merge conflicts, it normally just means the `dateModifed` in `project.yaml` has changed, but please check you're not deleting files another developer has set up.
+-  Never overwrite the staging or production database with a local copy.
+-  All database structure changes are made locally. Those changes are stored in Project Config, and applied to the staging and production databases on deployment. No database structure changes are permitted on staging or production sites.
+
+## Installation
 
 ### Creating a new site from this Boilerplate
 
 -  Create a new repository using this one as a template
 -  Clone the site
--  Create an empty database for the site
--  Duplicate the `.env.example` file as `.env`. Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
+-  If you're not using DDEV, create an empty database for the site
+-  Duplicate the `.env.example` file as `.env` (DDEV will do this for you and fill in some details). Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
 -  Run `npm update` to install the latest packages from `package.json`
 -  Run `composer install` to install Craft and it's plugins from `composer.json`
--  Run `./craft setup`
--  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
+-  Run `./craft setup` (or `ddev craft setup`)
+-  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line. This does not work with DDEV (use rsync instead).
 -  Update the details in `package.json`
 -  Update the site details in this README.md file
 
@@ -72,19 +75,21 @@ These will run every time the container starts to make sure you have the same pa
 
 -  Clone this repository
 -  Create an empty database for the site
--  Duplicate the `.env.example` file as `.env`. Update the database connection details and change the `ENVIRONMENT` variable to `dev`
+-  Duplicate the `.env.example` file as `.env` (DDEV will do this for you and fill in some details). Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
 -  Run `npm update` to install the latest packages from `package.json`
 -  Run `composer install` to install Craft and it's plugins from `composer.json`
 -  Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
 -  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
--  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line.
+-  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line. This does not work with DDEV (use rsync instead).
 -  Import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
--  Copy `config/license.key` from the server, as this isn't stored in the repository
+-  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below
 
 ### Syncing assets
+
+You can sync user-uploaded assets from the live sites to your local installation with rsync:
 
 -  Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
 -  Production to local:`rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
@@ -120,8 +125,8 @@ Front end resources are compiled with [Laravel Vite](https://laravel.com/docs/10
 Below is an explanation of what all the scripts are for in `composer.json`. These mostly relate to the deployment process.
 
 -  `craft-update` Runs Craft migrations (see `post-update-cmd` and `post-install-cmd`), applies Project Config & clears caches
--  `deploy-staging` When deploying to the staging site via Ploi, this runs `composer install`
--  `deploy-production` When deploying to the production site via Ploi, we only need to run migrations because Ploi rsync's all the Composer packages from staging
+-  `deploy-staging` When deploying to the staging site via Ploi, this runs `composer install`, then migrations
+-  `deploy-production` When deploying to the production site via Ploi, we only need to run migrations because Ploi rsyncs all files and the Composer packages from staging
 -  `post-update-cmd` After `composer update`, run migrations
 -  `post-install-cmd` After `composer install`, run migrations
 -  `nuke` Removes all Composer packages & the lock file, then runs `composer update` again with a clear cache
@@ -135,8 +140,8 @@ Reference: [Composer Commands](https://getcomposer.org/doc/articles/scripts).
 
 ### Deployment
 
--  The staging site is deployed automatically when you push to the `main` branch
--  The production site is deployed manually by logging into Ploi > Servers > server-name > sitename.com > "Deploy to production"
+-  The staging site is deployed automatically when you push to the `main` branch. Ploi will run `composer deploy-staging`
+-  The production site is deployed manually by logging into Ploi > Servers > server-name > sitename.com > "Deploy to production". Ploi will run `composer deploy-production`
 
 ## Built With
 
