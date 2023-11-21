@@ -521,11 +521,6 @@
         {
             "name": "craftcms/ckeditor",
             "version": "3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "69a76a6ec028a4ca93962f47e23bc3f3bb15417e"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/69a76a6ec028a4ca93962f47e23bc3f3bb15417e",
@@ -538,12 +533,6 @@
                 "nystudio107/craft-code-editor": "^1.0.8",
                 "php": "^8.0.2"
             },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main",
-                "vlucas/phpdotenv": "^5.5"
-            },
             "type": "craft-plugin",
             "extra": {
                 "name": "CKEditor",
@@ -555,7 +544,6 @@
                     "craft\\ckeditor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -567,18 +555,18 @@
             ],
             "description": "Edit rich text content in Craft CMS using CKEditor.",
             "keywords": [
-                "CKEditor",
+                "ckeditor",
                 "cms",
                 "craftcms",
                 "html",
                 "yii2"
             ],
             "support": {
-                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
-                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
-                "source": "https://github.com/craftcms/ckeditor"
+                "source": "https://github.com/craftcms/ckeditor",
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
             "time": "2023-09-13T15:54:45+00:00"
         },
@@ -681,11 +669,6 @@
         {
             "name": "craftcms/html-field",
             "version": "2.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/html-field.git",
-                "reference": "4797c9cb0397e6d69d25d9716a75f7b47c69fd3a"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/html-field/zipball/4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
@@ -695,19 +678,12 @@
             "require": {
                 "php": "^8.0.2"
             },
-            "require-dev": {
-                "craftcms/cms": "4.0.0-RC1",
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "craft\\htmlfield\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -719,11 +695,11 @@
             ],
             "description": "Base class for Craft CMS field types with HTML values.",
             "support": {
-                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/html-field/issues?state=open",
-                "rss": "https://github.com/craftcms/html-field/commits/main.atom",
-                "source": "https://github.com/craftcms/html-field"
+                "source": "https://github.com/craftcms/html-field",
+                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
+                "rss": "https://github.com/craftcms/html-field/commits/main.atom"
             },
             "time": "2023-09-17T11:24:51+00:00"
         },
@@ -828,11 +804,6 @@
         {
             "name": "davechild/textstatistics",
             "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DaveChild/Text-Statistics.git",
-                "reference": "e83d5f82726db80e662ae305fce3b3c41299b4f5"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/e83d5f82726db80e662ae305fce3b3c41299b4f5",
@@ -841,9 +812,6 @@
             },
             "require": {
                 "php": ">=7.2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7"
             },
             "suggest": {
                 "ext-bcmath": "More accurate floating point calculations.",
@@ -860,7 +828,6 @@
                     "DaveChild\\TextStatistics": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -874,10 +841,6 @@
             ],
             "description": "PHP package to measure the readability of text according to various algorithms.",
             "homepage": "https://github.com/DaveChild/Text-Statistics",
-            "support": {
-                "issues": "https://github.com/DaveChild/Text-Statistics/issues",
-                "source": "https://github.com/DaveChild/Text-Statistics/tree/master"
-            },
             "time": "2018-08-21T08:17:10+00:00"
         },
         {
@@ -1065,11 +1028,6 @@
         {
             "name": "dompdf/dompdf",
             "version": "v2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "e8d2d5e37e8b0b30f0732a011295ab80680d7e85"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dompdf/dompdf/zipball/e8d2d5e37e8b0b30f0732a011295ab80680d7e85",
@@ -1083,13 +1041,6 @@
                 "phenx/php-font-lib": ">=0.5.4 <1.0.0",
                 "phenx/php-svg-lib": ">=0.3.3 <1.0.0",
                 "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "ext-zip": "*",
-                "mockery/mockery": "^1.3",
-                "phpunit/phpunit": "^7.5 || ^8 || ^9",
-                "squizlabs/php_codesniffer": "^3.5"
             },
             "suggest": {
                 "ext-gd": "Needed to process images",
@@ -1106,7 +1057,6 @@
                     "lib/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -1118,10 +1068,6 @@
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "support": {
-                "issues": "https://github.com/dompdf/dompdf/issues",
-                "source": "https://github.com/dompdf/dompdf/tree/v2.0.3"
-            },
             "time": "2023-02-07T12:51:48+00:00"
         },
         {
@@ -1203,11 +1149,6 @@
         {
             "name": "embed/embed",
             "version": "v4.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "49134080764018bc6b8a2488dd1c8cc2c47d15fc"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/oscarotero/Embed/zipball/49134080764018bc6b8a2488dd1c8cc2c47d15fc",
@@ -1227,14 +1168,6 @@
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0|^2.0"
             },
-            "require-dev": {
-                "brick/varexporter": "^0.3.1",
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "nyholm/psr7": "^1.2",
-                "oscarotero/php-cs-fixer-config": "^1.0",
-                "phpunit/phpunit": "^9.0",
-                "symfony/css-selector": "^5.0"
-            },
             "suggest": {
                 "symfony/css-selector": "If you want to get elements using css selectors"
             },
@@ -1247,7 +1180,6 @@
                     "Embed\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1267,25 +1199,6 @@
                 "oembed",
                 "opengraph",
                 "twitter cards"
-            ],
-            "support": {
-                "email": "oom@oscarotero.com",
-                "issues": "https://github.com/oscarotero/Embed/issues",
-                "source": "https://github.com/oscarotero/Embed/tree/v4.4.8"
-            },
-            "funding": [
-                {
-                    "url": "https://paypal.me/oscarotero",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/oscarotero",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/misteroom",
-                    "type": "patreon"
-                }
             ],
             "time": "2023-05-22T18:48:30+00:00"
         },
@@ -1372,11 +1285,6 @@
         {
             "name": "fakerphp/faker",
             "version": "v1.23.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
@@ -1390,13 +1298,6 @@
             },
             "conflict": {
                 "fzaninotto/faker": "*"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "doctrine/persistence": "^1.3 || ^2.0",
-                "ext-intl": "*",
-                "phpunit/phpunit": "^9.5.26",
-                "symfony/phpunit-bridge": "^5.4.16"
             },
             "suggest": {
                 "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
@@ -1416,7 +1317,6 @@
                     "Faker\\": "src/Faker/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1431,20 +1331,11 @@
                 "faker",
                 "fixtures"
             ],
-            "support": {
-                "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
-            },
             "time": "2023-06-12T08:44:38+00:00"
         },
         {
             "name": "firebase/php-jwt",
             "version": "v6.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "71278f20b0a623389beefe87a641d03948a38870"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/firebase/php-jwt/zipball/71278f20b0a623389beefe87a641d03948a38870",
@@ -1453,14 +1344,6 @@
             },
             "require": {
                 "php": "^7.4||^8.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "^6.5||^7.4",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.5",
-                "psr/cache": "^1.0||^2.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0"
             },
             "suggest": {
                 "ext-sodium": "Support EdDSA (Ed25519) signatures",
@@ -1472,7 +1355,6 @@
                     "Firebase\\JWT\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1494,39 +1376,21 @@
                 "jwt",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.7.0"
-            },
             "time": "2023-06-14T15:29:26+00:00"
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "b2dff83693cb46eb4478b193e9d94e2ff6258480"
-            },
+            "version": "8.13.25",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/b2dff83693cb46eb4478b193e9d94e2ff6258480",
-                "reference": "b2dff83693cb46eb4478b193e9d94e2ff6258480",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/fe9c0b201941977b91b6b086c9551aff07a733ae",
+                "reference": "fe9c0b201941977b91b6b086c9551aff07a733ae",
                 "shasum": ""
             },
             "require": {
                 "giggsey/locale": "^1.7|^2.0",
                 "php": ">=5.3.2",
                 "symfony/polyfill-mbstring": "^1.17"
-            },
-            "require-dev": {
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "^2.7",
-                "php-coveralls/php-coveralls": "^1.0|^2.0",
-                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
-                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "extra": {
@@ -1545,7 +1409,6 @@
                     "/src/timezone/data/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1566,41 +1429,19 @@
                 "phonenumber",
                 "validation"
             ],
-            "support": {
-                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
-                "source": "https://github.com/giggsey/libphonenumber-for-php"
-            },
-            "time": "2023-10-11T07:12:56+00:00"
+            "time": "2023-11-13T09:34:15+00:00"
         },
         {
             "name": "giggsey/locale",
-            "version": "2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/Locale.git",
-                "reference": "a6b33dfc9e8949b7e28133c4628b29cd9f1850bb"
-            },
+            "version": "2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/a6b33dfc9e8949b7e28133c4628b29cd9f1850bb",
-                "reference": "a6b33dfc9e8949b7e28133c4628b29cd9f1850bb",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
+                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "^2.7",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^8.5|^9.5",
-                "symfony/console": "^5.0|^6.0",
-                "symfony/filesystem": "^5.0|^6.0",
-                "symfony/finder": "^5.0|^6.0",
-                "symfony/process": "^5.0|^6.0"
             },
             "type": "library",
             "autoload": {
@@ -1608,7 +1449,6 @@
                     "Giggsey\\Locale\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1620,32 +1460,20 @@
                 }
             ],
             "description": "Locale functions required by libphonenumber-for-php",
-            "support": {
-                "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/2.4"
-            },
-            "time": "2023-04-13T07:40:58+00:00"
+            "time": "2023-11-01T17:19:48+00:00"
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831"
-            },
+            "version": "v1.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831",
-                "reference": "672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0",
-                "phpoption/phpoption": "^1.9.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5.32 || ^9.6.3 || ^10.0.12"
+                "phpoption/phpoption": "^1.9.2"
             },
             "type": "library",
             "autoload": {
@@ -1653,7 +1481,6 @@
                     "GrahamCampbell\\ResultType\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1672,21 +1499,7 @@
                 "Result-Type",
                 "result"
             ],
-            "support": {
-                "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/result-type",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-02-25T20:23:15+00:00"
+            "time": "2023-11-12T22:16:48+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1785,11 +1598,6 @@
         {
             "name": "guzzlehttp/oauth-subscriber",
             "version": "0.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/oauth-subscriber.git",
-                "reference": "8d6cab29f8397e5712d00a383eeead36108a3c1f"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/oauth-subscriber/zipball/8d6cab29f8397e5712d00a383eeead36108a3c1f",
@@ -1800,9 +1608,6 @@
                 "guzzlehttp/guzzle": "^6.5|^7.2",
                 "guzzlehttp/psr7": "^1.7|^2.0",
                 "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0|^9.3.3"
             },
             "suggest": {
                 "ext-openssl": "Required to sign using RSA-SHA1"
@@ -1818,7 +1623,6 @@
                     "GuzzleHttp\\Subscriber\\Oauth\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1835,10 +1639,6 @@
                 "Guzzle",
                 "oauth"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/oauth-subscriber/issues",
-                "source": "https://github.com/guzzle/oauth-subscriber/tree/0.6.0"
-            },
             "time": "2021-07-13T12:01:32+00:00"
         },
         {
@@ -1986,19 +1786,11 @@
         {
             "name": "html2text/html2text",
             "version": "4.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mtibben/html2text.git",
-                "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/mtibben/html2text/zipball/61ad68e934066a6f8df29a3d23a6460536d0855c",
                 "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c",
                 "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4"
             },
             "suggest": {
                 "ext-mbstring": "For best performance",
@@ -2013,15 +1805,10 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Converts HTML to formatted plain text",
-            "support": {
-                "issues": "https://github.com/mtibben/html2text/issues",
-                "source": "https://github.com/mtibben/html2text/tree/4.3.1"
-            },
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
@@ -2237,11 +2024,6 @@
         {
             "name": "league/html-to-markdown",
             "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/html-to-markdown.git",
-                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0b4066eede55c48f38bcee4fb8f0aa85654390fd",
@@ -2252,14 +2034,6 @@
                 "ext-dom": "*",
                 "ext-xml": "*",
                 "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "mikehaertl/php-shellcommand": "^1.1.0",
-                "phpstan/phpstan": "^1.8.8",
-                "phpunit/phpunit": "^8.5 || ^9.2",
-                "scrutinizer/ocular": "^1.6",
-                "unleashedtech/php-coding-standard": "^2.7 || ^3.0",
-                "vimeo/psalm": "^4.22 || ^5.0"
             },
             "bin": [
                 "bin/html-to-markdown"
@@ -2275,7 +2049,6 @@
                     "League\\HTMLToMarkdown\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2299,38 +2072,11 @@
                 "html",
                 "markdown"
             ],
-            "support": {
-                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
-                "source": "https://github.com/thephpleague/html-to-markdown/tree/5.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/html-to-markdown",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2023-07-12T21:21:09+00:00"
         },
         {
             "name": "league/oauth1-client",
             "version": "v1.10.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/oauth1-client.git",
-                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
@@ -2343,13 +2089,6 @@
                 "guzzlehttp/guzzle": "^6.0|^7.0",
                 "guzzlehttp/psr7": "^1.7|^2.0",
                 "php": ">=7.1||>=8.0"
-            },
-            "require-dev": {
-                "ext-simplexml": "*",
-                "friendsofphp/php-cs-fixer": "^2.17",
-                "mockery/mockery": "^1.3.3",
-                "phpstan/phpstan": "^0.12.42",
-                "phpunit/phpunit": "^7.5||9.5"
             },
             "suggest": {
                 "ext-simplexml": "For decoding XML-based responses."
@@ -2366,7 +2105,6 @@
                     "League\\OAuth1\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2393,10 +2131,6 @@
                 "tumblr",
                 "twitter"
             ],
-            "support": {
-                "issues": "https://github.com/thephpleague/oauth1-client/issues",
-                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
-            },
             "time": "2022-04-15T14:02:14+00:00"
         },
         {
@@ -2456,11 +2190,6 @@
         {
             "name": "league/oauth2-google",
             "version": "4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/oauth2-google.git",
-                "reference": "1b01ba18ba31b29e88771e3e0979e5c91d4afe76"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/oauth2-google/zipball/1b01ba18ba31b29e88771e3e0979e5c91d4afe76",
@@ -2471,18 +2200,12 @@
                 "league/oauth2-client": "^2.0",
                 "php": "^7.3 || ^8.0"
             },
-            "require-dev": {
-                "eloquent/phony-phpunit": "^6.0 || ^7.1",
-                "phpunit/phpunit": "^8.0 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "League\\OAuth2\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2502,10 +2225,6 @@
                 "oauth",
                 "oauth2"
             ],
-            "support": {
-                "issues": "https://github.com/thephpleague/oauth2-google/issues",
-                "source": "https://github.com/thephpleague/oauth2-google/tree/4.0.1"
-            },
             "time": "2023-03-17T15:20:52+00:00"
         },
         {
@@ -2554,11 +2273,6 @@
         {
             "name": "masterminds/html5",
             "version": "2.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "f47dcf3c70c584de14f21143c55d9939631bc6cf"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/f47dcf3c70c584de14f21143c55d9939631bc6cf",
@@ -2568,9 +2282,6 @@
             "require": {
                 "ext-dom": "*",
                 "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8"
             },
             "type": "library",
             "extra": {
@@ -2583,7 +2294,6 @@
                     "Masterminds\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2612,10 +2322,6 @@
                 "serializer",
                 "xml"
             ],
-            "support": {
-                "issues": "https://github.com/Masterminds/html5-php/issues",
-                "source": "https://github.com/Masterminds/html5-php/tree/2.8.1"
-            },
             "time": "2023-05-10T11:58:31+00:00"
         },
         {
@@ -2655,11 +2361,6 @@
             "name": "ml/iri",
             "version": "1.1.4",
             "target-dir": "ML/IRI",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lanthaler/IRI.git",
-                "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/lanthaler/IRI/zipball/cbd44fa913e00ea624241b38cefaa99da8d71341",
@@ -2676,7 +2377,6 @@
                     "ML\\IRI": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2696,20 +2396,11 @@
                 "uri",
                 "url"
             ],
-            "support": {
-                "issues": "https://github.com/lanthaler/IRI/issues",
-                "source": "https://github.com/lanthaler/IRI/tree/master"
-            },
             "time": "2014-01-21T13:43:39+00:00"
         },
         {
             "name": "ml/json-ld",
             "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lanthaler/JsonLD.git",
-                "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/lanthaler/JsonLD/zipball/537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
@@ -2721,17 +2412,12 @@
                 "ml/iri": "^1.1.1",
                 "php": ">=5.3.0"
             },
-            "require-dev": {
-                "json-ld/tests": "1.0",
-                "phpunit/phpunit": "^4"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "ML\\JsonLD\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2749,24 +2435,15 @@
                 "JSON-LD",
                 "jsonld"
             ],
-            "support": {
-                "issues": "https://github.com/lanthaler/JsonLD/issues",
-                "source": "https://github.com/lanthaler/JsonLD/tree/1.2.1"
-            },
             "time": "2022-09-29T08:45:17+00:00"
         },
         {
             "name": "mmikkel/retcon",
-            "version": "2.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mmikkel/Retcon-Craft.git",
-                "reference": "81fe0d5898125fba7013f022408113b8bf1ff472"
-            },
+            "version": "2.7.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/81fe0d5898125fba7013f022408113b8bf1ff472",
-                "reference": "81fe0d5898125fba7013f022408113b8bf1ff472",
+                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/7b240366ee06eb5cd6448dd4825537ea0343e81f",
+                "reference": "7b240366ee06eb5cd6448dd4825537ea0343e81f",
                 "shasum": ""
             },
             "require": {
@@ -2775,9 +2452,6 @@
                 "php": "^7.2.5|^8.0",
                 "symfony/css-selector": "^3.4|^4.0|^5.0|^6.0",
                 "symfony/dom-crawler": "^4.4|^5.0|^6.0"
-            },
-            "require-dev": {
-                "craftcms/rector": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2795,7 +2469,6 @@
                     "mmikkel\\retcon\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2807,18 +2480,17 @@
             ],
             "description": "Powerful Twig filters for mutating and querying HTML",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "retcon"
             ],
             "support": {
                 "docs": "https://github.com/mmikkel/Retcon-Craft/blob/master/README.md",
-                "issues": "https://github.com/mmikkel/Retcon-Craft/issues",
-                "source": "https://github.com/mmikkel/Retcon-Craft/tree/2.7.3"
+                "issues": "https://github.com/mmikkel/Retcon-Craft/issues"
             },
-            "time": "2023-08-01T14:25:35+00:00"
+            "time": "2023-11-11T11:24:57+00:00"
         },
         {
             "name": "moneyphp/money",
@@ -2945,11 +2617,6 @@
         {
             "name": "nystudio107/craft-code-editor",
             "version": "1.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-code-editor.git",
-                "reference": "66a1ba02c0ad5de8e89d4632d5e4da1dfa193dce"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/66a1ba02c0ad5de8e89d4632d5e4da1dfa193dce",
@@ -2958,9 +2625,6 @@
             },
             "require": {
                 "phpdocumentor/reflection-docblock": "^5.0.0"
-            },
-            "require-dev": {
-                "craftcms/cms": "^3.0.0 || ^4.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2971,7 +2635,6 @@
                     "nystudio107\\codeeditor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2994,27 +2657,11 @@
                 "markdown",
                 "twig"
             ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-code-editor/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-code-editor/issues",
-                "source": "https://github.com/nystudio107/craft-code-editor"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
             "time": "2023-08-16T02:31:19+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
             "version": "4.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "eb05b1cc7dc9eeecbdfe8cd3cd3d119e83c62619"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/eb05b1cc7dc9eeecbdfe8cd3cd3d119e83c62619",
@@ -3030,7 +2677,6 @@
                     "nystudio107\\pluginvite\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3048,29 +2694,17 @@
             ],
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/4.0.8"
+                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
             "time": "2023-01-25T21:09:10+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.32",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8778276197d8e87f9aab38be04dde63082040520"
-            },
+            "version": "4.0.35",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8778276197d8e87f9aab38be04dde63082040520",
-                "reference": "8778276197d8e87f9aab38be04dde63082040520",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ab7cba5e3331ed130ca75ad1b02d75e753403db5",
+                "reference": "ab7cba5e3331ed130ca75ad1b02d75e753403db5",
                 "shasum": ""
             },
             "require": {
@@ -3081,15 +2715,6 @@
                 "php": "^8.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.1.29",
-                "codeception/module-asserts": "^1.3.1",
-                "codeception/module-datafactory": "^1.1.0",
-                "codeception/module-phpbrowser": "^1.0.2",
-                "codeception/module-rest": "^1.4.2",
-                "codeception/module-yii2": "^1.1.5",
-                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3102,7 +2727,6 @@
                     "nystudio107\\seomatic\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3114,16 +2738,16 @@
             ],
             "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 4. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
             "keywords": [
-                "Craft",
-                "JSON-LD",
-                "Sitemap",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "facebook",
+                "json-ld",
                 "meta",
                 "seo",
                 "seomatic",
+                "sitemap",
                 "tags",
                 "twitter"
             ],
@@ -3132,22 +2756,11 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-10-09T15:52:54+00:00"
+            "time": "2023-11-16T15:02:05+00:00"
         },
         {
             "name": "nystudio107/craft-vite",
             "version": "4.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "d20d2dbfd3b2d4ecd0380b3869185d54a9cf80a2"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/d20d2dbfd3b2d4ecd0380b3869185d54a9cf80a2",
@@ -3169,7 +2782,6 @@
                     "nystudio107\\vite\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3181,8 +2793,8 @@
             ],
             "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "vite"
@@ -3192,22 +2804,11 @@
                 "issues": "https://nystudio107.com/plugins/vite/support",
                 "source": "https://github.com/nystudio107/craft-vite"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
             "time": "2023-06-07T17:25:10+00:00"
         },
         {
             "name": "oscarotero/html-parser",
             "version": "v0.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oscarotero/html-parser.git",
-                "reference": "0c5b619bdc7ac061f06a667d913e2af708ee3231"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/oscarotero/html-parser/zipball/0c5b619bdc7ac061f06a667d913e2af708ee3231",
@@ -3217,17 +2818,12 @@
             "require": {
                 "php": "^7.2 || ^8"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.11",
-                "phpunit/phpunit": "^8.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "HtmlParser\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3246,11 +2842,6 @@
                 "html",
                 "parser"
             ],
-            "support": {
-                "email": "oom@oscarotero.com",
-                "issues": "https://github.com/oscarotero/html-parser/issues",
-                "source": "https://github.com/oscarotero/html-parser/tree/v0.1.7"
-            },
             "time": "2022-12-17T09:48:58+00:00"
         },
         {
@@ -3291,11 +2882,6 @@
         {
             "name": "phenx/php-font-lib",
             "version": "0.5.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/php-font-lib.git",
-                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
@@ -3305,16 +2891,12 @@
             "require": {
                 "ext-mbstring": "*"
             },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "FontLib\\": "src/FontLib"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0"
             ],
@@ -3326,20 +2908,11 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "support": {
-                "issues": "https://github.com/dompdf/php-font-lib/issues",
-                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
-            },
             "time": "2021-12-17T19:44:54+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
             "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dompdf/php-svg-lib.git",
-                "reference": "76876c6cf3080bcb6f249d7d59705108166a6685"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/76876c6cf3080bcb6f249d7d59705108166a6685",
@@ -3351,16 +2924,12 @@
                 "php": "^7.1 || ^8.0",
                 "sabberworm/php-css-parser": "^8.4"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Svg\\": "src/Svg"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0"
             ],
@@ -3372,20 +2941,11 @@
             ],
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
-            "support": {
-                "issues": "https://github.com/dompdf/php-svg-lib/issues",
-                "source": "https://github.com/dompdf/php-svg-lib/tree/0.5.0"
-            },
             "time": "2022-09-06T12:16:56+00:00"
         },
         {
             "name": "php-science/textrank",
             "version": "1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHP-Science/TextRank.git",
-                "reference": "c5ccfc998b3cee91bf5d01b9f107d382acfa0ca8"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/PHP-Science/TextRank/zipball/c5ccfc998b3cee91bf5d01b9f107d382acfa0ca8",
@@ -3397,9 +2957,6 @@
                 "ext-mbstring": "*",
                 "php": ">=7.2"
             },
-            "require-dev": {
-                "phpunit/phpunit": "9.*"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3409,7 +2966,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3429,10 +2985,6 @@
                 "summarization",
                 "textrank"
             ],
-            "support": {
-                "issues": "https://github.com/PHP-Science/TextRank/issues",
-                "source": "https://github.com/PHP-Science/TextRank/tree/1.2.2"
-            },
             "time": "2022-08-12T13:02:17+00:00"
         },
         {
@@ -3561,24 +3113,15 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e"
-            },
+            "version": "1.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
-                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/80735db690fe4fc5c76dfa7f9b770634285fa820",
+                "reference": "80735db690fe4fc5c76dfa7f9b770634285fa820",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.32 || ^9.6.3 || ^10.0.12"
             },
             "type": "library",
             "extra": {
@@ -3595,7 +3138,6 @@
                     "PhpOption\\": "src/PhpOption/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -3618,21 +3160,7 @@
                 "php",
                 "type"
             ],
-            "support": {
-                "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-02-25T19:38:58+00:00"
+            "time": "2023-11-12T21:59:55+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -4051,11 +3579,6 @@
         {
             "name": "putyourlightson/craft-dashboard-begone",
             "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-dashboard-begone.git",
-                "reference": "34dc73b8904adb8906a839bd2097534c1cb42f4e"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/putyourlightson/craft-dashboard-begone/zipball/34dc73b8904adb8906a839bd2097534c1cb42f4e",
@@ -4080,33 +3603,27 @@
                     "putyourlightson\\dashboardbegone\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Removes the dashboard and redirects users to entries.",
             "homepage": "https://github.com/putyourlightson/craft-dashboard-begone",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craftcms",
                 "dashboard"
             ],
             "support": {
                 "docs": "https://putyourlightson.com/plugins/dashboard-begone",
-                "issues": "https://github.com/putyourlightson/craft-dashboard-begone/issues",
-                "source": "https://github.com/putyourlightson/craft-dashboard-begone"
+                "source": "https://github.com/putyourlightson/craft-dashboard-begone",
+                "issues": "https://github.com/putyourlightson/craft-dashboard-begone/issues"
             },
             "time": "2022-05-04T18:39:42+00:00"
         },
         {
             "name": "putyourlightson/craft-sherlock",
             "version": "4.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-sherlock.git",
-                "reference": "09b4bf7e385051cee07e81c83f8366ea2af7d42d"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/putyourlightson/craft-sherlock/zipball/09b4bf7e385051cee07e81c83f8366ea2af7d42d",
@@ -4116,15 +3633,6 @@
             "require": {
                 "craftcms/cms": "^4.0.0",
                 "php": "^8.0.2"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.1.29",
-                "codeception/module-asserts": "^1.3.1",
-                "codeception/module-yii2": "^1.1.5",
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "vlucas/phpdotenv": "^5.4.1",
-                "yiisoft/yii2-redis": "^2.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4141,15 +3649,14 @@
                     "putyourlightson\\sherlock\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
             "description": "Security scanner and monitor to keep your site and CMS secure.",
             "homepage": "https://putyourlightson.com/plugins/sherlock",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craftcms",
                 "scanner",
                 "secure",
@@ -4157,8 +3664,8 @@
             ],
             "support": {
                 "docs": "https://putyourlightson.com/plugins/sherlock",
-                "issues": "https://github.com/putyourlightson/craft-sherlock/issues",
-                "source": "https://github.com/putyourlightson/craft-sherlock"
+                "source": "https://github.com/putyourlightson/craft-sherlock",
+                "issues": "https://github.com/putyourlightson/craft-sherlock/issues"
             },
             "time": "2023-10-09T18:44:10+00:00"
         },
@@ -4248,11 +3755,6 @@
         {
             "name": "sabberworm/php-css-parser",
             "version": "8.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "e41d2140031d533348b2192a83f02d8dd8a71d30"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/e41d2140031d533348b2192a83f02d8dd8a71d30",
@@ -4263,10 +3765,6 @@
                 "ext-iconv": "*",
                 "php": ">=5.6.20"
             },
-            "require-dev": {
-                "codacy/coverage": "^1.4",
-                "phpunit/phpunit": "^4.8.36"
-            },
             "suggest": {
                 "ext-mbstring": "for parsing UTF-8 CSS"
             },
@@ -4276,7 +3774,6 @@
                     "Sabberworm\\CSS\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4292,10 +3789,6 @@
                 "parser",
                 "stylesheet"
             ],
-            "support": {
-                "issues": "https://github.com/sabberworm/PHP-CSS-Parser/issues",
-                "source": "https://github.com/sabberworm/PHP-CSS-Parser/tree/8.4.0"
-            },
             "time": "2021-12-11T13:40:54+00:00"
         },
         {
@@ -4503,11 +3996,6 @@
         {
             "name": "stripe/stripe-php",
             "version": "v10.21.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "b4ab319731958077227fad1874a3671458c5d593"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/stripe/stripe-php/zipball/b4ab319731958077227fad1874a3671458c5d593",
@@ -4520,13 +4008,6 @@
                 "ext-mbstring": "*",
                 "php": ">=5.6.0"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "3.5.0",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpstan/phpstan": "^1.2",
-                "phpunit/phpunit": "^5.7 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.3"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -4538,7 +4019,6 @@
                     "Stripe\\": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4555,20 +4035,11 @@
                 "payment processing",
                 "stripe"
             ],
-            "support": {
-                "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v10.21.0"
-            },
             "time": "2023-08-11T00:23:24+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
             "version": "v1.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
@@ -4585,7 +4056,6 @@
                     "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4607,20 +4077,11 @@
                 "html",
                 "parser"
             ],
-            "support": {
-                "issues": "https://github.com/sunra/php-simple-html-dom-parser/issues",
-                "source": "https://github.com/sunra/php-simple-html-dom-parser/tree/master"
-            },
             "time": "2016-11-22T22:57:47+00:00"
         },
         {
             "name": "symfony/cache",
             "version": "v6.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/cache.git",
-                "reference": "81ca309f056e836480928b20280ec52ce8369bb3"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/cache/zipball/81ca309f056e836480928b20280ec52ce8369bb3",
@@ -4646,18 +4107,6 @@
                 "psr/simple-cache-implementation": "1.0|2.0|3.0",
                 "symfony/cache-implementation": "1.1|2.0|3.0"
             },
-            "require-dev": {
-                "cache/integration-tests": "dev-master",
-                "doctrine/dbal": "^2.13.1|^3.0",
-                "predis/predis": "^1.1",
-                "psr/simple-cache": "^1.0|^2.0|^3.0",
-                "symfony/config": "^5.4|^6.0",
-                "symfony/dependency-injection": "^5.4|^6.0",
-                "symfony/filesystem": "^5.4|^6.0",
-                "symfony/http-kernel": "^5.4|^6.0",
-                "symfony/messenger": "^5.4|^6.0",
-                "symfony/var-dumper": "^5.4|^6.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -4667,7 +4116,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4686,23 +4134,6 @@
             "keywords": [
                 "caching",
                 "psr6"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/cache/tree/v6.0.19"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
             ],
             "time": "2023-01-20T17:44:14+00:00"
         },
@@ -4828,11 +4259,6 @@
         {
             "name": "symfony/css-selector",
             "version": "v6.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "f1d00bddb83a4cb2138564b2150001cb6ce272b1"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/f1d00bddb83a4cb2138564b2150001cb6ce272b1",
@@ -4851,7 +4277,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4871,23 +4296,6 @@
             ],
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v6.0.19"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2023-01-01T08:36:10+00:00"
         },
         {
@@ -4937,11 +4345,6 @@
         {
             "name": "symfony/dom-crawler",
             "version": "v6.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "622578ff158318b1b49d95068bd6b66c713601e9"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/622578ff158318b1b49d95068bd6b66c713601e9",
@@ -4956,10 +4359,6 @@
             "conflict": {
                 "masterminds/html5": "<2.6"
             },
-            "require-dev": {
-                "masterminds/html5": "^2.6",
-                "symfony/css-selector": "^5.4|^6.0"
-            },
             "suggest": {
                 "symfony/css-selector": ""
             },
@@ -4972,7 +4371,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4988,23 +4386,6 @@
             ],
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v6.0.19"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2023-01-20T17:44:14+00:00"
         },
         {
@@ -5116,11 +4497,6 @@
         {
             "name": "symfony/expression-language",
             "version": "v5.4.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/expression-language.git",
-                "reference": "501589522b844b8eecf012c133f0404f0eef77ac"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/expression-language/zipball/501589522b844b8eecf012c133f0404f0eef77ac",
@@ -5141,7 +4517,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5157,23 +4532,6 @@
             ],
             "description": "Provides an engine that can compile and evaluate expressions",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/expression-language/tree/v5.4.21"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2023-02-14T08:03:56+00:00"
         },
         {
@@ -6255,11 +5613,6 @@
         {
             "name": "symfony/var-exporter",
             "version": "v6.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "df56f53818c2d5d9f683f4ad2e365ba73a3b69d2"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/var-exporter/zipball/df56f53818c2d5d9f683f4ad2e365ba73a3b69d2",
@@ -6268,9 +5621,6 @@
             },
             "require": {
                 "php": ">=8.0.2"
-            },
-            "require-dev": {
-                "symfony/var-dumper": "^5.4|^6.0"
             },
             "type": "library",
             "autoload": {
@@ -6281,7 +5631,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6304,23 +5653,6 @@
                 "hydrate",
                 "instantiate",
                 "serialize"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v6.0.19"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
             ],
             "time": "2023-01-13T08:34:10+00:00"
         },
@@ -6409,11 +5741,6 @@
         {
             "name": "thenetworg/oauth2-azure",
             "version": "v2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TheNetworg/oauth2-azure.git",
-                "reference": "e092f6fca469f8109aab4694e9e2dee98717af17"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/TheNetworg/oauth2-azure/zipball/e092f6fca469f8109aab4694e9e2dee98717af17",
@@ -6427,16 +5754,12 @@
                 "league/oauth2-client": "~2.0",
                 "php": "^7.1|^8.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^9.6"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "TheNetworg\\OAuth2\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6460,10 +5783,6 @@
                 "oauth2",
                 "windows azure"
             ],
-            "support": {
-                "issues": "https://github.com/TheNetworg/oauth2-azure/issues",
-                "source": "https://github.com/TheNetworg/oauth2-azure/tree/v2.2.1"
-            },
             "time": "2023-08-01T09:16:29+00:00"
         },
         {
@@ -6551,16 +5870,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "2.0.38",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/formie.git",
-                "reference": "41e9465c8fc9212b4820af81aab7cc29c65efad8"
-            },
+            "version": "2.0.42",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/41e9465c8fc9212b4820af81aab7cc29c65efad8",
-                "reference": "41e9465c8fc9212b4820af81aab7cc29c65efad8",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/298648b93c69038e006ec71d50f6ecc8aacc2bc9",
+                "reference": "298648b93c69038e006ec71d50f6ecc8aacc2bc9",
                 "shasum": ""
             },
             "require": {
@@ -6597,7 +5911,6 @@
                     "verbb\\formie\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -6609,33 +5922,28 @@
             ],
             "description": "The most user-friendly forms plugin for Craft.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "formie"
             ],
             "support": {
-                "docs": "https://github.com/verbb/formie",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/formie/issues?state=open",
-                "rss": "https://github.com/verbb/formie/commits/v2.atom",
-                "source": "https://github.com/verbb/formie"
+                "source": "https://github.com/verbb/formie",
+                "docs": "https://github.com/verbb/formie",
+                "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2023-10-08T02:08:29+00:00"
+            "time": "2023-11-09T04:45:06+00:00"
         },
         {
             "name": "verbb/hyper",
-            "version": "1.1.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/hyper.git",
-                "reference": "0bce7445b94e21863d88111ca41e19d4dba0ad7b"
-            },
+            "version": "1.1.16",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/0bce7445b94e21863d88111ca41e19d4dba0ad7b",
-                "reference": "0bce7445b94e21863d88111ca41e19d4dba0ad7b",
+                "url": "https://api.github.com/repos/verbb/hyper/zipball/c37c6b048e17340c515fe4a14b6b914fc0f4c59e",
+                "reference": "c37c6b048e17340c515fe4a14b6b914fc0f4c59e",
                 "shasum": ""
             },
             "require": {
@@ -6657,7 +5965,6 @@
                     "verbb\\hyper\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -6669,26 +5976,20 @@
             ],
             "description": "A user-friendly links field for Craft.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "hyper"
             ],
             "support": {
-                "docs": "https://github.com/verbb/hyper",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/hyper/issues?state=open",
-                "rss": "https://github.com/verbb/hyper/commits/v2.atom",
-                "source": "https://github.com/verbb/hyper"
+                "source": "https://github.com/verbb/hyper",
+                "docs": "https://github.com/verbb/hyper",
+                "rss": "https://github.com/verbb/hyper/commits/v2.atom"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-10-11T20:18:07+00:00"
+            "time": "2023-10-25T22:24:39+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -6748,11 +6049,6 @@
         {
             "name": "verbb/super-table",
             "version": "3.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/super-table.git",
-                "reference": "ba5d7b0ddbd2597c156a0e9913890d391ba54040"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/super-table/zipball/ba5d7b0ddbd2597c156a0e9913890d391ba54040",
@@ -6778,7 +6074,6 @@
                     "verbb\\supertable\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6790,54 +6085,38 @@
             ],
             "description": "Super-charge your content builders and create nested Matrix fields.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "super table"
             ],
             "support": {
-                "docs": "https://github.com/verbb/super-table",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/super-table/issues?state=open",
-                "rss": "https://github.com/verbb/super-table/commits/v2.atom",
-                "source": "https://github.com/verbb/super-table"
+                "source": "https://github.com/verbb/super-table",
+                "docs": "https://github.com/verbb/super-table",
+                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
             "time": "2023-10-05T04:08:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7"
-            },
+            "version": "v5.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
-                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
+                "reference": "2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.0.2",
-                "php": "^7.1.3 || ^8.0",
-                "phpoption/phpoption": "^1.8",
-                "symfony/polyfill-ctype": "^1.23",
-                "symfony/polyfill-mbstring": "^1.23.1",
-                "symfony/polyfill-php80": "^1.23.1"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.30 || ^9.5.25"
+                "graham-campbell/result-type": "^1.1.2",
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.2",
+                "symfony/polyfill-ctype": "^1.24",
+                "symfony/polyfill-mbstring": "^1.24",
+                "symfony/polyfill-php80": "^1.24"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
@@ -6849,7 +6128,7 @@
                     "forward-command": true
                 },
                 "branch-alias": {
-                    "dev-master": "5.5-dev"
+                    "dev-master": "5.6-dev"
                 }
             },
             "autoload": {
@@ -6857,7 +6136,6 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6879,21 +6157,7 @@
                 "env",
                 "environment"
             ],
-            "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.5.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-10-16T01:01:54+00:00"
+            "time": "2023-11-12T22:43:29+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -7289,11 +6553,6 @@
         {
             "name": "wbrowar/adminbar",
             "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wbrowar/craft-adminbar.git",
-                "reference": "9c701275439375bcf0266a5a8aab043abfa7bb3b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/wbrowar/craft-adminbar/zipball/9c701275439375bcf0266a5a8aab043abfa7bb3b",
@@ -7321,7 +6580,6 @@
                     "wbrowar\\adminbar\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7333,16 +6591,15 @@
             ],
             "description": "Front-end shortcuts for clients logged into Craft CMS.",
             "keywords": [
-                "Craft",
                 "admin bar",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms"
             ],
             "support": {
                 "docs": "https://github.com/wbrowar/craft-3-adminbar/blob/master/README.md",
-                "issues": "https://github.com/wbrowar/craft-3-adminbar/issues",
-                "source": "https://github.com/wbrowar/craft-adminbar/tree/3.2.0"
+                "issues": "https://github.com/wbrowar/craft-3-adminbar/issues"
             },
             "time": "2022-05-09T21:48:16+00:00"
         },
@@ -7752,11 +7009,6 @@
         {
             "name": "nikic/php-parser",
             "version": "v4.17.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
@@ -7766,10 +7018,6 @@
             "require": {
                 "ext-tokenizer": "*",
                 "php": ">=7.0"
-            },
-            "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -7785,7 +7033,6 @@
                     "PhpParser\\": "lib/PhpParser"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7799,20 +7046,11 @@
                 "parser",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.17.1"
-            },
             "time": "2023-08-13T19:53:39+00:00"
         },
         {
             "name": "psy/psysh",
             "version": "v0.11.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "128fa1b608be651999ed9789c95e6e2a31b5802b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/bobthecow/psysh/zipball/128fa1b608be651999ed9789c95e6e2a31b5802b",
@@ -7829,9 +7067,6 @@
             },
             "conflict": {
                 "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -7860,7 +7095,6 @@
                     "Psy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7879,20 +7113,11 @@
                 "interactive",
                 "shell"
             ],
-            "support": {
-                "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.22"
-            },
             "time": "2023-10-14T21:56:36+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
             "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-shell.git",
-                "reference": "358d4651ce1f54db0f1add026c202ac2e47db06b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yiisoft/yii2-shell/zipball/358d4651ce1f54db0f1add026c202ac2e47db06b",
@@ -7916,7 +7141,6 @@
                     "yii\\shell\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7935,19 +7159,6 @@
                 "shell",
                 "yii2"
             ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2-shell/issues",
-                "source": "https://github.com/yiisoft/yii2-shell",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
-                }
-            ],
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
@@ -7963,5 +7174,5 @@
     "platform-overrides": {
         "php": "8.0.28"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
