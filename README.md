@@ -18,6 +18,7 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  Apache or Nginx
 -  PHP 8.2+
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
+-  512MB+ of memory allocated to PHP
 
 This repository has been tested with both DDEV and Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`.
 
