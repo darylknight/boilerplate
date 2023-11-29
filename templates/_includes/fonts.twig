@@ -1,0 +1,17 @@
+{# Font-face rules are kept in this twig file, because if they're in a CSS file, Vite tries to process #}
+{# the URLs, and there isn't a way to have it work correctly during both `npm run dev` AND `npm run build` #}
+{# So keeping them in here keeps them out of the build process. The files are kept in src/public, which means #}
+{# Vite will copy them into web/dist when you run `npm run build` #}
+
+{# prettier-ignore-start #}
+<style>
+/* Example of how to reference a font file */
+/* @font-face {
+	font-display: swap;
+	font-family: 'Font Name';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/dist/fonts/font-name.woff') format('woff');
+} */
+</style>
+{# prettier-ignore-end #}

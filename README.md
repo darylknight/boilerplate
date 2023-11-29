@@ -22,10 +22,6 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 
 This repository has been tested with both DDEV and Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`.
 
-## DDEV + Vite Notes
-
-When referring to static assets in CSS like fonts and images, refer to them relative to the src/public folder. So fonts will be at /fonts/
-
 ### DDEV Hooks
 
 If you're using DDEV, note the post-start hooks in config.yaml:
@@ -41,7 +37,7 @@ hooks:
 These will:
 
 -  Install npm packages so the build process can run
--  Build the project and copy static assets from src/public to web/dist
+-  Build the project and copy static assets from `src/public` to `web/dist`
 -  Install Craft + plugins, then run migrations (see "Composer Scripts" below for explanation)
 
 These will run every time the container starts to make sure you have the same packages installed as any other developer working on the site.

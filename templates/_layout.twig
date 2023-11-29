@@ -4,6 +4,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		{# Include local fonts #}
+		{% include '_includes/fonts' %}
+
 		{# Adds JS and CSS processed with Vite #}
 		{{ craft.vite.script('src/js/app.js') }}
 
