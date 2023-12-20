@@ -68,7 +68,6 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 -  Run `npm update` to install the latest packages from `package.json`
 -  Run `composer install` to install Craft and it's plugins from `composer.json`
 -  Run `./craft setup` (or `ddev craft setup`)
--  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line. This does not work with DDEV (use rsync instead).
 -  Update the details in `package.json`
 -  Update the site details in this README.md file
 
@@ -83,8 +82,7 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 -  Run `composer install` to install Craft and it's plugins from `composer.json`
 -  Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
 -  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
--  Optionally, duplicate `scripts/.env.sh.example` as `scripts/.env.sh` and update it with the correct paths for your local environment if you want to use [Craft Scripts](https://github.com/nystudio107/craft-scripts) for pulling the database and assets through the command line. This does not work with DDEV (use rsync instead).
--  Import the database either by downloading a backup from the Utilities section inside Craft, or run `scripts/pull_db.sh` if you set up [Craft Scripts](https://github.com/nystudio107/craft-scripts)
+-  Import the database by downloading a backup from the Utilities section in the live site
 -  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below
 
