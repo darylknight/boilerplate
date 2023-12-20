@@ -10,6 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 -  For general configuration settings, see `config/general.php`
 -  See the [Craft docs](https://craftcms.com/docs/4.x/config/config-settings.html) for available config settings
 
+## Site Notes
+
+Add notes here that describe any weird functionality, such as commerce intergrations, external services, or custom tools.
+
 ### Prerequisites
 
 Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [Laravel Valet](https://laravel-mix.com) by default. To run this site locally, you will need:
