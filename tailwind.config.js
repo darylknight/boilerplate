@@ -10,6 +10,7 @@ module.exports = {
 	theme: {
 		colors: {
 			red: '#dc2626', // form error
+			green: '#15803d', // form success
 			blue: '#369',
 			white: '#fff',
 
@@ -25,7 +26,7 @@ module.exports = {
 
 		// You can replace the Tailwind fonts with the client's brand fonts here
 		fontFamily: {
-			// sans: 'avant-garde-book', // ? overrides the default font
+			sans: 'Unbounded', // ? overrides the default font
 			// bold: 'avant-garde-bold',
 		},
 
@@ -38,4 +39,5 @@ module.exports = {
 			'2xl': '1536px',
 		},
 	},
+	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }
