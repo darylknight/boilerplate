@@ -50,7 +50,7 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: null
+    instructions: 'Resized to 868px wide'
     name: Image
     searchable: false
     settings:
@@ -72,17 +72,6 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:33af4157-ab80-44a3-b036-006aac36eacf' # Images
       restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false

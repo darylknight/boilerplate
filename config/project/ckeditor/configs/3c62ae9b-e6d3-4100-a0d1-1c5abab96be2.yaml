@@ -1,7 +1,10 @@
 headingLevels:
+  - 1
   - 2
   - 3
   - 4
+  - 5
+  - 6
 listPlugin: DocumentList
 name: Standard
 options:
@@ -10,6 +13,7 @@ options:
       - left
       - center
 toolbar:
+  - sourceEditing
   - heading
   - '|'
   - bold
@@ -19,3 +23,5 @@ toolbar:
   - bulletedList
   - numberedList
   - horizontalLine
+  - insertTable
+  - blockQuote

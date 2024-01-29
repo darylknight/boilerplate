@@ -7,18 +7,6 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: a4ad7370-4914-43ff-8442-2dc59bb5ac3c # Heading
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6a68f455-06f7-4572-a60e-fa6223442376
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 41e0b3cc-ad7b-47c5-a503-a5dac4e24af0 # Text
             instructions: null
             label: null
@@ -2366,7 +2354,7 @@ fields:
               - '*'
       maxLinks: null
       minLinks: null
-      multipleLinks: false
+      multipleLinks: true
       newWindow: true
     translationKeyFormat: null
     translationMethod: none
@@ -2395,26 +2383,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
-  a4ad7370-4914-43ff-8442-2dc59bb5ac3c: # Heading
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: heading
-    instructions: 'Optional, appears above all columns'
-    name: Heading
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
 handle: text
 name: Text
 sortOrder: 3

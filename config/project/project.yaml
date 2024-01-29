@@ -1,4 +1,4 @@
-dateModified: 1706520844
+dateModified: 1706522963
 elementSources:
   craft\elements\Asset:
     -
@@ -62,15 +62,13 @@ elementSources:
         - dateCreated
         - desc
       disabled: false
-      key: 'folder:d14a5685-9f9b-4cad-8ad3-f4424c556c9e'
+      key: 'folder:3b990b82-599f-4fb4-8d57-f1a236ee7971'
       tableAttributes:
         - filename
         - size
         - dateModified
+        - link
       type: native
-    -
-      heading: ''
-      type: heading
   craft\elements\Entry:
     -
       heading: 'Site Pages'
@@ -256,7 +254,6 @@ meta:
     549503cf-e3fa-4dda-89d3-1f2e17735cb3: Globals # Globals
     63092641-8191-4272-9d2b-870c0e7aa674: Image # Image
     93796209-b311-4bfa-8cd4-fd9b8ca6d012: '404 Error' # 404 Error
-    a4ad7370-4914-43ff-8442-2dc59bb5ac3c: Heading # Heading
     a4d47a90-98af-4c19-9e35-65535ddaebb3: SEO # SEO
     a5e83d06-7ec6-4498-bb8d-53746387cc28: 'User Photos' # User Photos
     a7056238-d6aa-44ea-b45a-c079ea6053e7: Button # Button
