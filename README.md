@@ -16,7 +16,7 @@ Add notes here that describe any weird functionality, such as commerce intergrat
 
 ### Prerequisites
 
-Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [Laravel Valet](https://laravel-mix.com) by default. To run this site locally, you will need:
+Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [DDEV](https://ddev.com) by default. To run this site locally, you will need:
 
 -  Composer 2.x
 -  Apache or Nginx
@@ -24,7 +24,7 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
 -  512MB+ of memory allocated to PHP
 
-This repository has been tested with both DDEV and Laravel Valet as a local environment. If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this repository with `ddev`.
+If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this README file with `ddev`.
 
 ### DDEV Hooks
 
@@ -71,27 +71,23 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 -  Update the details in `package.json`
 -  Update the site details in this README.md file
 
-### Setting up an existing site based on this repository
+### Installing a local copy of this site
 
 -  Clone this repository
--  Create an empty database for the site
--  Duplicate the `.env.example` file as `.env` (DDEV will do this for you and fill in some details). Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
+-  Run `ddev start`
+-  DDEV will duplicate the `.env.example` file as `.env` and fill in some details. Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH` according to your environment (on DDEV, `BASE_PATH` should be `./`)
 -  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
 -  Enter `on` for `SYSTEM_STATUS`
--  Run `npm update` to install the latest packages from `package.json`
--  Run `composer install` to install Craft and it's plugins from `composer.json`
 -  Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
 -  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
--  Import the database by downloading a backup from the Utilities section in the live site
+-  Import the database by downloading a backup from the Utilities section on the live site
 -  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below
 
 ### Syncing assets
 
-You can sync user-uploaded assets from the live sites to your local installation with rsync:
-
 -  Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
--  Production to local:`rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
+-  Production to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
 
 ## Code Formatting
 
