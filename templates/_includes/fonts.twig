@@ -5,13 +5,21 @@
 
 {# prettier-ignore-start #}
 <style>
-/* Example of how to reference a font file */
-/* @font-face {
-	font-display: swap;
-	font-family: 'Font Name';
-	font-style: normal;
-	font-weight: 400;
-	src: url('/dist/fonts/font-name.woff') format('woff');
-} */
+/* unbounded-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/dist/fonts/unbounded-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* unbounded-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/dist/fonts/unbounded-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 </style>
 {# prettier-ignore-end #}
