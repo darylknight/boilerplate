@@ -283,6 +283,27 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.1.0
+    settings:
+      customCss: "admin-bar {\r\n    position: fixed;\r\n    top: auto;\r\n    bottom: 0;\r\n}\r\nbody {\r\n    padding-bottom: 43px;\r\n}"
+      customLinks:
+        -
+          __assoc__:
+            -
+              - linkLabel
+              - ''
+            -
+              - linkUrl
+              - ''
+            -
+              - adminOnly
+              - ''
+      displayDashboardLink: false
+      displayDefaultEditSection: false
+      displayGreeting: true
+      displayGuideLink: true
+      displayLogout: true
+      displaySettingsLink: false
+      displayUtilitiesLink: true
   ckeditor:
     edition: standard
     enabled: true
