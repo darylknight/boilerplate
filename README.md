@@ -24,7 +24,7 @@ Craft CMS is built on PHP, so it needs a local environment to run it. See Craft'
 -  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
 -  512MB+ of memory allocated to PHP
 
-If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. If you're using DDEV, you'll need to prefix every command in this README file with `ddev`.
+If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
 
 ### DDEV Hooks
 
@@ -61,30 +61,45 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 
 -  Create a new repository using this one as a template
 -  Clone the site
--  If you're not using DDEV, create an empty database for the site
--  Duplicate the `.env.example` file as `.env` (DDEV will do this for you and fill in some details). Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH`
--  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
--  Enter `on` for `SYSTEM_STATUS`
--  Run `npm update` to install the latest packages from `package.json`
--  Run `composer install` to install Craft and it's plugins from `composer.json`
--  Run `./craft setup` (or `ddev craft setup`)
+-  edit `.ddev/config.yaml` and change the `name` key to something unique to this site
+-  Run `ddev start`
+-  In `.env` update:
+
+   -  `CRAFT_ENVIRONMENT` to `dev`
+   -  `SYSTEM_STATUS` to `on`
+   -  `SYSTEM_NAME` to the title of this project
+   -  `CP_TRIGGER` to `control`
+   -  `BASE_PATH` to `./`
+   -  Run `ddev craft setup/app-id`
+   -  Run `ddev craft setup/security-key`
+
+-  Run `ddev npm update` to install the latest packages from `package.json`
+-  Run `ddev composer install` to install Craft and it's plugins from `composer.json`
+-  Run `ddev craft setup`
 -  Update the details in `package.json`
--  Update the site details in this README.md file
+-  Update the site details in this `README.md` file
 
 ### Installing a local copy of this site
 
 -  Clone this repository
 -  Run `ddev start`
--  DDEV will duplicate the `.env.example` file as `.env` and fill in some details. Update the Database Configuration, change the `CRAFT_ENVIRONMENT` variable to `dev`, update the `PRIMARY_SITE_URL` and `BASE_PATH` according to your environment (on DDEV, `BASE_PATH` should be `./`)
--  Enter a `CP_TRIGGER`. This defaults to `control` if left blank
--  Enter `on` for `SYSTEM_STATUS`
--  Generate a new `APP_ID` for `.env` by running `./craft setup/app-id`
--  Copy the `SECURITY_KEY` from the server and update it in the `.env` file.
--  Import the database by downloading a backup from the Utilities section on the live site
--  Copy `config/license.key` from the server as this isn't stored in the repository
--  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below
+-  In `.env` update:
 
-### Syncing assets
+   -  `CRAFT_ENVIRONMENT` to `dev`
+   -  `SYSTEM_STATUS` to `on`
+   -  `SYSTEM_NAME` to the title of this project
+   -  `CP_TRIGGER` to `control`
+   -  `BASE_PATH` to `./`
+   -  Run `ddev craft setup/app-id`
+   -  Copy the `CRAFT_SECURITY_KEY` from the live site
+
+-  Run `ddev npm install` to install the packages from `package.lock`
+-  Run `ddev composer install` to install Craft and it's plugins from `composer.lock`
+-  Downloading a database backup from the Utilities section of the live site, copy the .sql file into DDEV, then run `ddev import-db`
+-  Copy `config/license.key` from the server as this isn't stored in the repository
+-  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below:
+
+### Syncing assets [TODO]
 
 -  Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
 -  Production to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
