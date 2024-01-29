@@ -1,4 +1,4 @@
-dateModified: 1706522963
+dateModified: 1706526971
 elementSources:
   craft\elements\Asset:
     -
@@ -226,6 +226,7 @@ meta:
     5e6ccb6c-d6eb-446b-8ce9-aa8bb3fcf575: Assets # Assets
     5ede9260-316e-439e-ab9c-5b6fba5514fc: 'Contact Form' # Contact Form
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
+    6b84e948-d12b-4362-9b31-fd750489f131: Text # Text
     7d02b3f6-61ac-492a-9508-03dabf8c93e2: Button # Button
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
     9c3f09c1-dd31-4a39-8fd5-a5c28c95ad98: Button # Button
@@ -268,6 +269,7 @@ meta:
     d1c70998-f4bf-4681-922e-921e2a526697: 'Contact Form' # Contact Form
     d2c56410-5eb0-4ddf-a3dc-00036cbef8c0: 'Meta Data' # Meta Data
     d738c390-8d55-4719-a22c-15c3927411a2: Default # Default
+    dbe4010f-eb87-4e95-a69c-087821b73327: Simple # Simple
     e72fcb39-677a-4ffd-ae05-3064e47f7215: Form # Form
     eac1b272-bafe-43df-a0f6-fa48ac37a670: Buttons # Buttons
     ee562e2c-1f30-4b0a-bef2-1cdf2fe20dd7: New # New

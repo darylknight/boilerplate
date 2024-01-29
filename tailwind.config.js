@@ -9,19 +9,22 @@ module.exports = {
 	// Use the extend key to add to the config rather than replacing it
 	theme: {
 		colors: {
-			red: '#dc2626', // form error
+			red: '#b91c1c', // form error
 			green: '#15803d', // form success
 			blue: '#369',
 			white: '#fff',
 
 			gray: {
-				DEFAULT: '#666',
-				light: '#eee',
-				dark: '#444',
+				200: '#e5e7eb',
+				300: '#d1d5db',
+				500: '#6b7280',
+				700: '#374151',
+				900: '#111827',
 			},
 
 			black: '#000',
 			transparent: 'transparent',
+			inherit: 'inherit',
 		},
 
 		// You can replace the Tailwind fonts with the client's brand fonts here

@@ -1,0 +1,9 @@
+headingLevels: false
+listPlugin: DocumentList
+name: Simple
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

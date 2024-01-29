@@ -1,12 +1,14 @@
 {% import '_includes/macros' as macros %}
 
 <div class="container mx-auto px-6 py-10">
-	{% if block.text %}
-		{{ macros.text(block.text) }}
-	{% endif %}
+	<article class="prose mb-10">
+		{{ block.text }}
+	</article>
 
 	{% set form = block.form.one %}
 	{% if block.form %}
-		{{ macros.form(form) }}
+		<div class="max-w-[65ch]">
+			{{ macros.form(form) }}
+		</div>
 	{% endif %}
 </div>

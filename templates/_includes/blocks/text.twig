@@ -1,12 +1,9 @@
 {% import '_includes/macros' as macros %}
 
 <div class="container mx-auto px-6 py-10">
-	{% if block.heading %}
-		<h2 class="mb-10 text-center text-xl">
-			{{ block.heading }}
-		</h2>
-	{% endif %}
-	{{ macros.text(block.text) }}
+	<article class="prose">
+		{{ block.text }}
+	</article>
 
 	{% if block.button|length %}
 		{{ macros.button(block.button.url, block.button.text, 'btn', block.button.target) }}

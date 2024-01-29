@@ -3,7 +3,7 @@
 {% set asset = block.image.one %}
 
 {% set transform = {
-	width: 1050
+	width: 868
 } %}
 
 <div class="container mx-auto px-6 py-10">
@@ -12,7 +12,9 @@
 			{{ macros.image(asset, transform, 'mb-4 lg:mb-0') }}
 		</div>
 		<div class="col-span-12 lg:col-span-4 {{ block.layout == 'textImage' ? '' : 'lg:col-start-9' }}">
-			{{ macros.text(block.text) }}
+			<article class="prose">
+				{{ block.text }}
+			</article>
 
 			{% if block.button|length %}
 				<div class="mb-10"></div>

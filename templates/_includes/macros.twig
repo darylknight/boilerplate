@@ -18,118 +18,27 @@
 	{% endif %}
 {% endmacro %}
 
-{# This macro uses Retcon to add Tailwind classes to Redactor fields #}
-{% macro text(fieldHandle, classes) %}
-	{{
-		fieldHandle
-			|retconAttr(
-				'h1',
-				{
-					class: (classes|default('')) ~ ' h1'
-				}
-			)
-			|retconAttr(
-				'h2',
-				{
-					class: (classes|default('')) ~ ' h2'
-				}
-			)
-			|retconAttr(
-				'h3',
-				{
-					class: (classes|default('')) ~ ' h3'
-				}
-			)
-			|retconAttr(
-				'h4',
-				{
-					class: (classes|default('')) ~ ' h4'
-				}
-			)
-			|retconAttr(
-				'p',
-				{
-					class: (classes|default('')) ~ ' p'
-				}
-			)
-			|retconAttr(
-				'ul',
-				{
-					class: (classes|default('')) ~ ' list-disc pl-8 mb-4'
-				}
-			)
-			|retconAttr(
-				'ol',
-				{
-					class: (classes|default('')) ~ ' list-decimal pl-8'
-				}
-			)
-			|retconAttr(
-				'li',
-				{
-					class: (classes|default('')) ~ ' p pl-2 mb-1'
-				}
-			)
-			|retconAttr(
-				'blockquote',
-				{
-					class: (classes|default('')) ~ ' pl-4 mb-8 last:mb-0'
-				}
-			)
-			|retconAttr(
-				'strong',
-				{
-					class: 'font-bold'
-				}
-			)
-			|retconAttr(
-				'a',
-				{
-					class: 'underline focus:outline-none'
-				}
-			)
-			|retconAttr(
-				'table',
-				{
-					class: 'table-auto w-full border-t mb-10'
-				}
-			)
-			|retconAttr(
-				'table tr',
-				{
-					class: 'border-b border-l border-r'
-				}
-			)
-			|retconAttr(
-				'table td',
-				{
-					class: 'px-2 py-1 border-r'
-				}
-			)
-	}}
-{% endmacro %}
-
 {# Tailwind theme for Formie forms - Light Background #}
-{% macro form(formEmbed) %}
+{% macro form(formObject) %}
 	{{
 		craft.formie.renderForm(
-			formEmbed,
+			formObject,
 			{
 				themeConfig: {
 					resetClasses: true,
 					formTitle: {
 						attributes: {
-							class: 'text-lg'
+							class: 'text-lg leading-6 font-medium text-gray-900'
 						}
 					},
 					alertError: {
 						attributes: {
-							class: 'rounded bg-red/10 border border-red text-red p-4 mb-4'
+							class: 'rounded-md bg-red/10 border border-red text-sm text-red p-4 mb-4'
 						}
 					},
 					alertSuccess: {
 						attributes: {
-							class: 'rounded bg-blue/50 border border-black text-blue p-4 mb-4'
+							class: 'rounded-md bg-green/10 border border-green text-sm text-green p-4 mb-4'
 						}
 					},
 					buttonWrapper: {
@@ -154,12 +63,12 @@
 					},
 					saveButton: {
 						attributes: {
-							class: ['btn ', 'mx-2']
+							class: ['btn', 'mx-2']
 						}
 					},
 					backButton: {
 						attributes: {
-							class: ['btn ', 'mx-2']
+							class: ['btn', 'mx-2']
 						}
 					},
 					submitButton: {
@@ -174,7 +83,7 @@
 					},
 					pageTabs: {
 						attributes: {
-							class: 'border-b border-gray -mb-px flex space-x-8 mb-6'
+							class: 'border-b border-gray-200 -mb-px flex space-x-8 mb-6'
 						}
 					},
 					pageTab: {
@@ -185,25 +94,25 @@
 					pageTabLink: {
 						attributes: {
 							class: [
-								'whitespace-nowrap py-4 px-1 border-b-2 ',
-								"{{ (page.id == currentPage.id) ? 'border-red text-blue' : 'border-transparent text-blue hover:text-blue hover:border-gray' }}",
-								"{{ page.getFieldErrors(submission) ? 'text-[red]' : false }}"
+								'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
+								"{{ (page.id == currentPage.id) ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}",
+								"{{ page.getFieldErrors(submission) ? 'text-red' : false }}"
 							]
 						}
 					},
 					pageTitle: {
 						attributes: {
-							class: 'text-lg text-gray-900 mb-4'
+							class: 'text-lg leading-6 font-medium text-gray-900 mb-4'
 						}
 					},
 					progress: {
 						attributes: {
-							class: 'flex h-[1.2rem] text-gray bg-gray mt-4'
+							class: 'flex h-[1.2rem] text-sm text-white bg-slate-200 mt-4'
 						}
 					},
 					progressContainer: {
 						attributes: {
-							class: 'flex flex-col justify-center text-center bg-gray'
+							class: 'flex flex-col justify-center text-center font-medium bg-indigo-600'
 						}
 					},
 					subFieldRow: {
@@ -223,7 +132,7 @@
 					},
 					row: {
 						attributes: {
-							class: ['flex flex-wrap -mx-4 mb-6', "{{ not craft.formie.getVisibleFields(row) ? 'hidden' }}"]
+							class: ['flex flex-wrap -mx-4 mb-4', "{{ not craft.formie.getVisibleFields(row) ? 'hidden' }}"]
 						}
 					},
 					field: {
@@ -233,44 +142,30 @@
 					},
 					fieldLabel: {
 						attributes: {
-							class: 'mb-2 block text-gray font-medium text-base'
+							class: 'mb-1 block text-sm font-medium text-gray-700'
 						}
 					},
 					fieldRequired: {
 						attributes: {
-							class: 'text-gray'
+							class: 'text-red'
 						}
 					},
 					fieldInstructions: {
 						attributes: {
-							class: 'mb-1 text-blue'
+							class: 'mb-1 text-sm text-gray-500'
 						}
 					},
 					fieldInput: {
 						attributes: {
 							class: [
-								'bg-gray-light border-gray-light block w-full focus:ring-0 focus:outline-none focus:border-black border text-black rounded-md px-5 py-3 ',
-								"{{ (submission.getErrors(field.handle) ?? null) ? '!border-gray' }}"
+								'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md',
+								"{{ (submission.getErrors(field.handle) ?? null) ? 'border-red' }}"
 							]
-						}
-					},
-					singleLineText: {
-						fieldInput: {
-							attributes: {
-								class: ['']
-							}
-						}
-					},
-					multiLineText: {
-						fieldInput: {
-							attributes: {
-								class: ['min-h-[160px] !rounded-md']
-							}
 						}
 					},
 					fieldError: {
 						attributes: {
-							class: 'text-red mt-1'
+							class: 'text-red text-sm mt-1'
 						}
 					},
 					fieldAddButton: {
@@ -285,7 +180,7 @@
 					},
 					fieldLimit: {
 						attributes: {
-							class: 'mt-2 text-blue'
+							class: 'mt-2 text-sm text-gray-500'
 						}
 					},
 					agree: {
@@ -296,13 +191,13 @@
 						},
 						fieldOptionLabel: {
 							attributes: {
-								class: 'ml-2 '
+								class: 'ml-2 text-sm leading-4'
 							}
 						},
 						fieldInput: {
 							resetClass: true,
 							attributes: {
-								class: ' h-4 w-4 text-blue border-gray rounded-md'
+								class: 'focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded'
 							}
 						}
 					},
@@ -314,13 +209,13 @@
 						},
 						fieldOptionLabel: {
 							attributes: {
-								class: 'ml-2 '
+								class: 'ml-2 text-sm leading-4'
 							}
 						},
 						fieldInput: {
 							resetClass: true,
 							attributes: {
-								class: ' h-4 w-4 text-blue border-gray rounded-md'
+								class: 'focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded'
 							}
 						}
 					},
@@ -328,7 +223,7 @@
 						fieldInput: {
 							resetClass: true,
 							attributes: {
-								class: 'border border-cream bg-cream focus:border-black block w-full rounded-md px-5 py-3 font-medium text-black'
+								class: 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
 							}
 						}
 					},
@@ -343,18 +238,18 @@
 					radioButtons: {
 						fieldOption: {
 							attributes: {
-								class: ''
+								class: 'flex items-start mb-2'
 							}
 						},
 						fieldOptionLabel: {
 							attributes: {
-								class: 'cursor-pointer'
+								class: 'ml-2 text-sm leading-4'
 							}
 						},
 						fieldInput: {
 							resetClass: true,
 							attributes: {
-								class: 'w-7 h-7 bg-cream text-black mr-4 mb-2 border-none focus:outline-none focus:shadow-none focus:ring-0 focus:ring-transparent cursor-pointer'
+								class: 'focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300'
 							}
 						}
 					},
@@ -378,7 +273,7 @@
 						},
 						fieldRemoveButton: {
 							attributes: {
-								class: 'absolute top-0 right-0 m-1 inline-flex items-center px-2 py-1.5 border border-transparent text-xs rounded-md text-blue bg-gray hover:bg-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray'
+								class: 'btn'
 							}
 						}
 					},
@@ -390,34 +285,34 @@
 						},
 						fieldCanvas: {
 							attributes: {
-								class: 'w-full h-[8rem] border bg-gray-100'
+								class: 'w-full h-[8rem] border bg-slate-100'
 							}
 						},
 						fieldRemoveButton: {
 							attributes: {
-								class: 'absolute top-0 right-0 m-1 inline-flex items-center px-2 py-1 border border-gray text-xs rounded-md text-blue bg-gray hover:bg-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray'
+								class: 'btn'
 							}
 						}
 					},
 					table: {
 						fieldTable: {
 							attributes: {
-								class: 'min-w-full divide-y divide-gray'
+								class: 'min-w-full divide-y divide-gray-300'
 							}
 						},
 						fieldTableHeaderColumn: {
 							attributes: {
-								class: 'px-3 py-3.5 text-left text-gray-900'
+								class: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900'
 							}
 						},
 						fieldTableBody: {
 							attributes: {
-								class: 'divide-y divide-gray bg-white'
+								class: 'divide-y divide-gray-200 bg-white'
 							}
 						},
 						fieldTableBodyColumn: {
 							attributes: {
-								class: 'whitespace-nowrap px-3 py-4 text-blue'
+								class: 'whitespace-nowrap px-3 py-4 text-sm text-gray-500'
 							}
 						}
 					}
