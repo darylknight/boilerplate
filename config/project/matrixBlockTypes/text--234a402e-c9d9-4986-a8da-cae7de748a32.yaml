@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 7d02b3f6-61ac-492a-9508-03dabf8c93e2 # Button
+            fieldUid: 7d02b3f6-61ac-492a-9508-03dabf8c93e2 # Buttons
             instructions: null
             label: null
             required: false
@@ -33,13 +33,13 @@ fieldLayouts:
         uid: 9fc7f30a-ba9d-47d1-aab2-016a6faf3eee
         userCondition: null
 fields:
-  7d02b3f6-61ac-492a-9508-03dabf8c93e2: # Button
+  7d02b3f6-61ac-492a-9508-03dabf8c93e2: # Buttons
     columnSuffix: xstrrnrj
     contentColumnType: text
     fieldGroup: null
-    handle: button
-    instructions: Optional
-    name: Button
+    handle: buttons
+    instructions: null
+    name: Buttons
     searchable: false
     settings:
       columnType: text

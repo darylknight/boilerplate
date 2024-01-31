@@ -16,9 +16,13 @@
 				{{ block.text }}
 			</article>
 
-			{% if block.button|length %}
-				<div class="mb-10"></div>
-				{{ macros.button(block.button.url, block.button.text, 'btn', block.button.target) }}
+			{% set buttons = block.buttons %}
+			{% if not buttons.isEmpty %}
+				<div class="pt-10">
+					{% for button in buttons %}
+						{{ macros.button(button.url, button.text, 'btn mr-2', button.target) }}
+					{% endfor %}
+				</div>
 			{% endif %}
 		</div>
 	</div>
