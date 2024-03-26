@@ -2,6 +2,10 @@
 
 This repository is for the Boilerplate website at [boilerplate.com](https://boilerplate.com).
 
+## Site Notes
+
+Add notes here that describe any weird functionality, such as commerce intergrations, external services, or custom tools.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -10,18 +14,14 @@ These instructions will get you a copy of the project up and running on your loc
 -  For general configuration settings, see `config/general.php`
 -  See the [Craft docs](https://craftcms.com/docs/4.x/config/config-settings.html) for available config settings
 
-## Site Notes
-
-Add notes here that describe any weird functionality, such as commerce intergrations, external services, or custom tools.
-
 ### Prerequisites
 
 Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [DDEV](https://ddev.com) by default. To run this site locally, you will need:
 
 -  Composer 2.x
 -  Apache or Nginx
--  PHP 8.2+
--  MySQL 5.7.8+ with InnoDB or MariaDB 10.5+
+-  PHP 8.2
+-  MySQL 5.7.8+ with InnoDB
 -  512MB+ of memory allocated to PHP
 
 If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
@@ -46,7 +46,7 @@ These will:
 
 These will run every time the container starts to make sure you have the same packages installed as any other developer working on the site.
 
-## Project Config
+### Project Config
 
 This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
 
@@ -95,7 +95,8 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 
 -  Run `ddev npm install` to install the packages from `package.lock`
 -  Run `ddev composer install` to install Craft and it's plugins from `composer.lock`
--  Downloading a database backup from the Utilities section of the live site, copy the .sql file into DDEV, then run `ddev import-db`
+-  Download a database backup from the Utilities section of the live site, copy the .sql file into the project root, then run `ddev import-db`
+-  Delete the sql file
 -  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below:
 
