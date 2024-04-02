@@ -1,4 +1,4 @@
-dateModified: 1711444990
+dateModified: 1712050468
 elementSources:
   craft\elements\Asset:
     -
@@ -315,7 +315,7 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    licenseKey: NWHSZ9879SFNILSER8VMNN2N
+    licenseKey: $PLUGIN_FORMIE
     schemaVersion: 2.0.15
     settings:
       ajaxTimeout: 10
@@ -494,7 +494,7 @@ plugins:
   hyper:
     edition: standard
     enabled: true
-    licenseKey: TBE5EF1NZMVLXBLOK1YD3C0W
+    licenseKey: $PLUGIN_HYPER
     schemaVersion: 1.0.0
   image-resizer:
     edition: standard
@@ -504,10 +504,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: $PLUGIN_RETOUR
+    schemaVersion: 3.0.12
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: ECF4UA8CZTXS4UAR4GFR7TP8
+    licenseKey: $PLUGIN_SEOMATIC
     schemaVersion: 3.0.12
     settings:
       addHrefLang: true

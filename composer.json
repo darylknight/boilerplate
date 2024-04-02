@@ -3,6 +3,7 @@
 		"craftcms/ckeditor": "^3.1.0",
 		"craftcms/cms": "^4.0.0",
 		"mmikkel/retcon": "^2.4.2",
+		"nystudio107/craft-retour": "4.1.16",
 		"nystudio107/craft-seomatic": "^4.0.0",
 		"nystudio107/craft-vite": "^4.0.5",
 		"putyourlightson/craft-dashboard-begone": "^2.0.0",
