@@ -1,13 +1,39 @@
 {% import '_includes/macros' as macros %}
 
-<div class="container mx-auto px-6 py-10">
+{% set form = block.form.one %}
+
+<div class="container mx-auto px-6 py-10 lg:py-20">
 	<article class="prose mb-10">
 		{{ block.text }}
 	</article>
 
-	{% set form = block.form.one %}
-	{% if block.form %}
-		<div class="max-w-[65ch]">
+	{% if form %}
+		{# ? UTM campaign tracking #}
+		{# Reuires 3 hidden fields on the form with the handles utm_source, utm_medium and utm_campaign #}
+
+		{# Create a blank array to hold the values #}
+		{% set utmFields = {} %}
+
+		{# Loop through the UTM variables utm_source, utm_medium and utm_campaign, and merge them #}
+		{% for key, value in craft.app.session.get('queryParams') %}
+			{% if key in utmParams %}
+				{% set utmFields =
+					utmFields|merge({
+						(key): value
+					})
+				%}
+			{% endif %}
+		{% endfor %}
+
+		{% if craft.app.session.get('queryParams') %}
+			{#
+				If there is a queryParams set on the session, loop through that array
+				and set the values of the fields matching those names on the form
+			#}
+			{% do craft.formie.populateFormValues(form.handle, utmFields) %}
+		{% endif %}
+
+		<div class="prose">
 			{{ macros.form(form) }}
 		</div>
 	{% endif %}

@@ -5,50 +5,76 @@
 /* ? See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer for details on why these are split into base/components/utilities */
 /* ? Useful: If you include classes inside the @layers, they will automatically be removed from compiled CSS if they aren't used in the HTML */
 @layer base {
-	/* x-cloak stops elements flashing in before Alpine.js loads */
+	/* ? x-cloak stops elements flashing in before Alpine.js loads */
 	[x-cloak] {
 		display: none;
 	}
 
 	.h1,
 	.prose h1 {
-		@apply text-4xl  last:mb-0 lg:text-5xl;
+		@apply mb-[0.5em] text-4xl leading-[1.2] last:mb-0 lg:text-5xl;
 	}
 	.h2,
 	.prose h2 {
-		@apply text-3xl  last:mb-0 lg:text-4xl;
+		@apply mb-[0.5em] text-3xl leading-[1.2] last:mb-0 lg:text-4xl;
 	}
 	.h3,
 	.prose h3 {
-		@apply mb-[0.5em] text-2xl  last:mb-0 lg:text-3xl;
+		@apply mb-[0.5em] text-2xl leading-[1.2] last:mb-0 lg:text-3xl;
 	}
 	.h4,
 	.prose h4 {
-		@apply text-lg  last:mb-0 lg:text-xl;
+		@apply text-lg leading-[1.2] last:mb-0 lg:text-xl;
 	}
-
 	.p,
 	.prose p {
-		@apply mb-4 text-base  last:mb-0 lg:text-lg;
-	}
-	.prose .table {
-		@apply w-full;
-	}
-
-	/* Don't allow the typography plugin to set text color */
-	.prose * {
-		@apply text-inherit !important;
+		@apply mb-10 text-base last:mb-0 lg:text-lg;
 	}
 }
 
 @layer components {
-	/* Remember to use focus-visible: for states instead of focus: */
-	/* This means once you click on a button, it doesn't keep the :focus state */
+	/* ? Remember to use focus-visible: for states instead of focus: */
+	/* ? This means once you click on a button, it doesn't keep the :focus state */
 
 	.btn {
 		@apply inline-block rounded-md border-2 border-black px-10 py-2 hover:bg-black hover:text-white focus-visible:bg-black focus-visible:text-white focus-visible:outline-none;
 	}
+
+	/* * Prose /*
+	/* Imitates Tailwind's Typography plugin without all the extra stuff */
+	.prose {
+		@apply max-w-[65ch];
+	}
+	.prose ul {
+		@apply mb-10 list-disc pl-8 text-base lg:text-lg;
+	}
+	.prose ol {
+		@apply mb-10 list-decimal pl-8 text-base lg:text-lg;
+	}
+	.prose li {
+		@apply mb-2;
+	}
+	.prose hr {
+		@apply mb-4 border border-neutral-400 last:mb-0;
+	}
+	.prose .table,
+	.prose table {
+		@apply mb-4 w-full table-auto border-collapse;
+	}
+	.prose table td,
+	.prose table th {
+		@apply border border-neutral-300 p-2;
+	}
+	.prose table th {
+		@apply bg-neutral-100;
+	}
+	.prose blockquote {
+		@apply mb-5 border-l-4 pl-4 italic;
+	}
 }
 
 @layer utilities {
+	.field-instructions > p {
+		@apply text-sm;
+	}
 }
