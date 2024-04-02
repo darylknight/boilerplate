@@ -116,6 +116,12 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 
 The `prettier-plugin-tailwindcss` plugin is now compatible with `prettier-plugin-twig-melody`, so this project will now automatically sort Tailwind classes in the markup whenever the document is formatted. This was made possible by manually defining the pluing order in `.prettierrc`. See [Enabling Tailwind class sorting in Twig with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier) for details.
 
+### Build notes
+
+-  In package.json, the 'engines' key is set to use node 18 or above, because `prettier-plugin-twig-melody` requires >=18. This is installed by DDEV's config.yaml, which is set to `nodejs_version: "18"`. By defualt, DDEV would otherwise install node 16.
+-  The `engine-strict=true` in `.npmrc` enforces this requirement so that any developer working on this project must use at least node 18
+-  DDEV comes with nvm pre-installed, so you can also use that to switch versions within a container
+
 ## Front End CSS (Tailwind)
 
 -  This project uses [Tailwind CSS](https://tailwindcss.com)
