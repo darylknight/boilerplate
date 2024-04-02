@@ -1,18 +1,22 @@
 {
 	"name": "boilerplate-tailwind",
 	"version": "1.0.0",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build"
+	"type": "module",
+	"author": {
+		"email": "daryl@codeknight.co.uk",
+		"name": "Daryl Knight",
+		"url": "https://codeknight.co.uk"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/darylknight/boilerplate-tailwind"
 	},
-	"author": {
-		"email": "daryl@codeknight.co.uk",
-		"name": "Daryl Knight",
-		"url": "https://codeknight.co.uk"
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"alpinejs": "^3.9.6"
 	},
 	"devDependencies": {
 		"@prettier/plugin-php": "^0.22.2",
@@ -23,11 +27,8 @@
 		"prettier": "^3.2.5",
 		"prettier-plugin-tailwindcss": "^0.5.13",
 		"tailwindcss": "^3.2.3",
-		"vite": "^4.5.1",
+		"vite": "^5.0.1",
 		"vite-plugin-restart": "^0.4.0"
-	},
-	"dependencies": {
-		"alpinejs": "^3.9.6"
 	},
 	"engines": {
 		"node": ">=18.0.0"
