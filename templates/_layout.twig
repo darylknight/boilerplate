@@ -8,7 +8,9 @@
 		{% include '_includes/fonts' %}
 
 		{# Adds JS and CSS processed with Vite #}
-		{{ craft.vite.script('src/js/app.js') }}
+		{# ? https://nystudio107.com/docs/vite/#the-script-function #}
+		{# The false argument here disables async CSS to prevent FOUT #}
+		{{ craft.vite.script('src/js/app.js', false) }}
 
 		{# TODO: Add favicon here #}
 
