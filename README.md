@@ -76,8 +76,12 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 -  Run `ddev npm update` to install the latest packages from `package.json`
 -  Run `ddev composer install` to install Craft and it's plugins from `composer.json`
 -  Run `ddev craft setup`
+-  Run `ddev craft project-config/rebuild`
 -  Update the details in `package.json`
 -  Update the site details in this `README.md` file
+-  Go to Settings > Plugins and deleted the license keys as they can be tied to other domains
+-  Refresh the page, then add the newly generated license keys to `.env`
+-  Replace the keys in the control panel with the `PLUGIN_NAME` variables from `.env`
 
 ### Installing a local copy of this site
 
@@ -108,13 +112,13 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 ## Code Formatting
 
 -  This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier for Melody](https://github.com/trivago/prettier-plugin-twig-melody) plugin to make it work with Twig files. This is an opinionated way to format code which keeps spacing consistent between developers
--  The configuration for Prettier in this project is defined in `.prettierrc`
+-  The configuration for Prettier in this project is defined in `.prettierrc.json`
 -  To ignore certain files or paths, add them to `.prettierignore`
 -  It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code). To do this, follow [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
 
 ### Prettier & Tailwind class sorting
 
-The `prettier-plugin-tailwindcss` plugin is now compatible with `prettier-plugin-twig-melody`, so this project will now automatically sort Tailwind classes in the markup whenever the document is formatted. This was made possible by manually defining the pluing order in `.prettierrc`. See [Enabling Tailwind class sorting in Twig with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier) for details.
+The `prettier-plugin-tailwindcss` plugin is now compatible with `prettier-plugin-twig-melody`, so this project will now automatically sort Tailwind classes in the markup whenever the document is formatted. This was made possible by manually defining the pluing order in `.prettierrc.json`. See [Enabling Tailwind class sorting in Twig with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier) for details.
 
 ### Build notes
 
