@@ -1,4 +1,4 @@
-dateModified: 1712050468
+dateModified: 1714407598
 elementSources:
   craft\elements\Asset:
     -
@@ -511,7 +511,7 @@ plugins:
     schemaVersion: 3.0.12
   seomatic:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: $PLUGIN_SEOMATIC
     schemaVersion: 3.0.12
     settings:

@@ -33,6 +33,7 @@ return [
 		'enableTemplateCaching' => $isProd, // Only allow template caching on production
 		'limitAutoSlugsToAscii' => true, // https://craftcms.com/docs/3.x/config/config-settings.html#limitautoslugstoascii
 		'previewTokenDuration' => 'P1M', // Make preview links (?x-craft-preview) last for a month instead of a day
+		'upscaleImages' => false, // don't upscale image transforms
 
 		// Set default accessibility options for everyone
 		'accessibilityDefaults' => [

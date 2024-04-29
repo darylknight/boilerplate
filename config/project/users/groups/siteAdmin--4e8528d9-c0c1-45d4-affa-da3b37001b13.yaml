@@ -4,7 +4,6 @@ name: 'Site Admin'
 permissions:
   - accesscp
   - accesscpwhensystemisoff
-  - accessplugin-seomatic
   - accesssitewhensystemisoff
   - 'assignusergroup:4e8528d9-c0c1-45d4-affa-da3b37001b13' # Site Admin
   - 'createentries:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
@@ -61,21 +60,9 @@ permissions:
   - 'savepeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'savepeerentrydrafts:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
   - 'savepeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
-  - 'seomatic:dashboard'
-  - 'seomatic:global-meta'
-  - 'seomatic:global-meta:ads'
-  - 'seomatic:global-meta:facebook'
-  - 'seomatic:global-meta:general'
-  - 'seomatic:global-meta:humans'
-  - 'seomatic:global-meta:robots'
-  - 'seomatic:global-meta:security'
-  - 'seomatic:global-meta:twitter'
-  - 'seomatic:site-settings'
-  - 'seomatic:site-settings:creator'
-  - 'seomatic:site-settings:identity'
-  - 'seomatic:site-settings:miscellaneous'
-  - 'seomatic:site-settings:sitemap'
-  - 'seomatic:site-settings:social'
+  - 'utility:php-info'
+  - 'utility:system-report'
+  - 'utility:updates'
   - 'viewassets:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files
   - 'viewassets:33af4157-ab80-44a3-b036-006aac36eacf' # Images
   - 'viewentries:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
