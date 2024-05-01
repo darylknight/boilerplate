@@ -16,6 +16,7 @@
 		"build": "vite build"
 	},
 	"dependencies": {
+		"@alpinejs/focus": "^3.13.10",
 		"alpinejs": "^3.9.6"
 	},
 	"devDependencies": {
