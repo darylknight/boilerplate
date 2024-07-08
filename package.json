@@ -1,6 +1,8 @@
 {
 	"name": "boilerplate-tailwind",
 	"version": "1.0.0",
+	"description": "Boilerplate - Craft CMS website",
+	"homepage": "https://codeknight.co.uk",
 	"type": "module",
 	"author": {
 		"email": "daryl@codeknight.co.uk",

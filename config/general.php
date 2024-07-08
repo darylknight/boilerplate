@@ -18,7 +18,7 @@ return [
 		'defaultWeekStartDay' => 1, // Monday
 		'omitScriptNameInUrls' => true, // Whether generated URLs should omit "index.php"
 		'cpTrigger' => App::env('CP_TRIGGER') ?: 'control', // The URI segment that tells Craft to load the control panel
-		'securityKey' => App::env('SECURITY_KEY'), // The secure key Craft will use for hashing and encrypting data
+		'securityKey' => App::env('CRAFT_SECURITY_KEY'), // The secure key Craft will use for hashing and encrypting data
 		'addTrailingSlashesToUrls' => false, // Don't add trailing slashes
 		'sendPoweredByHeader' => false, // Don't tell the world that this site uses Craft
 		'maxUploadFileSize' => 100000000, // 100mb upload limit

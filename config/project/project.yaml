@@ -1,4 +1,4 @@
-dateModified: 1714407676
+dateModified: 1720432033
 elementSources:
   craft\elements\Asset:
     -
@@ -316,7 +316,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_FORMIE
-    schemaVersion: 2.0.15
+    schemaVersion: 2.0.16
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -562,7 +562,7 @@ plugins:
   sherlock:
     edition: lite
     enabled: true
-    schemaVersion: 4.1.0
+    schemaVersion: 4.5.0
     settings:
       apiKey: wrmmophihkrapgprdodcnzyosjevkteh
       blowfishHashCost:
@@ -749,6 +749,7 @@ plugins:
           -
             - threshold
             - 5
+      maxScans: false
       monitor: false
       notificationEmailAddresses: $EMAIL_SYSTEM_ADDRESS
       phpComposerVersion:
