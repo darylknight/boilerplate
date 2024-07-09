@@ -1,4 +1,4 @@
-dateModified: 1720432033
+dateModified: 1720531514
 elementSources:
   craft\elements\Asset:
     -
@@ -224,31 +224,23 @@ meta:
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'End Date' # End Date
     5e6ccb6c-d6eb-446b-8ce9-aa8bb3fcf575: Assets # Assets
-    5ede9260-316e-439e-ab9c-5b6fba5514fc: 'Contact Form' # Contact Form
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
     6b84e948-d12b-4362-9b31-fd750489f131: Text # Text
     7d02b3f6-61ac-492a-9508-03dabf8c93e2: Buttons # Buttons
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
-    9c3f09c1-dd31-4a39-8fd5-a5c28c95ad98: Button # Button
-    17b216fe-faa2-4aed-b927-03b84406a9fc: Text # Text
     17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Start Date' # Start Date
-    24bf3782-f6ee-4ede-be36-2374c6331dfa: Caption # Caption
     28acf5ce-1530-440f-a016-28e61b84f780: Buttons # Buttons
     30ba6aa9-32c2-4356-8811-0ba5fe3b2171: Image # Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
     41e0b3cc-ad7b-47c5-a503-a5dac4e24af0: Text # Text
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: Text # Text
-    76dd902c-6643-4db8-a27c-e2e1b3142fb0: Text # Text
-    84e8844d-cd9e-4e53-81f5-005891a59e8d: Button # Button
     234a402e-c9d9-4986-a8da-cae7de748a32: Text # Text
     274b53b7-b114-412d-8a2b-b9eae52f9822: Page # Page
     414e3fb0-5309-47af-8bcc-920b35c18875: Default # Default
     0468bb2b-6b23-493c-9867-c8e7fb7f4431: '404 Text' # 404 Text
     631f7883-af4d-4cd9-8811-62ba70b2ae77: Navigation # Navigation
     669efec2-e57d-4d6f-9adc-4e4cf69972d0: Alert # Alert
-    929a1c10-6bba-4747-a328-fe6e9cbd4bad: Text # Text
     6975e64f-9cc5-4116-bee9-1458fdfedaeb: 'Public Schema' # Public Schema
-    9922d29b-82a6-4555-96b9-6928042c087b: Button # Button
     22495aea-1ee3-41b8-9e04-206260f630a6: Layout # Layout
     56371b8f-300e-443b-b33a-c161122a03e2: Text # Text
     67840ae5-eb64-4d49-a47f-3bdf0458a447: Content # Content
@@ -258,8 +250,6 @@ meta:
     93796209-b311-4bfa-8cd4-fd9b8ca6d012: '404 Error' # 404 Error
     a4d47a90-98af-4c19-9e35-65535ddaebb3: SEO # SEO
     a5e83d06-7ec6-4498-bb8d-53746387cc28: 'User Photos' # User Photos
-    a7056238-d6aa-44ea-b45a-c079ea6053e7: Button # Button
-    ad52075d-406a-4f0b-a05f-4605f97944e7: 'Video Intro' # Video Intro
     b1b58943-2b7b-479b-8caf-59ecaad36651: Default # Default
     b7de99ca-42a6-47d5-a87c-7543f84e639c: Pages # Pages
     b5705248-eb29-4714-bfa8-40499641ca95: 'Menu - Header' # Menu - Header
@@ -269,15 +259,9 @@ meta:
     cc626e87-09aa-4a14-80e4-d44dbd87d144: Video # Video
     d1c70998-f4bf-4681-922e-921e2a526697: 'Contact Form' # Contact Form
     d2c56410-5eb0-4ddf-a3dc-00036cbef8c0: 'Meta Data' # Meta Data
-    d738c390-8d55-4719-a22c-15c3927411a2: Default # Default
     dbe4010f-eb87-4e95-a69c-087821b73327: Simple # Simple
     e72fcb39-677a-4ffd-ae05-3064e47f7215: Form # Form
-    eac1b272-bafe-43df-a0f6-fa48ac37a670: Buttons # Buttons
-    ee562e2c-1f30-4b0a-bef2-1cdf2fe20dd7: New # New
-    f873c1df-d476-417a-b57c-26e7c609c183: 'Image Size' # Image Size
     f984d80e-8891-459f-aea7-a7d6df67e010: 'Page Target' # Page Target
-    fa97b4d1-33c1-4819-a6c4-c441f301ec4f: Image # Image
-    ff17f800-7774-4a64-848b-f3abe5d77ee4: Heading # Heading
 plugins:
   admin-bar:
     edition: standard
@@ -511,7 +495,7 @@ plugins:
     schemaVersion: 3.0.12
   seomatic:
     edition: standard
-    enabled: false
+    enabled: true
     licenseKey: $PLUGIN_SEOMATIC
     schemaVersion: 3.0.12
     settings:
