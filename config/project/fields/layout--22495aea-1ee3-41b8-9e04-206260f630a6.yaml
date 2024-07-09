@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: layout
+instructions: 'Select the layout for this block'
+name: 'Content Matrix - Text + Image - Layout'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text / Image'
+        -
+          - value
+          - textImage
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image / Text'
+        -
+          - value
+          - imageText
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

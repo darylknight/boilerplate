@@ -1,16 +1,17 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 549503cf-e3fa-4dda-89d3-1f2e17735cb3 # Globals
 handle: alertBar
 instructions: 'This field lets you schedule alerts to start/end at the top of the site for important announcements'
 name: 'Alert Bar'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_alertbar}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - 669efec2-e57d-4d6f-9adc-4e4cf69972d0
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

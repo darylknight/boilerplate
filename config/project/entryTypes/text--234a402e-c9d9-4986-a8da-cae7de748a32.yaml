@@ -1,5 +1,6 @@
+color: null
 fieldLayouts:
-  cc0dc321-be99-46d4-91f9-d533b05ef040:
+  085ac208-518d-4e2b-9d15-bf3a68810673:
     tabs:
       -
         elementCondition: null
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -27,50 +30,51 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 1ef86e1e-e03c-40d3-94b8-2db58896ec0d
+            uid: 9ec2999c-634f-44b8-b869-7313a962eca6
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
+            fieldUid: 41e0b3cc-ad7b-47c5-a503-a5dac4e24af0
+            handle: null
+            includeInCards: true
             instructions: null
-            label: null
+            label: Text
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7558004-ab81-4452-87ee-2cf8cfff52c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7d02b3f6-61ac-492a-9508-03dabf8c93e2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Buttons
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ff008eeb-693e-49d2-b011-73c36e45f793
+            uid: f2c5d143-cc81-4b48-b23b-5f560d23ab72
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4db9a164-d1b3-4b72-b7ce-8c7b309bb0b0
+        uid: 9fc7f30a-ba9d-47d1-aab2-016a6faf3eee
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: d2c56410-5eb0-4ddf-a3dc-00036cbef8c0 # Meta Data
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 33ec22f4-1108-4a8a-81ff-279497766cc8
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 4fc8a576-820b-452e-9fc4-69fcd6698bc9
-        userCondition: null
-handle: page
-hasTitleField: true
-name: Page
+handle: text
+hasTitleField: false
+icon: ''
+name: 'Block: Text'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
-titleFormat: null
+titleFormat: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

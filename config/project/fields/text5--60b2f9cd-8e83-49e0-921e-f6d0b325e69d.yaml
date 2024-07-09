@@ -1,14 +1,13 @@
 columnSuffix: null
-contentColumnType: text
-handle: text404
-instructions: 'This appears on the 404 page, which happens when a page the user is trying to view doesn''t exist'
-name: '404 Text'
+handle: text5
+instructions: 'The text of the alert bar'
+name: 'Alert Bar - Alert - Text'
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: 3c62ae9b-e6d3-4100-a0d1-1c5abab96be2 # Standard
-  columnType: text
+  ckeConfig: dbe4010f-eb87-4e95-a69c-087821b73327 # Simple
+  createButtonLabel: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
   purifierConfig: null

@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 414e3fb0-5309-47af-8bcc-920b35c18875 # Menu Item
 handle: menuHeader
 name: 'Menu - Header'
 propagationMethod: all

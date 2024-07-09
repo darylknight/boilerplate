@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 549503cf-e3fa-4dda-89d3-1f2e17735cb3 # Globals
 handle: heading404
 instructions: 'This appears on the 404 page, which happens when a page the user is trying to view doesn''t exist'
 name: '404 Heading'

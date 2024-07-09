@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: form
+instructions: 'Select a form to include on the page. Forms can be created and edited from the **Forms** option in the sidebar on the left'
+name: 'Content Matrix - Form - Form'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: verbb\formie\fields\Forms

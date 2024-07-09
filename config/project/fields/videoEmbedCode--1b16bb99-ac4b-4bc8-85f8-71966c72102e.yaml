@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: videoEmbedCode
+instructions: 'Enter the embed code of the video from either YouTube or Vimeo'
+name: 'Content Matrix - Video - Video Embed Code'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  initialRows: 2
+  multiline: true
+  placeholder: '<iframe src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

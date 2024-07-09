@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: a4d47a90-98af-4c19-9e35-65535ddaebb3 # SEO
 handle: metaData
 instructions: 'This field allows you to override the SEO settings for this entry'
 name: 'Meta Data'

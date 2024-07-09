@@ -1,16 +1,25 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 67840ae5-eb64-4d49-a47f-3bdf0458a447 # Content
 handle: contentMatrix
 instructions: 'This field allows you to add different kinds of content to the page. Each block can be added multiple times, re-ordered by dragging or disabled using the cog wheel in the top right of the block'
 name: 'Content Matrix'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_contentmatrix}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  entryTypes:
+    - 30ba6aa9-32c2-4356-8811-0ba5fe3b2171 # Block: Image
+    - 234a402e-c9d9-4986-a8da-cae7de748a32 # Block: Text
+    - 138367f7-dc97-47dc-b20f-5db11ef457b3 # Block: Text + Image
+    - cc626e87-09aa-4a14-80e4-d44dbd87d144 # Block: Video
+    - e72fcb39-677a-4ffd-ae05-3064e47f7215 # Block: Form
+    - bd8fef7a-6dbb-400a-85af-c39555c9fa56
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

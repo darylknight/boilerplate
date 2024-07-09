@@ -1,14 +1,13 @@
 columnSuffix: null
-contentColumnType: text
-handle: text404
-instructions: 'This appears on the 404 page, which happens when a page the user is trying to view doesn''t exist'
-name: '404 Text'
+handle: text4
+instructions: 'Appears above the form'
+name: 'Content Matrix - Form - Text'
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
   ckeConfig: 3c62ae9b-e6d3-4100-a0d1-1c5abab96be2 # Standard
-  columnType: text
+  createButtonLabel: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
   purifierConfig: null

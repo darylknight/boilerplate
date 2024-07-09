@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  8c8ced71-5350-44b0-b38c-0d570dde703d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Start Date'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ed88d6a-2e36-4fbb-8c70-363482a71128
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'End Date'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01edc326-d60d-4208-ad74-544e7e2ba829
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4fc773dd-ab18-4abb-b268-c93a8ab01e9c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3c098591-b8b9-4bab-b64d-09659b251c76
+        userCondition: null
+handle: alert
+hasTitleField: false
+icon: null
+name: Alert
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

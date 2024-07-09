@@ -1,7 +1,7 @@
-columnSuffix: gtpqodhl
-handle: pageTarget
+columnSuffix: xstrrnrj
+handle: buttons
 instructions: null
-name: 'Page Target'
+name: 'Content Matrix - Text - Buttons'
 searchable: false
 settings:
   defaultLinkType: default-verbb-hyper-links-entry
@@ -27,7 +27,7 @@ settings:
           - false
         -
           - layoutUid
-          - 446ae70d-675a-445a-b668-3c12a4778e80
+          - b28ee9e5-6e03-4a92-b6aa-b6daecdcaaed
         -
           - layoutConfig
           -
@@ -42,7 +42,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - 95bf61aa-5e29-49ce-8077-0e6cfae3ad6f
+                        - bc447167-dbf6-4bdd-b7a1-00ee57b7cad0
                       -
                         - elements
                         -
@@ -89,7 +89,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - de9267f5-2e60-455a-bd78-7e45aa440061
+                                - 84f582a2-4284-44d9-a592-52724696c0a6
                           -
                             __assoc__:
                               -
@@ -136,7 +136,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 0d05ff41-082d-44f9-a86d-ec830febb3a7
+                                - 63b9c6d3-dad9-4d04-8e19-dd4b808e9593
                   -
                     __assoc__:
                       -
@@ -144,7 +144,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - af6f2547-82de-43fd-82b2-d097d2b22785
+                        - b24bd032-dcd0-4722-b1ad-c9839f67243d
                       -
                         - elements
                         -
@@ -191,7 +191,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 85f190a7-b446-4a14-a309-a861d57dbe21
+                                - 4c616e51-3079-4f21-b343-ea5fca07b6c8
                           -
                             __assoc__:
                               -
@@ -235,7 +235,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 70e80380-f3cd-452d-ac9c-54d5d058ccff
+                                - 2fbaf687-0068-4156-a6ab-f8ef4e8084c1
                           -
                             __assoc__:
                               -
@@ -261,7 +261,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 8046aac5-250b-43b9-8e0c-1c99ee0d8a66
+                                - bb06930e-b370-4fd3-8eb1-37ca821914ce
         -
           - sources
           - '*'
@@ -284,7 +284,7 @@ settings:
           - false
         -
           - layoutUid
-          - 817e7aeb-2c1b-49bc-8005-dd0b02e8efc0
+          - 3a09ca54-08cc-4132-a46d-c14e71961f44
         -
           - layoutConfig
           -
@@ -299,7 +299,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - e968f3fb-e06a-41dd-acfb-7970bf2d8d2f
+                        - 9cc0125b-26bc-40eb-8f49-4a5c4599d1a0
                       -
                         - elements
                         -
@@ -346,7 +346,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 6ba79094-535d-4160-903f-e6417667e113
+                                - 45c8a822-2c1c-4041-aff3-21d992158187
                           -
                             __assoc__:
                               -
@@ -393,7 +393,132 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - df47ff62-66fa-45e9-abe3-980066be2776
+                                - c958f651-44f9-4b70-95b7-8f9e37672b37
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - e4f077fa-0024-4eb0-9788-6a5a00c14fcc
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - uid
+                                - cfad388f-7ffa-40be-a904-85ffe397f561
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - uid
+                                - 1f844488-3cbb-4b4e-b507-e2ceaed67ad9
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - uid
+                                - 9d4ab09f-72c2-4ac1-af35-0db3241c428d
         -
           - sources
           - '*'
@@ -416,7 +541,7 @@ settings:
           - false
         -
           - layoutUid
-          - cd3468f1-8fcd-41df-9d02-069136839536
+          - eecf7e7d-9f10-4cbc-9023-d67ebb5d5e36
         -
           - layoutConfig
           -
@@ -431,7 +556,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - 7ea29816-3275-4f53-89f5-1d2f3f64fd9a
+                        - b59ae535-de73-469f-8518-0c3a10c89d04
                       -
                         - elements
                         -
@@ -478,7 +603,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 1d835c88-bc9d-4a35-ba07-a1ae13440eb9
+                                - f0163167-303c-4481-bf37-fa113ba79d71
                           -
                             __assoc__:
                               -
@@ -525,7 +650,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - c20bb935-ea9c-4880-90dc-ba85b007ed79
+                                - e19c0f35-c68d-4535-9332-9f17a5a19667
                   -
                     __assoc__:
                       -
@@ -533,7 +658,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - 25a82378-ecfe-47bb-af93-17115b17a3a7
+                        - d08dc73a-6321-4352-b778-0e1c0648d875
                       -
                         - elements
                         -
@@ -580,7 +705,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 14aed528-64eb-4a05-9048-27cd815f49d0
+                                - 83993ef9-bd64-48b6-8261-d43d497e27a4
                           -
                             __assoc__:
                               -
@@ -624,7 +749,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 053ad693-e28a-4e33-8b4d-aacb583afccf
+                                - b067ba8a-fcc3-4a89-8e47-c92209ac313a
                           -
                             __assoc__:
                               -
@@ -650,7 +775,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 0d78c7dd-f409-4e0e-8b77-fab54bced0ad
+                                - 681edc26-ef17-428a-a2a0-b10d959cfe27
     -
       __assoc__:
         -
@@ -670,7 +795,7 @@ settings:
           - false
         -
           - layoutUid
-          - e1cbafb2-4e5d-40cc-a8c6-2372f04670eb
+          - bc71e06d-67ce-40e2-8385-c92ad7bb7638
         -
           - layoutConfig
           -
@@ -685,7 +810,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - 9b11a56f-c1c5-4a28-8ac9-5aaae5bb492d
+                        - 4945b6a5-4e33-4f89-a9f9-14e8da756ca6
                       -
                         - elements
                         -
@@ -732,7 +857,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - a2051b41-7be9-43c7-90e6-10140f8a8a44
+                                - 3e34323e-37b5-457c-a7f3-6a999b914783
                           -
                             __assoc__:
                               -
@@ -779,7 +904,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - fda705af-ab6e-4dc5-8183-c169b696d3b6
+                                - 98ca7793-3365-49ee-9d77-b9636f6eafda
                   -
                     __assoc__:
                       -
@@ -787,7 +912,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - bfc8f7b8-293e-4e66-8a45-d2f1541a23e7
+                        - beb5a98d-4a20-4e7c-a082-372790b1c264
                       -
                         - elements
                         -
@@ -834,7 +959,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 85f64ec0-69f8-41eb-9847-ea76a7d050f2
+                                - 8c3a38d4-2e41-4cd2-8643-9c9f95b81082
                           -
                             __assoc__:
                               -
@@ -878,7 +1003,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - a28403da-554f-4d35-b445-3ca472db828f
+                                - 98412444-1f8d-484f-9e5b-15fce3b4942c
                           -
                             __assoc__:
                               -
@@ -904,7 +1029,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - f62d2591-444c-4aad-b679-b795f6bf03d8
+                                - db21bb8e-47f5-43c9-8f48-51d343301ff5
     -
       __assoc__:
         -
@@ -924,7 +1049,7 @@ settings:
           - false
         -
           - layoutUid
-          - e32b3dcc-664b-466a-9774-2a3dfa7114e6
+          - 24035d5c-1bf5-4c7c-aa68-fceffb3efa21
         -
           - layoutConfig
           -
@@ -939,7 +1064,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - 678acacf-f670-425d-b869-b2c9dadc7d28
+                        - 090ad6f8-e108-4141-8b89-5321b8527b95
                       -
                         - elements
                         -
@@ -986,7 +1111,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - c483bc59-db55-4678-940f-9545fa2165ff
+                                - ae27e31d-36f3-4d16-b321-665ba7a6239c
                           -
                             __assoc__:
                               -
@@ -1033,7 +1158,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - d718b07f-1284-4b8c-9fe9-5de32242011e
+                                - a9011670-4702-49c6-b242-a5392000116c
                   -
                     __assoc__:
                       -
@@ -1041,7 +1166,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - cc3094ff-5177-4399-bb75-51330d53c484
+                        - 1db4d3f9-5348-47e2-ab26-ca805a68c80d
                       -
                         - elements
                         -
@@ -1088,7 +1213,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 631d19b5-6cb4-4574-b819-e2e15e70fc2d
+                                - 2759ed85-f518-4361-970c-0d47f11d1b2a
                           -
                             __assoc__:
                               -
@@ -1132,7 +1257,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 379b5113-6ea5-4bf7-9e34-d104a798e1be
+                                - c6db936f-6db1-427b-9f6f-0672521a8f1e
                           -
                             __assoc__:
                               -
@@ -1158,7 +1283,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 8343ce06-b8a1-4d7e-9c06-a88e1cb7d366
+                                - 8036740e-8a7c-4746-98b6-a702e1f8cedc
     -
       __assoc__:
         -
@@ -1178,7 +1303,7 @@ settings:
           - false
         -
           - layoutUid
-          - f3c9b20c-c34d-4786-bd30-b72c575af824
+          - 4be97b5c-3842-4def-a5bf-051628ca9db6
         -
           - layoutConfig
           -
@@ -1193,7 +1318,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - ffe04d89-b302-4334-9b7e-e2afa16658ce
+                        - c5484f38-c95b-464b-addf-c586e6a35f03
                       -
                         - elements
                         -
@@ -1240,7 +1365,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - d5afb832-4730-42bc-9913-c55958aca0ce
+                                - 6be85e0f-9f5d-4296-b160-c0e2a34388ba
                           -
                             __assoc__:
                               -
@@ -1287,7 +1412,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - c15f87c6-0c97-4125-884d-2071bad788e8
+                                - 1927afe0-80a6-40d3-b0c5-4ab53ea1dbb0
         -
           - sources
           - '*'
@@ -1310,7 +1435,7 @@ settings:
           - false
         -
           - layoutUid
-          - 0b4316bb-ea38-43ec-8a5d-d8a61e04447d
+          - 69b500c4-5278-4e38-a729-e5037ddd5d04
         -
           - layoutConfig
           -
@@ -1325,7 +1450,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - ccafcd29-9bcc-41f3-a142-c240dbfcc802
+                        - 570020a4-7e59-43fe-aacd-32c23bc85f36
                       -
                         - elements
                         -
@@ -1372,7 +1497,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 89cb2a41-ca56-4ab6-894c-b5373471320c
+                                - 494f363e-c5d7-4b2f-82c1-551e575425fa
                           -
                             __assoc__:
                               -
@@ -1419,7 +1544,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 0dd046ce-dd0f-4fd5-bf2a-06eb0bdb70bf
+                                - 09e0f94b-fa66-48d8-b420-b01289607a84
                   -
                     __assoc__:
                       -
@@ -1427,7 +1552,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - 10435385-1ca5-490c-8ec0-f954c7d5a766
+                        - 501927af-2a10-4623-9149-3a675e7d46b8
                       -
                         - elements
                         -
@@ -1474,7 +1599,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 4642b699-3def-43a6-b4c1-a2871d9a92d0
+                                - f354b616-cf8f-47fe-9e17-414a89d0dbe5
                           -
                             __assoc__:
                               -
@@ -1518,7 +1643,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 32161f5f-c525-4800-928b-b8534c009bec
+                                - b920eeb5-3bee-4e09-8fc9-a35424db7a54
                           -
                             __assoc__:
                               -
@@ -1544,7 +1669,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - ae1d7fc4-6c08-4f90-bcf2-b56aa0e51c24
+                                - f2c48967-f67f-43b4-9b18-c320224303ea
     -
       __assoc__:
         -
@@ -1564,7 +1689,7 @@ settings:
           - false
         -
           - layoutUid
-          - 472ab39d-589e-4a91-aafc-ee418e5dd585
+          - 4c12de6c-abff-4fcc-813d-18475d2c2a07
         -
           - layoutConfig
           -
@@ -1579,7 +1704,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - 4a929e21-80b9-40cf-a370-b4b65846b8c6
+                        - 2c961f83-e51f-4b5a-a079-2275a86a15d8
                       -
                         - elements
                         -
@@ -1626,7 +1751,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - e5ff0043-0789-48ce-96fd-58fe2d54d62a
+                                - 95a8fa4d-570b-49fc-9e8b-1eb414d9ddff
                           -
                             __assoc__:
                               -
@@ -1673,7 +1798,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 5214b251-0637-4ef3-ba11-6944ffe29137
+                                - 6997cd16-f7b1-48da-9876-8e27ed20af11
                   -
                     __assoc__:
                       -
@@ -1681,7 +1806,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - cec165bf-5b62-49d0-a811-db7ca997f580
+                        - 02fa281e-6c64-4ace-8ee6-6fc0b3283b28
                       -
                         - elements
                         -
@@ -1728,7 +1853,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - dc2622b4-e3d0-401a-90d6-53ddb39a128c
+                                - ed1d9a6d-448d-4797-8982-5889f14784ab
                           -
                             __assoc__:
                               -
@@ -1772,7 +1897,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 64fd5df2-72c8-4b2e-ba16-8d23b121a7d5
+                                - 3aa9af05-59ae-4ffb-8d28-40b826202089
                           -
                             __assoc__:
                               -
@@ -1798,7 +1923,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - e39d825f-cf07-420a-822a-c82e4e6c7283
+                                - b5262418-a751-4584-a423-70c263dfd9da
         -
           - sites
           - '*'
@@ -1821,7 +1946,7 @@ settings:
           - false
         -
           - layoutUid
-          - a62c377d-9f77-450d-a30d-386a2b490e0d
+          - b884c39f-141a-4fc3-8f6b-f2d935448681
         -
           - layoutConfig
           -
@@ -1836,7 +1961,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - c20e3e5c-0df4-4b5b-bc6f-bfcd6f62b374
+                        - d0ce4c64-98f0-4eb5-9782-54539da4c0a7
                       -
                         - elements
                         -
@@ -1883,7 +2008,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 8a6ba580-ad3c-4a0f-8aa7-04753d76e395
+                                - 5c5e33de-7a7b-4952-9e9c-a613216f88d3
                           -
                             __assoc__:
                               -
@@ -1930,7 +2055,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 34def1e2-7c57-4b98-814b-dbfa9d939686
+                                - 9e72d027-1648-4ac4-b29e-460fea21e096
     -
       __assoc__:
         -
@@ -1950,7 +2075,7 @@ settings:
           - false
         -
           - layoutUid
-          - 1611a223-34fd-4542-b092-e6e253685da7
+          - 9dc0c809-6e4f-49d1-8485-84736404f3e4
         -
           - layoutConfig
           -
@@ -1965,7 +2090,7 @@ settings:
                         - Content
                       -
                         - uid
-                        - fc0739e2-5bb0-4b8b-83d2-9a81a20071d3
+                        - a9f936ac-9b26-4fa4-9bad-8906d17147df
                       -
                         - elements
                         -
@@ -2012,7 +2137,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 05a1b4af-22ab-4bdd-929c-43ab2475de02
+                                - 79678456-5048-44fa-9ed2-110e0349665a
                           -
                             __assoc__:
                               -
@@ -2059,7 +2184,7 @@ settings:
                                 - 50
                               -
                                 - uid
-                                - 667a29c9-5e92-4379-b393-03b3d4bab675
+                                - 371c5127-0727-4222-ac5d-979bcd605dfe
                   -
                     __assoc__:
                       -
@@ -2067,7 +2192,7 @@ settings:
                         - Advanced
                       -
                         - uid
-                        - 0e2f36e0-b0a4-4e6e-98d4-f5c153dff0f5
+                        - 646a8534-1d5a-4153-a327-1f86cd498d29
                       -
                         - elements
                         -
@@ -2114,7 +2239,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 33b3d8b7-cada-4e49-82d2-6955bcb813a6
+                                - a7a3bb6f-268a-4450-aeda-c7a8499f4d09
                           -
                             __assoc__:
                               -
@@ -2158,7 +2283,7 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 52ea5483-e916-41da-9060-0c401261b882
+                                - c28fa61a-55e9-46b6-b89d-c631dc4c27e7
                           -
                             __assoc__:
                               -
@@ -2184,300 +2309,13 @@ settings:
                                 - 100
                               -
                                 - uid
-                                - 17075c6e-964d-47e0-84b2-62ed68614daa
-        -
-          - sources
-          - '*'
-    -
-      __assoc__:
-        -
-          - type
-          - verbb\hyper\links\FormieForm
-        -
-          - label
-          - Form
-        -
-          - handle
-          - default-verbb-hyper-links-formie-form
-        -
-          - enabled
-          - false
-        -
-          - isCustom
-          - false
-        -
-          - layoutUid
-          - c42f6ebe-70db-406d-8b7d-6dc122d6a5ef
-        -
-          - layoutConfig
-          -
-            __assoc__:
-              -
-                - tabs
-                -
-                  -
-                    __assoc__:
-                      0:
-                        - name
-                        - Content
-                      1:
-                        - uid
-                        - 6b72b868-55fe-4d80-8c30-2dae7e3380b7
-                      4:
-                        - elements
-                        -
-                          -
-                            __assoc__:
-                              0:
-                                - type
-                                - verbb\hyper\fieldlayoutelements\LinkField
-                              1:
-                                - attribute
-                                - linkValue
-                              4:
-                                - mandatory
-                                - true
-                              5:
-                                - requirable
-                                - true
-                              7:
-                                - autocomplete
-                                - false
-                              12:
-                                - autofocus
-                                - false
-                              13:
-                                - autocorrect
-                                - true
-                              14:
-                                - autocapitalize
-                                - true
-                              15:
-                                - disabled
-                                - false
-                              16:
-                                - readonly
-                                - false
-                              27:
-                                - translatable
-                                - false
-                              32:
-                                - required
-                                - false
-                              33:
-                                - providesThumbs
-                                - false
-                              34:
-                                - includeInCards
-                                - false
-                              35:
-                                - width
-                                - 50
-                              36:
-                                - uid
-                                - 555e0ca1-c8f4-4ae9-87bd-08a779c286ab
-                          -
-                            __assoc__:
-                              0:
-                                - type
-                                - verbb\hyper\fieldlayoutelements\LinkTextField
-                              1:
-                                - attribute
-                                - linkText
-                              2:
-                                - requirable
-                                - true
-                              4:
-                                - autocomplete
-                                - false
-                              9:
-                                - autofocus
-                                - false
-                              10:
-                                - autocorrect
-                                - true
-                              11:
-                                - autocapitalize
-                                - true
-                              12:
-                                - disabled
-                                - false
-                              13:
-                                - readonly
-                                - false
-                              15:
-                                - placeholder
-                                - 'e.g. Read more'
-                              19:
-                                - mandatory
-                                - false
-                              25:
-                                - translatable
-                                - false
-                              30:
-                                - required
-                                - false
-                              31:
-                                - providesThumbs
-                                - false
-                              32:
-                                - includeInCards
-                                - false
-                              33:
-                                - width
-                                - 50
-                              34:
-                                - uid
-                                - ca4d009a-9989-4ff2-b248-8e11f9f694d9
-                  -
-                    __assoc__:
-                      0:
-                        - name
-                        - Advanced
-                      1:
-                        - uid
-                        - c997ac10-7de0-48c3-91ea-9d8feefc8e94
-                      4:
-                        - elements
-                        -
-                          -
-                            __assoc__:
-                              0:
-                                - type
-                                - verbb\hyper\fieldlayoutelements\LinkTitleField
-                              1:
-                                - attribute
-                                - linkTitle
-                              2:
-                                - requirable
-                                - true
-                              4:
-                                - autocomplete
-                                - false
-                              9:
-                                - autofocus
-                                - false
-                              10:
-                                - autocorrect
-                                - true
-                              11:
-                                - autocapitalize
-                                - true
-                              12:
-                                - disabled
-                                - false
-                              13:
-                                - readonly
-                                - false
-                              19:
-                                - mandatory
-                                - false
-                              25:
-                                - translatable
-                                - false
-                              30:
-                                - required
-                                - false
-                              31:
-                                - providesThumbs
-                                - false
-                              32:
-                                - includeInCards
-                                - false
-                              33:
-                                - width
-                                - 100
-                              34:
-                                - uid
-                                - c75fdfa5-efea-4926-b3eb-5c43260521cc
-                          -
-                            __assoc__:
-                              0:
-                                - type
-                                - verbb\hyper\fieldlayoutelements\ClassesField
-                              1:
-                                - attribute
-                                - classes
-                              2:
-                                - requirable
-                                - true
-                              4:
-                                - autocomplete
-                                - false
-                              9:
-                                - autofocus
-                                - false
-                              10:
-                                - autocorrect
-                                - true
-                              11:
-                                - autocapitalize
-                                - true
-                              12:
-                                - disabled
-                                - false
-                              13:
-                                - readonly
-                                - false
-                              19:
-                                - mandatory
-                                - false
-                              25:
-                                - translatable
-                                - false
-                              30:
-                                - required
-                                - false
-                              31:
-                                - providesThumbs
-                                - false
-                              32:
-                                - includeInCards
-                                - false
-                              33:
-                                - width
-                                - 100
-                              34:
-                                - uid
-                                - 4b1a10a3-5f9e-407f-9f5a-b007803abe23
-                          -
-                            __assoc__:
-                              0:
-                                - type
-                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
-                              1:
-                                - attribute
-                                - customAttributes
-                              2:
-                                - requirable
-                                - true
-                              3:
-                                - mandatory
-                                - false
-                              9:
-                                - translatable
-                                - false
-                              14:
-                                - required
-                                - false
-                              15:
-                                - providesThumbs
-                                - false
-                              16:
-                                - includeInCards
-                                - false
-                              17:
-                                - width
-                                - 100
-                              18:
-                                - uid
-                                - 4d88c400-8502-4aed-a7ab-50b85d153dbb
+                                - 3a18d26e-0d77-4d59-b5e5-d0adc0716e03
         -
           - sources
           - '*'
   maxLinks: null
   minLinks: null
-  multipleLinks: false
+  multipleLinks: true
   newWindow: true
 translationKeyFormat: null
 translationMethod: none
