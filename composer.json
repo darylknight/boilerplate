@@ -1,19 +1,19 @@
 {
 	"require": {
-		"craftcms/ckeditor": "^3.1.0",
-		"craftcms/cms": "^4.0.0",
-		"mmikkel/retcon": "^2.4.2",
-		"nystudio107/craft-retour": "^4.1.16",
-		"nystudio107/craft-seomatic": "^4.0.0",
-		"nystudio107/craft-vite": "^4.0.5",
-		"putyourlightson/craft-dashboard-begone": "^2.0.0",
-		"putyourlightson/craft-sherlock": "^4.0.0",
-		"verbb/formie": "^2.0.21",
-		"verbb/hyper": "^1.0.4",
-		"verbb/image-resizer": "^3.0.8",
-		"verbb/super-table": "^3.0.0-beta.3",
-		"vlucas/phpdotenv": "^5.4.0",
-		"wbrowar/craft-admin-bar": "^4.0.0"
+		"craftcms/ckeditor": "^4.1.0",
+		"craftcms/cms": "^5.0.0",
+		"mmikkel/retcon": "^3.2.0",
+		"nystudio107/craft-retour": "^5.0.2",
+		"nystudio107/craft-seomatic": "^5.0.4",
+		"nystudio107/craft-vite": "^5.0.0",
+		"putyourlightson/craft-dashboard-begone": "^3.0.0",
+		"putyourlightson/craft-sherlock": "^5.1.0",
+		"verbb/formie": "^3.0.0-beta.16",
+		"verbb/hyper": "^2.0.2",
+		"verbb/image-resizer": "^4.0.0",
+		"verbb/super-table": "^4.0.1",
+		"vlucas/phpdotenv": "^5.6.0",
+		"wbrowar/craft-admin-bar": "^5.0.0-beta.1"
 	},
 	"require-dev": {
 		"yiisoft/yii2-shell": "^2.0.3"
@@ -31,7 +31,7 @@
 		"sort-packages": true,
 		"optimize-autoloader": true,
 		"platform": {
-			"php": "8.2.0"
+			"php": "8.2.20"
 		}
 	},
 	"scripts": {
