@@ -68,10 +68,9 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
    -  `CRAFT_ENVIRONMENT` to `dev`
    -  `SYSTEM_STATUS` to `on`
    -  `SYSTEM_NAME` to the title of this project
-   -  `CP_TRIGGER` to `control`
-   -  `BASE_PATH` to `./`
    -  Run `ddev craft setup/app-id`
    -  Run `ddev craft setup/security-key`
+   -  Update the other variables under `# General settings`
 
 -  Run `ddev npm update` to install the latest packages from `package.json`
 -  Run `ddev composer install` to install Craft and it's plugins from `composer.json`
@@ -92,19 +91,19 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
    -  `CRAFT_ENVIRONMENT` to `dev`
    -  `SYSTEM_STATUS` to `on`
    -  `SYSTEM_NAME` to the title of this project
-   -  `CP_TRIGGER` to `control`
-   -  `BASE_PATH` to `./`
    -  Run `ddev craft setup/app-id`
    -  Copy the `CRAFT_SECURITY_KEY` from the live site
+   -  Update the other variables under `# General settings`
+   -  Copy the plugin license keys from the live site
 
 -  Run `ddev npm install` to install the packages from `package.lock`
 -  Run `ddev composer install` to install Craft and it's plugins from `composer.lock`
--  Download a database backup from the Utilities section of the live site, copy the .sql file into the project root, then run `ddev import-db`
+-  Download a database backup from the Utilities section of the live site, copy the .sql file into the project root, then run `ddev import-db` (then delete the file)
 -  Delete the sql file
 -  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below:
 
-### Syncing assets [TODO]
+### Syncing assets
 
 -  Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
 -  Production to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
@@ -116,13 +115,31 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
 -  To ignore certain files or paths, add them to `.prettierignore`
 -  It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code). To do this, follow [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
 
-### Prettier & Tailwind class sorting
+### Code formatting with Prettier & Tailwind class sorting
 
-The `prettier-plugin-tailwindcss` plugin is now compatible with `prettier-plugin-twig-melody`, so this project will now automatically sort Tailwind classes in the markup whenever the document is formatted. This was made possible by manually defining the pluing order in `.prettierrc.json`. See [Enabling Tailwind class sorting in Twig with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier) for details.
+Visual Studio Code can be set up to format twig files on save using Prettier. The following repositories in package.json are used for this:
+
+```
+"@prettier/plugin-php": "^0.22.2", // formats PHP files
+"@zackad/prettier-plugin-twig-melody": "^0.6.0", // Fixes Trivago's repository to format twig files
+"prettier": "^3.2.5", // The formatting engine
+"prettier-plugin-tailwindcss": "^0.5.13", // Tailwind's plugin to sort Tailwind classes
+"tailwindcss": "^3.2.3", // Tailwind itself
+```
+
+These files configure how it works:
+
+-  `.prettierrc.json` - defines how files should be formatted
+-  `.prettierignore` - tells Prettier which files to ignore
+
+See these two articles for details on how to setup VS Code to auto-format twig files on save:
+
+-  [Using Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms)
+-  [Tailwind class sorting in Twig files with Prettier](https://codeknight.co.uk/blog/enabling-prettier-class-sorting-in-twig-with-prettier)
 
 ### Build notes
 
--  In package.json, the 'engines' key is set to use node 18 or above, because `prettier-plugin-twig-melody` requires >=18. This is installed by DDEV's config.yaml, which is set to `nodejs_version: "18"`. By defualt, DDEV would otherwise install node 16.
+-  In package.json, the `engines` key is set to use node 18 or above, because `prettier-plugin-twig-melody` requires higher than version 18. This is installed by DDEV's config.yaml, which is set to `nodejs_version: "18"`. By defualt, DDEV would otherwise install node 16.
 -  The `engine-strict=true` in `.npmrc` enforces this requirement so that any developer working on this project must use at least node 18
 -  DDEV comes with nvm pre-installed, so you can also use that to switch versions within a container
 -  In `package.json`, the `"type": "module",` line is required by Vite 5. This makes all js files in the project root behave like ES modules, and they need updating accordingly.
