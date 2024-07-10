@@ -1,7 +1,6 @@
-{# ? TODO: dynamic CSRF tokens so you can cache the whole block #}
-{# ? https://verbb.io/craft-plugins/formie/docs/template-guides/cached-forms#cached-forms #}
-
-{% for block in entry.contentMatrix.all() %}
-	{# Run through all the block types in the content matrix field and include the matching file #}
-	{% include '_includes/blocks/' ~ block.type %}
-{% endfor %}
+{% cache %}
+	{% for block in entry.contentMatrix.all() %}
+		{# Run through all the block types in the content matrix field and include the matching file #}
+		{% include '_includes/blocks/' ~ block.type %}
+	{% endfor %}
+{% endcache %}
