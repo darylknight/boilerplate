@@ -6,7 +6,10 @@
 			width="{{ transform ? transform.width|default('auto') }}"
 			height="{{ transform ? transform.height|default('auto') }}"
 			loading="lazy"
-			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
+			style="object-position: {{
+			asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100
+				~ '%;'
+			}}"
 			alt="{{ asset.alt }}" />
 	{% endif %}
 {% endmacro %}
@@ -14,7 +17,9 @@
 {# This macro requires a URL and some button text #}
 {% macro button(url, text, class, target) %}
 	{% if url %}
-		<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">{{ text }}</a>
+		<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">
+			{{ text }}
+		</a>
 	{% endif %}
 {% endmacro %}
 
@@ -78,7 +83,9 @@
 					},
 					page: {
 						attributes: {
-							class: ["{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}"]
+							class: [
+								"{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}"
+							]
 						}
 					},
 					pageTabs: {
@@ -132,7 +139,10 @@
 					},
 					row: {
 						attributes: {
-							class: ['flex flex-wrap -mx-4 mb-4', "{{ not craft.formie.getVisibleFields(row) ? 'hidden' }}"]
+							class: [
+								'flex flex-wrap -mx-4 mb-4',
+								"{{ row.getIsHidden() ? 'hidden' }}"
+							]
 						}
 					},
 					field: {
