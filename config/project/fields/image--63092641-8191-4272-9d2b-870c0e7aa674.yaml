@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: image
-instructions: 'To edit the alt text, credit the photographer or edit the image, double click on it.'
-name: 'Content Matrix - Image - Image'
+instructions: 'To edit the alt text or the image, double click on it'
+name: Image
 searchable: false
 settings:
   allowSelfRelations: false

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: text4
-instructions: 'Appears above the form'
-name: 'Content Matrix - Form - Text'
+handle: richText
+instructions: null
+name: 'Rich Text'
 searchable: false
 settings:
   availableTransforms: ''

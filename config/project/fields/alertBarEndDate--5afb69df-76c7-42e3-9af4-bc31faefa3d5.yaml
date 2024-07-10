@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: startDate
-instructions: 'When the alert should start showing'
-name: 'Alert Bar - Alert - Start Date'
+handle: alertBarEndDate
+instructions: 'When the alert should stop showing'
+name: 'Alert Bar - End Date'
 searchable: false
 settings:
   max: null

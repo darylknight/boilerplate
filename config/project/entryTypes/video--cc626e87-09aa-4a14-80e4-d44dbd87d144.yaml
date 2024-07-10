@@ -36,22 +36,22 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 6b84e948-d12b-4362-9b31-fd750489f131
-            handle: text
-            includeInCards: true
+            fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Rich Text
+            handle: null
+            includeInCards: false
             instructions: null
-            label: Text
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cb10ebac-3647-417d-b084-733952f665b4
+            uid: b10cc38e-b232-49eb-a601-f11507c08169
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1b16bb99-ac4b-4bc8-85f8-71966c72102e
+            fieldUid: 1b16bb99-ac4b-4bc8-85f8-71966c72102e # Video Embed Code
             handle: null
             includeInCards: false
             instructions: null

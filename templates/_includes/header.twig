@@ -2,7 +2,9 @@
 	<div class="container mx-auto px-6 py-2">
 		<nav>
 			{% for entry in craft.entries.section('menuHeader').all() %}
-				<a href="{{ entry.pageTarget.url }}" class="inline-block text-white" target="{{ entry.pageTarget.target }}">
+				<a href="{{ entry.pageTarget.url }}"
+					class="mr-5 inline-block text-white"
+					target="{{ entry.pageTarget.target }}">
 					{{ entry.pageTarget.text }}
 				</a>
 			{% endfor %}

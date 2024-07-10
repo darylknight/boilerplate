@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: videoEmbedCode
 instructions: 'Enter the embed code of the video from either YouTube or Vimeo'
-name: 'Content Matrix - Video - Video Embed Code'
+name: 'Video Embed Code'
 searchable: false
 settings:
   byteLimit: null

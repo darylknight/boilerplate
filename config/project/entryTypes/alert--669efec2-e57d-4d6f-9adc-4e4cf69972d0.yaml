@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Alert Bar - Start Date
             handle: null
             includeInCards: true
             instructions: null
@@ -22,7 +22,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5
+            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5 # Alert Bar - End Date
             handle: null
             includeInCards: false
             instructions: null
@@ -37,7 +37,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d
+            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d # Alert Bar - Text
             handle: text
             includeInCards: false
             instructions: null

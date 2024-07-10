@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ec5f32b098ad00fdec680b843bdeb83",
+    "content-hash": "2cd87cfc7ef96929581701a828c4f761",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -4012,55 +4012,6 @@
             "time": "2024-04-02T15:17:40+00:00"
         },
         {
-            "name": "putyourlightson/craft-sherlock",
-            "version": "5.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sherlock/zipball/eab57d9be7c858fba23021d83270b044eb554186",
-                "reference": "eab57d9be7c858fba23021d83270b044eb554186",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Sherlock",
-                "handle": "sherlock",
-                "developer": "PutYourLightsOn",
-                "developerUrl": "https://putyourlightson.com/",
-                "documentationUrl": "https://putyourlightson.com/plugins/sherlock",
-                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sherlock/develop/CHANGELOG.md",
-                "class": "putyourlightson\\sherlock\\Sherlock"
-            },
-            "autoload": {
-                "psr-4": {
-                    "putyourlightson\\sherlock\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "description": "Security scanner and monitor to keep your site and CMS secure.",
-            "homepage": "https://putyourlightson.com/plugins/sherlock",
-            "keywords": [
-                "cms",
-                "craft",
-                "monitor",
-                "notifications",
-                "scanner",
-                "secure",
-                "security"
-            ],
-            "support": {
-                "docs": "https://putyourlightson.com/plugins/sherlock",
-                "source": "https://github.com/putyourlightson/craft-sherlock",
-                "issues": "https://github.com/putyourlightson/craft-sherlock/issues"
-            },
-            "time": "2024-05-27T06:14:59+00:00"
-        },
-        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "dist": {
@@ -6456,60 +6407,6 @@
                 "rss": "https://github.com/verbb/image-resizer/commits/v2.atom"
             },
             "time": "2024-05-13T00:50:47+00:00"
-        },
-        {
-            "name": "verbb/super-table",
-            "version": "4.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/bc291889d04c2b209933ab8412528893594e38cf",
-                "reference": "bc291889d04c2b209933ab8412528893594e38cf",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2",
-                "verbb/base": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Super Table",
-                "handle": "super-table",
-                "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
-                "documentationUrl": "https://github.com/verbb/super-table",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/super-table/craft-5/CHANGELOG.md",
-                "class": "verbb\\supertable\\SuperTable"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\supertable\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Super-charge your content builders and create nested Matrix fields.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "super table"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/super-table/issues?state=open",
-                "source": "https://github.com/verbb/super-table",
-                "docs": "https://github.com/verbb/super-table",
-                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
-            },
-            "time": "2024-06-18T08:47:07+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

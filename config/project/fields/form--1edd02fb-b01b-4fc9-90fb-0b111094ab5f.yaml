@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: form
-instructions: 'Select a form to include on the page. Forms can be created and edited from the **Forms** option in the sidebar on the left'
-name: 'Content Matrix - Form - Form'
+instructions: 'Select a form to include. Forms can be created and edited from the **Forms** option in the sidebar on the left'
+name: Form
 searchable: false
 settings:
   allowSelfRelations: false
@@ -16,7 +16,7 @@ settings:
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: verbb\formie\fields\Forms

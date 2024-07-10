@@ -1,12 +1,7 @@
-{% if alertBar.alertBar|length %}
-	{# If there are alerts scheduled, cycle through them #}
-	{% for alert in alertBar.alertBar.all() %}
-		{% if alert.startDate < now and alert.endDate > now %}
-			<div class="bg-blue py-2 text-center text-white">
-				<article class="prose mx-auto text-white">
-					{{ alert.text }}
-				</article>
-			</div>
-		{% endif %}
-	{% endfor %}
+{% if alertBar.alertBarStartDate < now and alertBar.alertBarEndDate > now %}
+	<div class="bg-blue-700 py-2 text-center text-white">
+		<article class="prose mx-auto text-white">
+			{{ alertBar.alertBarText }}
+		</article>
+	</div>
 {% endif %}

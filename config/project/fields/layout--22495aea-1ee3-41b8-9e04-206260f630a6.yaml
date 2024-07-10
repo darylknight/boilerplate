@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: layout
 instructions: 'Select the layout for this block'
-name: 'Content Matrix - Text + Image - Layout'
+name: Layout
 searchable: false
 settings:
   options:

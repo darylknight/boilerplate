@@ -6,13 +6,46 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: c4fb0464-3077-45aa-9c64-7e0015f54677 # Alert Bar
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Alert Bar - Start Date
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaed2074-ea60-4ce5-b4b4-2a88a1e57c21
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5 # Alert Bar - End Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69da0d49-66b3-4204-9fa7-c36cc45f7709
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d # Alert Bar - Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ad39ccbf-d33d-4982-ab84-b060e9099678
+            uid: 6892edb5-c4ae-4583-930d-ef69eb131f29
             userCondition: null
             warning: null
             width: 100
