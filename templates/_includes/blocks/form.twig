@@ -30,7 +30,7 @@
 				If there is a queryParams set on the session, loop through that array
 				and set the values of the fields matching those names on the form
 			#}
-			{% do craft.formie.populateFormValues(form.handle, utmFields) %}
+			{% do craft.formie.populateFormValues(form, utmFields) %}
 		{% endif %}
 
 		<div class="prose">
