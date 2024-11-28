@@ -23,6 +23,7 @@ return GeneralConfig::create()
 	->preloadSingles() // Preload Single entries as Twig variables
 	->preventUserEnumeration() // Prevent user enumeration attacks
 	->enableGql(false) // Remove GraphQL from the sidebar
+	->transformGifs(false), // Don't screw up gifs by transforming them
 	->enableTemplateCaching($isProd) // Only allow template caching on production
 	->limitAutoSlugsToAscii() // https://craftcms.com/docs/5.x/reference/config/general.html#limitautoslugstoascii
 	->previewTokenDuration('P1M') // Make preview links (?x-craft-preview) last for a month instead of a day
