@@ -14,7 +14,8 @@
 	],
 
 	"plugins": [
-		"@zackad/prettier-plugin-twig-melody",
+		"@prettier/plugin-php",
+		"@zackad/prettier-plugin-twig",
 		"prettier-plugin-tailwindcss"
 	]
 }
