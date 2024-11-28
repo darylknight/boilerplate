@@ -12,19 +12,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 -  The site is built with [Craft CMS](https://craftcms.com)
 -  For general configuration settings, see `config/general.php`
--  See the [Craft docs](https://craftcms.com/docs/4.x/config/config-settings.html) for available config settings
+-  See the [Craft docs](https://craftcms.com/docs/5.x/configure.html) for available config settings
 
 ### Prerequisites
 
-Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/4.x/requirements.html). This project should run in various dev environments, but it assumes [DDEV](https://ddev.com) by default. To run this site locally, you will need:
+Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/5.x/requirements.html). This project should run in various dev environments, but it assumes [DDEV](https://ddev.com) by default. To run this site locally, you will need:
 
--  Composer 2.x
--  Apache or Nginx
--  PHP 8.2
--  MySQL 5.7.8+ with InnoDB
+-  Composer 2.0+
+-  DDEV (or Apache/Nginx)
+-  PHP 8.2+
+-  MySQL 8.0.17+ using InnoDB
 -  512MB+ of memory allocated to PHP
 
-If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root.
+If you're using Apache instead of nginx, you'll need to download Craft's default `.htaccess` file and put it in the document root. See https://craftcms.com/docs/5.x/requirements.html#required-php-extensions for required PHP extensions.
 
 ### DDEV Hooks
 
@@ -48,7 +48,7 @@ These will run every time the container starts to make sure you have the same pa
 
 ### Project Config
 
-This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-config.html). This has a few implications when there are multiple developers working on the same project.
+This Craft website uses [Project Config](https://craftcms.com/docs/5.x/system/project-config.html). This has a few implications when there are multiple developers working on the same project.
 
 -  Whenever you start work on a project, check for changes in the remote branch. If there are any, pull these down and run `composer install`. This will also run the scripts at the bottom of `composer.json`, which will run Project Config migrations on your local database.
 -  If there are Project Config merge conflicts, it normally just means the `dateModifed` in `project.yaml` has changed, but please check you're not deleting files another developer has set up.
@@ -91,14 +91,14 @@ This Craft website uses [Project Config](https://craftcms.com/docs/4.x/project-c
    -  `CRAFT_ENVIRONMENT` to `dev`
    -  `SYSTEM_STATUS` to `on`
    -  `SYSTEM_NAME` to the title of this project
-   -  Run `ddev craft setup/app-id`
    -  Copy the `CRAFT_SECURITY_KEY` from the live site
    -  Update the other variables under `# General settings`
    -  Copy the plugin license keys from the live site
 
 -  Run `ddev npm install` to install the packages from `package.lock`
 -  Run `ddev composer install` to install Craft and it's plugins from `composer.lock`
--  Download a database backup from the Utilities section of the live site, copy the .sql file into the project root, then run `ddev import-db` (then delete the file)
+-  Run `ddev craft setup/app-id`
+-  Download a database backup from the Utilities section of the live site, copy the .sql file into the project root, then run `ddev import-db`
 -  Delete the sql file
 -  Copy `config/license.key` from the server as this isn't stored in the repository
 -  You can download user-uploaded assets from the server either through SFTP, SSH, or with one of the rsync commands below:
