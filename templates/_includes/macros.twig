@@ -140,14 +140,17 @@
 					row: {
 						attributes: {
 							class: [
-								'flex flex-wrap -mx-4 mb-4',
+								'grid mb-4 gap-4 grid-cols-1',
+								"{{ row.getFields(false, false) | length == 2 ? 'md:grid-cols-2' }}",
+								"{{ row.getFields(false, false) | length == 3 ? 'md:grid-cols-2 lg:grid-cols-3' }}",
+								"{{ row.getFields(false, false) | length == 4 ? 'md:grid-cols-2 xl:grid-cols-4' }}",
 								"{{ row.getIsHidden() ? 'hidden' }}"
 							]
 						}
 					},
 					field: {
 						attributes: {
-							class: 'px-4 flex-1'
+							class: 'flex-1'
 						}
 					},
 					fieldLabel: {
