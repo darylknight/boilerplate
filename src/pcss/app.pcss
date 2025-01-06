@@ -78,6 +78,11 @@
 	.prose blockquote {
 		@apply mb-5 border-l-4 pl-4 italic;
 	}
+
+	/* make select dropdowns readable on windows */
+	form select option {
+		@apply bg-white text-black;
+	}
 }
 
 @layer utilities {
