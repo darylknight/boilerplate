@@ -15,7 +15,7 @@ hooks:
         - exec: npm run build
         - exec: composer install
 upload_dirs:
-    - web/uploads
+    - uploads
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
