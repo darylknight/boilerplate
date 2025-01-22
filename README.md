@@ -120,11 +120,11 @@ This Craft website uses [Project Config](https://craftcms.com/docs/5.x/system/pr
 Visual Studio Code can be set up to format twig files on save using Prettier. The following repositories in package.json are used for this:
 
 ```
-"@prettier/plugin-php": "^0.22.2", // formats PHP files
-"@zackad/prettier-plugin-twig": "^0.7.0", // Fixes Trivago's repository to format twig files
-"prettier": "^3.2.5", // The formatting engine
-"prettier-plugin-tailwindcss": "^0.5.13", // Tailwind's plugin to sort Tailwind classes
-"tailwindcss": "^3.2.3", // Tailwind itself
+"prettier" // The formatting engine
+"@prettier/plugin-php" // formats PHP files
+"tailwindcss" // Tailwind itself
+"prettier-plugin-tailwindcss" // Tailwind's plugin to sort Tailwind classes
+"@zackad/prettier-plugin-twig" // Fixes Trivago's abandoned repository to format twig files an integrated with prettier-plugin-tailwindcss
 ```
 
 These files configure how it works:
