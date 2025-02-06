@@ -110,11 +110,7 @@ This Craft website uses [Project Config](https://craftcms.com/docs/5.x/system/pr
 
 ## Code formatting
 
-- This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier Plugin for Twig
-  ](https://github.com/zackad/prettier-plugin-twig) plugin to make it work with Twig files. This is an opinionated way to format code which keeps code consistent between developers.
-- The configuration for Prettier in this project is defined in `.prettierrc.json`
-- To ignore certain files or paths, add them to `.prettierignore`
-- You should set up your editor to format files automatically on save
+This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier Plugin for Twig](https://github.com/zackad/prettier-plugin-twig) plugin to make it work with Twig files. This is an opinionated way to format code which keeps code consistent between developers. You should set up your editor to format files automatically on save
 
 ### Tailwind class sorting
 
