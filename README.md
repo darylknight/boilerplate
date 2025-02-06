@@ -108,23 +108,24 @@ This Craft website uses [Project Config](https://craftcms.com/docs/5.x/system/pr
 - Staging to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/staging.boilerplate.com/web/uploads/ web/uploads/`
 - Production to local: `rsync -rtP --delete ploi@SER.VER.IP.ADD.RESS:/home/ploi/boilerplate.com/web/uploads/ web/uploads/`
 
-## Code Formatting
+## Code formatting
 
-- This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier for Melody](https://github.com/trivago/prettier-plugin-twig-melody) plugin to make it work with Twig files. This is an opinionated way to format code which keeps spacing consistent between developers
+- This project uses [Prettier](https://prettier.io) for automatic code formatting, with the [Prettier Plugin for Twig
+  ](https://github.com/zackad/prettier-plugin-twig) plugin to make it work with Twig files. This is an opinionated way to format code which keeps code consistent between developers.
 - The configuration for Prettier in this project is defined in `.prettierrc.json`
 - To ignore certain files or paths, add them to `.prettierignore`
-- It's easiest to set up Prettier to format files automatically on save (you can do this with Visual Studio Code). To do this, follow [Prettier with Twig in VS Code](https://codeknight.co.uk/blog/getting-prettier-working-with-twig-craft-cms).
+- You should set up your editor to format files automatically on save
 
-### Code formatting with Prettier & Tailwind class sorting
+### Tailwind class sorting
 
-Visual Studio Code can be set up to format twig files on save using Prettier. The following repositories in package.json are used for this:
+In addition to formatting spacing and line breaks, we also auto-sort Tailwind classes. The following repositories in `package.json` are used for this:
 
 ```
 "prettier" // The formatting engine
-"@prettier/plugin-php" // formats PHP files
-"tailwindcss" // Tailwind itself
+"tailwindcss" // Tailwind
+"@prettier/plugin-php" // Formats PHP files
+"@zackad/prettier-plugin-twig" // Fixes Trivago's abandoned repository to enable Prettier formatting for Twig files
 "prettier-plugin-tailwindcss" // Tailwind's plugin to sort Tailwind classes
-"@zackad/prettier-plugin-twig" // Fixes Trivago's abandoned repository to format twig files an integrated with prettier-plugin-tailwindcss
 ```
 
 These files configure how it works:
@@ -139,7 +140,7 @@ See these two articles for details on how to setup VS Code to auto-format twig f
 
 ### Build notes
 
-- In package.json, the `engines` key is set to use node 18 or above, because `prettier-plugin-twig-melody` requires higher than version 18. This is installed by DDEV's config.yaml, which is set to `nodejs_version: "18"`. By defualt, DDEV would otherwise install node 16.
+- In package.json, the `engines` key is set to use node 18 or above, because `prettier-plugin-twig` requires higher than version 18. This is installed by DDEV's config.yaml, which is set to `nodejs_version: "18"`. By defualt, DDEV would otherwise install node 16.
 - The `engine-strict=true` in `.npmrc` enforces this requirement so that any developer working on this project must use at least node 18
 - DDEV comes with nvm pre-installed, so you can also use that to switch versions within a container
 - In `package.json`, the `"type": "module",` line is required by Vite 5. This makes all js files in the project root behave like ES modules, and they need updating accordingly.
