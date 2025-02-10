@@ -2,23 +2,18 @@
 {% macro image(asset, transform, class) %}
 	{% if asset %}
 		{# If we're in local dev, just load a placeholder #}
-		{% if getenv('CRAFT_ENVIRONMENT') == 'dev' %}
-			<img src="https://placehold.co/{{transform.width|default('1200')}}x{{transform.height|default('800')}}"
-				class="{{ class ? class }}"
-				loading="lazy"
-				alt="Placeholder" />
-		{% else %}
-			<img src="{{ asset.url(transform) }}"
-				class="{{ class ? class }}"
-				width="{{ transform ? transform.width|default('auto') }}"
-				height="{{ transform ? transform.height|default('auto') }}"
-				loading="lazy"
-				style="object-position: {{
+		<img
+			src="{{ asset.url(transform) }}"
+			class="{{ class ? class }}"
+			width="{{ transform ? transform.width|default('auto') }}"
+			height="{{ transform ? transform.height|default('auto') }}"
+			loading="lazy"
+			style="object-position: {{
 			asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100
 				~ '%;'
 			}}"
-				alt="{{ asset.alt }}" />
-		{% endif %}
+			alt="{{ asset.alt }}"
+		/>
 	{% endif %}
 {% endmacro %}
 

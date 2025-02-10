@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: metaData
 instructions: 'This field allows you to override the SEO settings for this entry'
 name: 'Meta Data'

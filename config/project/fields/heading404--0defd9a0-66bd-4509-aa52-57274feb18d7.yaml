@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: heading404
 instructions: 'This appears on the 404 page, which happens when a page the user is trying to view doesn''t exist'
 name: '404 Heading'
@@ -8,7 +7,6 @@ settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null

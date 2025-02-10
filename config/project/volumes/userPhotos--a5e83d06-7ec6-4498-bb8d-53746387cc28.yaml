@@ -1,3 +1,5 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
   9b51f130-54e3-4503-9a73-9527b1f8fab1:
     tabs:
@@ -9,9 +11,11 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-02-10T11:06:02+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +24,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -35,14 +40,17 @@ fieldLayouts:
             attribute: alt
             class: null
             cols: null
+            dateAdded: '2025-02-10T11:06:02+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -61,6 +69,7 @@ fs: userPhotos
 handle: userPhotos
 name: 'User Photos'
 sortOrder: 4
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''

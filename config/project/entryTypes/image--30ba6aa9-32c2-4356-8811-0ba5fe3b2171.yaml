@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-02-10T11:06:02+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: 63092641-8191-4272-9d2b-870c0e7aa674 # Image
             handle: null
@@ -54,12 +56,12 @@ fieldLayouts:
         userCondition: null
 handle: image
 hasTitleField: false
-icon: ''
+icon: null
 name: 'Block: Image'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

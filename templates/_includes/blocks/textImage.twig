@@ -3,22 +3,27 @@
 {% set asset = block.image.one %}
 
 {% set transform = {
-	width: 868
+	width: 800,
+	height: 600
 } %}
 
 <div class="container mx-auto px-6 py-10 lg:py-20">
 	<div class="grid grid-cols-12">
-		<div class="col-span-12 lg:col-span-7 {{
+		<div
+			class="col-span-12 flex items-center lg:col-span-7 {{
 			block.layout == 'textImage'
 				? 'lg:order-last lg:col-start-6'
-			}}">
+			}}"
+		>
 			{{ macros.image(asset, transform, 'mb-4 lg:mb-0') }}
 		</div>
-		<div class="col-span-12 lg:col-span-4 {{
+		<div
+			class="col-span-12 flex items-center lg:col-span-4 {{
 			block.layout == 'textImage'
 				? ''
 				: 'lg:col-start-9'
-			}}">
+			}}"
+		>
 			<article class="prose">
 				{{ block.richText }}
 			</article>

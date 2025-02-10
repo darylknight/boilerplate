@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-02-10T11:06:02+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Rich Text
             handle: null
@@ -50,6 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: 1edd02fb-b01b-4fc9-90fb-0b111094ab5f # Form
             handle: null
@@ -69,12 +72,12 @@ fieldLayouts:
         userCondition: null
 handle: form
 hasTitleField: false
-icon: ''
+icon: null
 name: 'Block: Form'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

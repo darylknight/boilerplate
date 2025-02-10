@@ -5,10 +5,14 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: 0defd9a0-66bd-4509-aa52-57274feb18d7 # 404 Heading
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -17,10 +21,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: 0468bb2b-6b23-493c-9867-c8e7fb7f4431 # 404 Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField

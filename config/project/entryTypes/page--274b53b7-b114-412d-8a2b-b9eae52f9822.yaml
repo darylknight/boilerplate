@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   cc0dc321-be99-46d4-91f9-d533b05ef040:
     tabs:
@@ -9,9 +10,11 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-02-10T11:06:02+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,8 +23,9 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,10 +36,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -50,10 +58,14 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
             fieldUid: d2c56410-5eb0-4ddf-a3dc-00036cbef8c0 # Meta Data
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -66,11 +78,12 @@ fieldLayouts:
         userCondition: null
 handle: page
 hasTitleField: true
+icon: null
 name: Page
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

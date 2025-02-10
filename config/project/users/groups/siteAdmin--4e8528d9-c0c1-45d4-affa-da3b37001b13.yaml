@@ -73,3 +73,4 @@ permissions:
   - 'viewpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'viewpeerentrydrafts:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
   - 'viewpeerentrydrafts:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
+  - viewusers

@@ -4,6 +4,7 @@ instructions: 'Select the layout for this block'
 name: Layout
 searchable: false
 settings:
+  customOptions: false
   options:
     -
       __assoc__:
