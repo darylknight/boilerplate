@@ -1,5 +1,5 @@
 // Import CSS for Vite. Path is relative to this JS file
-import '../pcss/app.pcss'
+import '../css/app.css'
 
 //
 import Alpine from 'alpinejs'
