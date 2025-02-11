@@ -3,12 +3,14 @@ headingLevels:
   - 2
   - 3
   - 4
+  - 5
 name: Standard
 options:
   alignment:
     options:
       - left
       - center
+      - right
   link:
     decorators:
       isExternal:
@@ -16,6 +18,8 @@ options:
           target: _blank
         label: 'Open in a new tab'
         mode: manual
+  mediaEmbed:
+    previewsInData: true
 toolbar:
   - sourceEditing
   - heading

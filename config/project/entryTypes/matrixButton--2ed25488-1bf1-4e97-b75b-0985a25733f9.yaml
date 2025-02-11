@@ -1,35 +1,37 @@
 color: null
 fieldLayouts:
-  414f5591-4c22-4b53-92b7-a0c508eb4a87:
+  86b85399-b282-4594-9fc3-7fbee69dfc96:
+    cardView:
+      - 'layoutElement:61b59e1e-8ad3-4774-aace-790e534228e5'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-02-11T10:33:20+00:00'
+            dateAdded: '2025-02-11T10:04:57+00:00'
             elementCondition: null
             fieldUid: f386df65-5754-4161-9cbb-ffc7042904cb # Button
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1f60d292-9bc1-4225-ac03-c8ce836ce85b
+            uid: 61b59e1e-8ad3-4774-aace-790e534228e5
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9848f732-a6eb-413f-993f-c47d65389512
+        uid: 2776557d-3a4b-4abb-acf3-001b6b1502ba
         userCondition: null
-handle: menuItem
+handle: matrixButton
 hasTitleField: false
-icon: bars
-name: 'Menu Item'
-showSlugField: true
-showStatusField: true
+icon: null
+name: 'Matrix: Button'
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: '{button.label}'

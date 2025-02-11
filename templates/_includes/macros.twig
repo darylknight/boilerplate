@@ -18,11 +18,9 @@
 {% endmacro %}
 
 {# This macro requires a URL and some button text #}
-{% macro button(url, text, class, target) %}
+{% macro button(url, label, class) %}
 	{% if url %}
-		<a href="{{ url }}" {{ target ? 'target="_blank"' }} class="{{ class }}">
-			{{ text }}
-		</a>
+		<a href="{{ url }}" class="{{ class }}">{{ label }}</a>
 	{% endif %}
 {% endmacro %}
 

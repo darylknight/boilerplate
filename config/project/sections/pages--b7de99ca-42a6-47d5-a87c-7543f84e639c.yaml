@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 274b53b7-b114-412d-8a2b-b9eae52f9822 # Page
+    uid: 274b53b7-b114-412d-8a2b-b9eae52f9822 # Page > Content
 handle: pages
 maxAuthors: 1
 name: Pages

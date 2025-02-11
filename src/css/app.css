@@ -9,77 +9,6 @@
 	--font-sans: Unbounded;
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-	*,
-	::after,
-	::before,
-	::backdrop,
-	::file-selector-button {
-		border-color: var(--color-gray-200, currentColor);
-	}
-}
-
-@utility btn {
-	/* ? Remember to use focus-visible: for states instead of focus: */
-	/* ? This means once you click on a button, it doesn't keep the :focus state */
-	@apply inline-block rounded-md border-2 border-black px-10 py-2 hover:bg-black hover:text-white focus-visible:bg-black focus-visible:text-white focus-visible:outline-hidden;
-}
-
-@utility prose {
-	/* * Prose /*
-	/* Imitates Tailwind's Typography plugin without all the extra stuff */
-	& ul {
-		@apply mb-10 list-disc pl-8 text-base last:mb-0 lg:text-lg;
-	}
-	& ol {
-		@apply mb-10 list-decimal pl-8 text-base last:mb-0 lg:text-lg;
-	}
-	& li {
-		@apply mb-2;
-	}
-	& hr {
-		@apply mb-4 border border-neutral-400 last:mb-0;
-	}
-	& .table {
-		@apply mb-4 w-full table-auto border-collapse;
-	}
-	& table {
-		@apply mb-4 w-full table-auto border-collapse;
-	}
-	& table td {
-		@apply border border-neutral-300 p-2;
-	}
-	& table th {
-		@apply border border-neutral-300 p-2;
-	}
-	& table th {
-		@apply bg-neutral-100;
-	}
-	& blockquote {
-		@apply mb-5 border-l-4 pl-4 italic;
-	}
-}
-
-@utility table {
-	.prose & {
-		@apply mb-4 w-full table-auto border-collapse;
-	}
-}
-
-@utility field-instructions {
-	& > p {
-		@apply text-sm;
-	}
-}
-
 /* ? See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer for details on why these are split into base/components/utilities */
 /* ? Useful: If you include classes inside the @layers, they will automatically be removed from compiled CSS if they aren't used in the HTML */
 @layer base {
@@ -119,6 +48,59 @@
 }
 
 @layer components {
+	.btn {
+		/* ? Remember to use focus-visible: for states instead of focus: */
+		/* ? This means once you click on a button, it doesn't keep the :focus state */
+		@apply inline-block rounded-md border-2 border-black px-10 py-2 hover:bg-black hover:text-white focus-visible:bg-black focus-visible:text-white focus-visible:outline-hidden;
+	}
+
+	.prose {
+		/* * Prose /*
+		/* Imitates Tailwind's Typography plugin without all the extra stuff */
+		& ul {
+			@apply mb-10 list-disc pl-8 text-base last:mb-0 lg:text-lg;
+		}
+		& ol {
+			@apply mb-10 list-decimal pl-8 text-base last:mb-0 lg:text-lg;
+		}
+		& li {
+			@apply mb-2;
+		}
+		& hr {
+			@apply mb-4 border border-neutral-400 last:mb-0;
+		}
+		& .table {
+			@apply mb-4 w-full table-auto border-collapse;
+		}
+		& table {
+			@apply mb-4 w-full table-auto border-collapse;
+		}
+		& table td {
+			@apply border border-neutral-300 p-2;
+		}
+		& table th {
+			@apply border border-neutral-300 p-2;
+		}
+		& table th {
+			@apply bg-neutral-100;
+		}
+		& blockquote {
+			@apply mb-5 border-l-4 pl-4 italic;
+		}
+	}
+
+	.table {
+		.prose & {
+			@apply mb-4 w-full table-auto border-collapse;
+		}
+	}
+
+	.field-instructions {
+		& > p {
+			@apply text-sm;
+		}
+	}
+
 	/* make select dropdowns readable on windows */
 	form select option {
 		@apply bg-white text-black;

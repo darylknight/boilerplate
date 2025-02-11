@@ -1,4 +1,4 @@
-dateModified: 1739185622
+dateModified: 1739270697
 elementSources:
   craft\elements\Asset:
     -
@@ -218,18 +218,18 @@ meta:
     0f821582-b0f9-4517-9422-53b6ce1325ac: 'Content Matrix' # Content Matrix
     1b16bb99-ac4b-4bc8-85f8-71966c72102e: 'Video Embed Code' # Video Embed Code
     1edd02fb-b01b-4fc9-90fb-0b111094ab5f: Form # Form
+    2ed25488-1bf1-4e97-b75b-0985a25733f9: 'Matrix: Button' # Matrix: Button
     3c62ae9b-e6d3-4100-a0d1-1c5abab96be2: Standard # Standard
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'Alert Bar - End Date' # Alert Bar - End Date
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
-    7d02b3f6-61ac-492a-9508-03dabf8c93e2: Buttons # Buttons
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
     17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Alert Bar - Start Date' # Alert Bar - Start Date
     30ba6aa9-32c2-4356-8811-0ba5fe3b2171: 'Block: Image' # Block: Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
     60b2f9cd-8e83-49e0-921e-f6d0b325e69d: 'Alert Bar - Text' # Alert Bar - Text
     234a402e-c9d9-4986-a8da-cae7de748a32: 'Block: Text' # Block: Text
-    274b53b7-b114-412d-8a2b-b9eae52f9822: Page # Page
+    274b53b7-b114-412d-8a2b-b9eae52f9822: 'Page > Content' # Page > Content
     414e3fb0-5309-47af-8bcc-920b35c18875: 'Menu Item' # Menu Item
     0468bb2b-6b23-493c-9867-c8e7fb7f4431: '404 Text' # 404 Text
     669efec2-e57d-4d6f-9adc-4e4cf69972d0: Alert # Alert
@@ -242,15 +242,15 @@ meta:
     b1b58943-2b7b-479b-8caf-59ecaad36651: Default # Default
     b7de99ca-42a6-47d5-a87c-7543f84e639c: Pages # Pages
     b5705248-eb29-4714-bfa8-40499641ca95: 'Menu - Header' # Menu - Header
+    c615a9c4-62f7-45b2-b1fd-ca823af0de54: Buttons # Buttons
     c2434455-665e-4005-81d8-6df1bc63b014: $SYSTEM_NAME # $SYSTEM_NAME
     cbd7becc-06f1-4c4c-b953-45081affffaf: 'Alert Bar' # Alert Bar
     cc626e87-09aa-4a14-80e4-d44dbd87d144: 'Block: Video' # Block: Video
     d1c70998-f4bf-4681-922e-921e2a526697: 'Contact Form' # Contact Form
     d2c56410-5eb0-4ddf-a3dc-00036cbef8c0: 'Meta Data' # Meta Data
-    d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3: 'Rich Text' # Rich Text
-    dbe4010f-eb87-4e95-a69c-087821b73327: Simple # Simple
+    d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3: Text # Text
     e72fcb39-677a-4ffd-ae05-3064e47f7215: 'Block: Form' # Block: Form
-    f984d80e-8891-459f-aea7-a7d6df67e010: 'Page Target' # Page Target
+    f386df65-5754-4161-9cbb-ffc7042904cb: Button # Button
 plugins:
   admin-bar:
     edition: standard
@@ -464,15 +464,6 @@ plugins:
       useQueueForIntegrations: false
       useQueueForNotifications: false
       validateCustomTemplates: true
-  hyper:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_HYPER
-    schemaVersion: 1.0.0
-  image-resizer:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
   retcon:
     edition: standard
     enabled: true

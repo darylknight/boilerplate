@@ -38,7 +38,7 @@ fieldLayouts:
           -
             dateAdded: '2025-02-10T11:06:02+00:00'
             elementCondition: null
-            fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Rich Text
+            fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Text
             handle: null
             includeInCards: false
             instructions: null

@@ -3,7 +3,7 @@
 {% set asset = block.image.one %}
 
 {% set transform = {
-	width: 800,
+	width: 868,
 	height: 600
 } %}
 
@@ -24,25 +24,26 @@
 				: 'lg:col-start-9'
 			}}"
 		>
-			<article class="prose">
-				{{ block.richText }}
-			</article>
+			<div>
+				<article class="prose">
+					{{ block.text }}
+				</article>
 
-			{% set buttons = block.buttons %}
-			{% if not buttons.isEmpty %}
-				<div class="pt-10">
-					{% for button in buttons %}
-						{{
-							macros.button(
-								button.url,
-								button.text,
-								'btn mr-2',
-								button.target
-							)
-						}}
-					{% endfor %}
-				</div>
-			{% endif %}
+				{% set buttons = block.buttons %}
+				{% if buttons %}
+					<div class="pt-10">
+						{% for row in buttons %}
+							{{
+								macros.button(
+									row.button.url,
+									row.button.label,
+									'btn mr-2'
+								)
+							}}
+						{% endfor %}
+					</div>
+				{% endif %}
+			</div>
 		</div>
 	</div>
 </div>

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: richText
+handle: text
 instructions: null
-name: 'Rich Text'
+name: Text
 searchable: false
 settings:
   availableTransforms: ''
