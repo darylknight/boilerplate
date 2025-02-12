@@ -45,6 +45,12 @@
 	.prose p {
 		@apply mb-10 text-base leading-[1.8] last:mb-0 lg:text-lg lg:leading-[1.8];
 	}
+
+	/* Use pointer for buttons */
+	button:not(:disabled),
+	[role='button']:not(:disabled) {
+		cursor: pointer;
+	}
 }
 
 @layer components {
@@ -89,16 +95,8 @@
 		}
 	}
 
-	.table {
-		.prose & {
-			@apply mb-4 w-full table-auto border-collapse;
-		}
-	}
-
-	.field-instructions {
-		& > p {
-			@apply text-sm;
-		}
+	.field-instructions p {
+		@apply text-sm;
 	}
 
 	/* make select dropdowns readable on windows */
