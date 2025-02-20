@@ -4,6 +4,7 @@
 	"semi": false,
 	"singleQuote": true,
 	"twigSingleQuote": true,
+	"printWidth": 120,
 
 	"twigMultiTags": [
 		"nav,endnav",
