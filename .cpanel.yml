@@ -1,0 +1,14 @@
+---
+deployment:
+   tasks:
+      - export DEPLOYPATH=/home/sendyourmac/sendyourmac/
+      - /bin/cp -R config $DEPLOYPATH
+      - /bin/cp -R modules $DEPLOYPATH
+      - /bin/cp -R storage $DEPLOYPATH
+      - /bin/cp -R templates $DEPLOYPATH
+      - /bin/cp -R web $DEPLOYPATH
+      - /bin/cp -R bootstrap.php $DEPLOYPATH
+      - /bin/cp -R composer.json $DEPLOYPATH
+      - /bin/cp -R composer.lock $DEPLOYPATH
+      - /bin/cp -R craft $DEPLOYPATH
+      - /bin/cp -R vite.config.js $DEPLOYPATH
