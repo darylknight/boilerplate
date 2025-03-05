@@ -5,7 +5,7 @@ deployment:
       - /bin/cp -R config $DEPLOYPATH
       - /bin/cp -R modules $DEPLOYPATH
       - /bin/cp -R storage $DEPLOYPATH
-      # - /bin/cp -R templates $DEPLOYPATH
+      - /bin/cp -R templates $DEPLOYPATH
       - /bin/cp -R web $DEPLOYPATH
       - /bin/cp -R bootstrap.php $DEPLOYPATH
       - /bin/cp -R composer.json $DEPLOYPATH
