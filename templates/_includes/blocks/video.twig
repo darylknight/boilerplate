@@ -1,4 +1,8 @@
-{# ? |replace the iframe width="[0-9+]" and height="[0-9+]" so the aspect-ratio class works #}
+{# ? |replace the iframe width="" and height="" so the aspect-ratio class works #}
+{# ? remove the iframe style so Vimeo videos work #}
+{# ? unwrap (remove the wrapping div) from the iframe style so Vimeo videos work #}
+{# ? Remove script tags from Vimeo videos #}
+{# ? Add lazy loading #}
 
 <div class="container mx-auto px-6 py-10 lg:py-20">
 	{% if block.richText %}
@@ -9,10 +13,13 @@
 
 	{{
 		block.videoEmbedCode
+			|retconUnwrap('iframe')
+			|retconRemove('script')
 			|retconAttr(
 				'iframe',
 				{
 					class: 'w-full aspect-video',
+					style: false,
 					width: false,
 					height: false,
 					loading: 'lazy'
