@@ -13,18 +13,6 @@
 		{{ craft.vite.script('src/js/app.js', false) }}
 
 		{# TODO: Add favicon here #}
-
-		{# ? UTM Tracking #}
-		{# ? Credit - Steve Rowling #}
-		{%- if
-			not craft.app.session.get('queryParams')
-				and (craft.app.request.getQueryParams()|length) %}
-			{% do craft.app.session.set(
-				'queryParams',
-				craft.app.request.getQueryParams()
-			) %}
-		{% endif -%}
-		{%- set utmParams = ['utm_source', 'utm_medium', 'utm_campaign'] -%}
 	</head>
 
 	<body>
