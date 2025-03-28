@@ -20,7 +20,6 @@ return GeneralConfig::create()
 	->sendPoweredByHeader(false) // Don't tell the world that this site uses Craft
 	->maxUploadFileSize(100000000) // 100mb upload limit
 	->useEmailAsUsername() // Uses email instead of username
-	->preloadSingles() // Preload Single entries as Twig variables
 	->preventUserEnumeration() // Prevent user enumeration attacks
 	->enableGql(false) // Remove GraphQL from the sidebar
 	->transformGifs(false) // Don't screw up gifs by transforming them
@@ -46,5 +45,4 @@ return GeneralConfig::create()
 	->aliases([
 		'@web' => getenv('PRIMARY_SITE_URL'),
 		'@webroot' => dirname(__DIR__) . '/web',
-	])
-;
+	]);
