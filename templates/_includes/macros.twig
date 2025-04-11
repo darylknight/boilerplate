@@ -8,10 +8,7 @@
 			width="{{ transform ? transform.width|default('auto') }}"
 			height="{{ transform ? transform.height|default('auto') }}"
 			loading="lazy"
-			style="object-position: {{
-			asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100
-				~ '%;'
-			}}"
+			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
 			alt="{{ asset.alt }}"
 		/>
 	{% endif %}
@@ -84,9 +81,7 @@
 					},
 					page: {
 						attributes: {
-							class: [
-								"{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}"
-							]
+							class: ["{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}"]
 						}
 					},
 					pageTabs: {
