@@ -44,5 +44,5 @@ return GeneralConfig::create()
 	// This uses values from .env
 	->aliases([
 		'@web' => getenv('PRIMARY_SITE_URL'),
-		'@webroot' => dirname(__DIR__) . '/web',
+		'@webroot' => getenv('CRAFT_WEB_ROOT'),
 	]);
