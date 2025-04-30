@@ -18,9 +18,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 Craft CMS is built on PHP, so it needs a local environment to run it. See Craft's basic requirements [here](https://craftcms.com/docs/5.x/requirements.html). This project should run in various dev environments, but it assumes [DDEV](https://ddev.com) by default. To run this site locally, you will need:
 
-- Composer 2.0+
+- Composer 2
 - DDEV (or Apache/Nginx)
-- PHP 8.2+
+- PHP 8.2
 - MySQL 8.0.17+ using InnoDB
 - 512MB+ of memory allocated to PHP
 
