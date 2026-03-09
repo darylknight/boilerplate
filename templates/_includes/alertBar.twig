@@ -1,7 +1,7 @@
-{% if alertBar.alertBarStartDate < now and alertBar.alertBarEndDate > now %}
+{% if alertBar.startDate < now and alertBar.endDate > now %}
 	<div class="bg-blue py-2 text-center text-white">
 		<article class="prose mx-auto">
-			{{ alertBar.alertBarText }}
+			{{ alertBar.text }}
 		</article>
 	</div>
 {% endif %}

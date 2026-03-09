@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
   73d01e66-0e22-449e-913f-cf6508764087:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -15,7 +16,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -24,7 +24,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -44,13 +43,11 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -65,6 +62,7 @@ fieldLayouts:
         name: Content
         uid: 1258e9d0-2fed-407e-bd49-a654848e83c8
         userCondition: null
+    thumbFieldKey: null
 fs: seo
 handle: seo
 name: SEO

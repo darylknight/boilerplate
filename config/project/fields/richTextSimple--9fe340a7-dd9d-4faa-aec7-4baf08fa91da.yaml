@@ -1,47 +1,24 @@
 columnSuffix: null
-handle: text
+handle: richTextSimple
 instructions: null
-name: Text
+name: 'Rich Text - Simple'
 searchable: false
 settings:
   advancedLinkFields: null
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
-  css: ".ck .table {\r\n  width: 100%;\r\n}"
+  css: null
   defaultTransform: null
   defaultUploadLocationSubpath: null
   defaultUploadLocationVolume: null
   fullGraphqlData: true
-  headingLevels:
-    - '1'
-    - '2'
-    - '3'
-    - '4'
-    - '5'
+  headingLevels: false
   imageEntryTypeUid: null
   imageFieldUid: null
   imageMode: img
   js: null
-  options:
-    __assoc__:
-      -
-        - alignment
-        -
-          __assoc__:
-            -
-              - options
-              -
-                - left
-                - center
-                - right
-      -
-        - mediaEmbed
-        -
-          __assoc__:
-            -
-              - previewsInData
-              - true
+  options: null
   parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
@@ -51,18 +28,11 @@ settings:
   sourceEditingGroups:
     - __ADMINS__
   toolbar:
-    - sourceEditing
     - heading
     - '|'
     - bold
     - italic
     - link
-    - alignment
-    - bulletedList
-    - numberedList
-    - horizontalLine
-    - insertTable
-    - blockQuote
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

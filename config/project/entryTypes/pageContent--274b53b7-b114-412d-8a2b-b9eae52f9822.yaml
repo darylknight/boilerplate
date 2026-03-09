@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: green
+description: null
 fieldLayouts:
   cc0dc321-be99-46d4-91f9-d533b05ef040:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -14,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -37,13 +38,13 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-11T10:43:31+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0f821582-b0f9-4517-9422-53b6ce1325ac # Content Matrix
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -59,13 +60,13 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2025-02-11T10:43:31+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d2c56410-5eb0-4ddf-a3dc-00036cbef8c0 # Meta Data
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -76,6 +77,7 @@ fieldLayouts:
         name: SEO
         uid: 4fc8a576-820b-452e-9fc4-69fcd6698bc9
         userCondition: null
+    thumbFieldKey: null
 handle: pageContent
 hasTitleField: true
 icon: memo
@@ -87,3 +89,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,49 +1,24 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   6b8a5bf3-93ba-4dcc-a120-cfbd5079af8a:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:0eec332a-8470-4fe0-8cd2-51eb90611cf8'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
             dateAdded: '2025-02-10T11:06:02+00:00'
-            disabled: false
+            editCondition: null
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4f40bdc2-365b-4204-88cb-924748d4d71f
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-02-10T11:06:02+00:00'
-            elementCondition: null
+            elementEditCondition: null
             fieldUid: 63092641-8191-4272-9d2b-870c0e7aa674 # Image
             handle: null
-            includeInCards: true
             instructions: null
             label: Image
-            providesThumbs: true
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -54,14 +29,16 @@ fieldLayouts:
         name: Content
         uid: b756e4dc-0aab-4091-8012-c4c644c233ba
         userCondition: null
+    thumbFieldKey: 'layoutElement:0eec332a-8470-4fe0-8cd2-51eb90611cf8'
 handle: image
 hasTitleField: false
-icon: null
+icon: image
 name: 'Block: Image'
-showSlugField: true
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

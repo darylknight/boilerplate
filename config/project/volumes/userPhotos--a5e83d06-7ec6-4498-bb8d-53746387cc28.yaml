@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
   9b51f130-54e3-4503-9a73-9527b1f8fab1:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -15,7 +16,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -24,7 +24,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -44,13 +43,11 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -65,6 +62,7 @@ fieldLayouts:
         name: Content
         uid: 02ef9582-02f8-4e39-8b57-33d39e8dadaf
         userCondition: null
+    thumbFieldKey: null
 fs: userPhotos
 handle: userPhotos
 name: 'User Photos'

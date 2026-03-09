@@ -1,7 +1,6 @@
 {# This macro requires an asset and a transform #}
 {% macro image(asset, transform, class) %}
 	{% if asset %}
-		{# If we're in local dev, just load a placeholder #}
 		<img
 			src="{{ asset.url(transform) }}"
 			class="{{ class ? class }}"
@@ -15,9 +14,9 @@
 {% endmacro %}
 
 {# This macro requires a URL and some button text #}
-{% macro button(url, label, class) %}
+{% macro button(url, label, class, target) %}
 	{% if url %}
-		<a href="{{ url }}" class="{{ class }}">{{ label }}</a>
+		<a href="{{ url }}" class="{{ class }}" {{ target ? 'target="_blank"' }}>{{ label }}</a>
 	{% endif %}
 {% endmacro %}
 
@@ -36,12 +35,12 @@
 					},
 					alertError: {
 						attributes: {
-							class: 'rounded-md bg-red/10 border border-red text-sm text-red p-4 mb-4'
+							class: 'rounded-md bg-red-50 border border-red-200 text-sm text-red-700 p-4 mb-4'
 						}
 					},
 					alertSuccess: {
 						attributes: {
-							class: 'rounded-md bg-green/10 border border-green text-sm text-green p-4 mb-4'
+							class: 'rounded-md bg-green-50 border border-green-200 text-sm text-green-700 p-4 mb-4'
 						}
 					},
 					buttonWrapper: {
@@ -66,17 +65,26 @@
 					},
 					saveButton: {
 						attributes: {
-							class: ['btn', 'mx-2']
+							class: [
+								'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-600 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+								'mx-2'
+							]
 						}
 					},
 					backButton: {
 						attributes: {
-							class: ['btn', 'mx-2']
+							class: [
+								'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500',
+								'mx-2'
+							]
 						}
 					},
 					submitButton: {
 						attributes: {
-							class: ['btn', 'mx-2 order-10']
+							class: [
+								'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+								'mx-2 order-10'
+							]
 						}
 					},
 					page: {
@@ -99,7 +107,7 @@
 							class: [
 								'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
 								"{{ (page.id == currentPage.id) ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}",
-								"{{ page.getFieldErrors(submission) ? 'text-red' : false }}"
+								"{{ page.getFieldErrors(submission) ? 'text-red-500' : false }}"
 							]
 						}
 					},
@@ -135,18 +143,12 @@
 					},
 					row: {
 						attributes: {
-							class: [
-								'grid mb-4 gap-4 grid-cols-1',
-								"{{ row.getFields(false, false) | length == 2 ? 'md:grid-cols-2' }}",
-								"{{ row.getFields(false, false) | length == 3 ? 'md:grid-cols-2 lg:grid-cols-3' }}",
-								"{{ row.getFields(false, false) | length == 4 ? 'md:grid-cols-2 xl:grid-cols-4' }}",
-								"{{ row.getIsHidden() ? 'hidden' }}"
-							]
+							class: ['flex flex-wrap -mx-4 mb-4', "{{ row.getIsHidden() ? 'hidden' }}"]
 						}
 					},
 					field: {
 						attributes: {
-							class: 'flex-1'
+							class: 'px-4 flex-1 data-[conditionally-hidden=true]:hidden'
 						}
 					},
 					fieldLabel: {
@@ -156,40 +158,45 @@
 					},
 					fieldRequired: {
 						attributes: {
-							class: 'text-red'
+							class: 'text-red-500'
 						}
 					},
 					fieldInstructions: {
 						attributes: {
-							class: 'mb-1 field-instructions text-gray-500'
+							class: 'mb-1 text-sm text-gray-500'
 						}
 					},
 					fieldInput: {
 						attributes: {
 							class: [
 								'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md',
-								"{{ (submission.getErrors(field.handle) ?? null) ? 'border-red' }}"
+								"{{ (submission.getErrors(field.handle) ?? null) ? 'border-red-300' }}"
 							]
 						}
 					},
 					fieldError: {
 						attributes: {
-							class: 'text-red text-sm mt-1'
+							class: 'text-red-500 text-sm mt-1'
 						}
 					},
 					fieldAddButton: {
 						attributes: {
-							class: 'btn'
+							class: 'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500'
 						}
 					},
 					fieldRemoveButton: {
 						attributes: {
-							class: 'btn'
+							class: 'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500'
 						}
 					},
 					fieldLimit: {
 						attributes: {
 							class: 'mt-2 text-sm text-gray-500'
+						}
+					},
+					fieldRichText: {
+						attributes: {
+							class: 'relative'
 						}
 					},
 					agree: {
@@ -213,7 +220,7 @@
 					checkboxes: {
 						fieldOption: {
 							attributes: {
-								class: 'flex items-start mb-2'
+								class: ["{{ field.layout == 'horizontal' ? 'inline-block mr-4' : 'flex items-start mb-2' }}"]
 							}
 						},
 						fieldOptionLabel: {
@@ -236,6 +243,14 @@
 							}
 						}
 					},
+					fileUpload: {
+						fieldInput: {
+							resetClass: true,
+							attributes: {
+								class: 'block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-slate-200 file:text-slate-700 hover:file:bg-slate-300'
+							}
+						}
+					},
 					hiddenField: {
 						field: {
 							resetClass: true,
@@ -247,7 +262,7 @@
 					radioButtons: {
 						fieldOption: {
 							attributes: {
-								class: 'flex items-start mb-2'
+								class: ["{{ field.layout == 'horizontal' ? 'inline-block mr-4' : 'flex items-start mb-2' }}"]
 							}
 						},
 						fieldOptionLabel: {
@@ -282,7 +297,7 @@
 						},
 						fieldRemoveButton: {
 							attributes: {
-								class: 'btn'
+								class: 'absolute top-0 right-0 m-1 inline-flex items-center px-2 py-1.5 border border-transparent text-xs font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500'
 							}
 						}
 					},
@@ -299,7 +314,7 @@
 						},
 						fieldRemoveButton: {
 							attributes: {
-								class: 'btn'
+								class: 'absolute top-0 right-0 m-1 inline-flex items-center px-2 py-1 border border-slate-300 text-xs font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500'
 							}
 						}
 					},

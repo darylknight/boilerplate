@@ -6,6 +6,8 @@ permissions:
   - accesscpwhensystemisoff
   - accesssitewhensystemisoff
   - 'assignusergroup:4e8528d9-c0c1-45d4-affa-da3b37001b13' # Site Admin
+  - 'changeauthorforpeerentries:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
+  - 'changeauthorforpeerentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'createentries:b5705248-eb29-4714-bfa8-40499641ca95' # Menu - Header
   - 'createentries:b7de99ca-42a6-47d5-a87c-7543f84e639c' # Pages
   - 'createfolders:08d0227a-6f2b-43f5-a49d-c43fc178a53a' # Files

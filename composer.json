@@ -1,6 +1,6 @@
 {
 	"require": {
-		"craftcms/ckeditor": "^4.1.0",
+		"craftcms/ckeditor": "^5.0.0",
 		"craftcms/cms": "^5.0.0",
 		"mmikkel/retcon": "^3.2.0",
 		"nystudio107/craft-retour": "^5.0.2",

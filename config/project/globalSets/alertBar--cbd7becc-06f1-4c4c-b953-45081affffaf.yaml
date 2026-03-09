@@ -1,18 +1,19 @@
 fieldLayouts:
   bb12114c-041a-4a0c-a85e-090d88a3fe9b:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
             dateAdded: '2025-02-10T11:06:02+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Alert Bar - Start Date
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
+            elementEditCondition: null
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Alert Bar - Date
+            handle: startDate
+            instructions: 'When the alert bar should start appearing'
+            label: 'Start Date'
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -21,40 +22,41 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2025-02-10T11:06:02+00:00'
+            dateAdded: '2026-03-09T08:19:55+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 5afb69df-76c7-42e3-9af4-bc31faefa3d5 # Alert Bar - End Date
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
+            elementEditCondition: null
+            fieldUid: 17c63dc5-a8a5-4077-84e6-6f5d5baa1e46 # Alert Bar - Date
+            handle: endDate
+            instructions: 'When the alert bar should stop appearing'
+            label: 'End Date'
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 69da0d49-66b3-4204-9fa7-c36cc45f7709
+            uid: 72c2170f-b061-4e55-93c4-b0ad3bf8d121
             userCondition: null
             warning: null
             width: 50
           -
-            dateAdded: '2025-02-10T11:06:02+00:00'
+            dateAdded: '2026-03-09T08:30:45+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 60b2f9cd-8e83-49e0-921e-f6d0b325e69d # Alert Bar - Text
-            handle: null
-            includeInCards: false
+            elementEditCondition: null
+            fieldUid: 9fe340a7-dd9d-4faa-aec7-4baf08fa91da # Rich Text - Simple
+            handle: text
             instructions: null
-            label: null
-            providesThumbs: false
+            label: Text
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6892edb5-c4ae-4583-930d-ef69eb131f29
+            uid: d4f060c9-8586-4daf-87ed-44df6b2204bc
             userCondition: null
             warning: null
             width: 100
         name: Content
         uid: d71cb39a-1664-46e1-8e6e-4fddfba65f37
         userCondition: null
+    thumbFieldKey: null
 handle: alertBar
 name: 'Alert Bar'
 sortOrder: 3

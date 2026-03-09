@@ -2,16 +2,14 @@
 
 <div class="container mx-auto px-6 py-10 lg:py-20">
 	<article class="prose">
-		{{ block.richText }}
+		{{ block.text }}
 	</article>
 
-	{% set buttons = block.buttons %}
-	{% if not buttons.isEmpty %}
+	{% set buttons = block.buttons.all() %}
+	{% if buttons %}
 		<div class="pt-10">
-			{% for button in buttons %}
-				{{
-					macros.button(button.url, button.text, 'btn mr-2', button.target)
-				}}
+			{% for row in buttons %}
+				{{ macros.button(row.button.url, row.button.label, 'btn mr-2', row.button.target) }}
 			{% endfor %}
 		</div>
 	{% endif %}

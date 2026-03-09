@@ -6,6 +6,7 @@ searchable: false
 settings:
   advancedFields:
     - urlSuffix
+    - target
   fullGraphqlData: false
   maxLength: 255
   showLabelField: true
@@ -34,6 +35,12 @@ settings:
             -
               - sources
               - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
       -
         - url
         -
@@ -43,6 +50,9 @@ settings:
               - ''
             -
               - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
               - ''
   types:
     - entry

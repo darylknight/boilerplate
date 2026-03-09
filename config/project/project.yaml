@@ -1,4 +1,4 @@
-dateModified: 1739283958
+dateModified: 1773045388
 elementSources:
   craft\elements\Asset:
     -
@@ -213,29 +213,25 @@ fs:
     url: '@web/uploads/users'
 meta:
   __names__:
-    0defd9a0-66bd-4509-aa52-57274feb18d7: '404 Heading' # 404 Heading
     0f57cf4e-d77d-4b47-bc2c-46a7aeb51e24: New # New
     0f821582-b0f9-4517-9422-53b6ce1325ac: 'Content Matrix' # Content Matrix
     1b16bb99-ac4b-4bc8-85f8-71966c72102e: 'Video Embed Code' # Video Embed Code
     1edd02fb-b01b-4fc9-90fb-0b111094ab5f: Form # Form
     2ed25488-1bf1-4e97-b75b-0985a25733f9: 'Matrix: Button' # Matrix: Button
-    3c62ae9b-e6d3-4100-a0d1-1c5abab96be2: Standard # Standard
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
-    5afb69df-76c7-42e3-9af4-bc31faefa3d5: 'Alert Bar - End Date' # Alert Bar - End Date
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
-    17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Alert Bar - Start Date' # Alert Bar - Start Date
+    9fe340a7-dd9d-4faa-aec7-4baf08fa91da: 'Rich Text - Simple' # Rich Text - Simple
+    17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Alert Bar - Date' # Alert Bar - Date
     30ba6aa9-32c2-4356-8811-0ba5fe3b2171: 'Block: Image' # Block: Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
-    60b2f9cd-8e83-49e0-921e-f6d0b325e69d: 'Alert Bar - Text' # Alert Bar - Text
     234a402e-c9d9-4986-a8da-cae7de748a32: 'Block: Text' # Block: Text
     274b53b7-b114-412d-8a2b-b9eae52f9822: 'Page > Content' # Page > Content
     414e3fb0-5309-47af-8bcc-920b35c18875: 'Menu Item' # Menu Item
-    0468bb2b-6b23-493c-9867-c8e7fb7f4431: '404 Text' # 404 Text
-    669efec2-e57d-4d6f-9adc-4e4cf69972d0: Alert # Alert
     6975e64f-9cc5-4116-bee9-1458fdfedaeb: 'Public Schema' # Public Schema
     22495aea-1ee3-41b8-9e04-206260f630a6: Layout # Layout
     138367f7-dc97-47dc-b20f-5db11ef457b3: 'Block: Text + Image' # Block: Text + Image
+    1757808b-bb6a-4160-bdc2-94215eb2b6f9: 'Plain Text' # Plain Text
     63092641-8191-4272-9d2b-870c0e7aa674: Image # Image
     93796209-b311-4bfa-8cd4-fd9b8ca6d012: '404 Error' # 404 Error
     a5e83d06-7ec6-4498-bb8d-53746387cc28: 'User Photos' # User Photos
@@ -280,7 +276,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.0.0.1
   dashboard-begone:
     edition: standard
     enabled: true
@@ -289,7 +285,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_FORMIE
-    schemaVersion: 3.4.8
+    schemaVersion: 3.4.12
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -477,7 +473,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_SEOMATIC
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -490,7 +486,7 @@ plugins:
           __assoc__:
             -
               - policy
-              - '''self'''
+              - "'self'"
       devModeCpTitlePrefix: '&#x1f6a7;⚙ '
       devModeTitlePrefix: '&#x1f6a7; '
       displayAnalysisSidebar: true
@@ -532,5 +528,5 @@ system:
   live: $SYSTEM_STATUS
   name: $SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.9.0.8
   timeZone: Europe/London

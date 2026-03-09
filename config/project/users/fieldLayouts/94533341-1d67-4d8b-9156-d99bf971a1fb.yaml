@@ -1,3 +1,4 @@
+cardThumbAlignment: end
 tabs:
   -
     elementCondition: null
@@ -12,7 +13,6 @@ tabs:
         disabled: false
         elementCondition: null
         id: null
-        includeInCards: false
         inputType: null
         instructions: null
         label: null
@@ -21,7 +21,6 @@ tabs:
         name: null
         orientation: null
         placeholder: null
-        providesThumbs: false
         readonly: false
         requirable: true
         required: false
@@ -38,11 +37,9 @@ tabs:
         dateAdded: '2025-02-10T11:06:02+00:00'
         elementCondition: null
         id: null
-        includeInCards: false
         instructions: null
         label: null
         orientation: null
-        providesThumbs: false
         requirable: false
         tip: null
         type: craft\fieldlayoutelements\users\PhotoField
@@ -59,7 +56,6 @@ tabs:
         disabled: false
         elementCondition: null
         id: null
-        includeInCards: false
         inputType: null
         instructions: null
         label: null
@@ -68,7 +64,6 @@ tabs:
         name: null
         orientation: null
         placeholder: null
-        providesThumbs: false
         readonly: false
         requirable: false
         size: null
@@ -82,3 +77,4 @@ tabs:
     name: Content
     uid: 1ff811c3-2b80-40c6-80c3-557012a7047f
     userCondition: null
+thumbFieldKey: null

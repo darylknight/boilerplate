@@ -6,6 +6,7 @@ searchable: false
 settings:
   createButtonLabel: 'Add a button'
   defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
       __assoc__:
@@ -19,7 +20,7 @@ settings:
   propagationKeyFormat: null
   propagationMethod: all
   showCardsInGrid: true
-  viewMode: cards
+  viewMode: cards-grid
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

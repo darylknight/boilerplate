@@ -63,35 +63,38 @@
 	.prose {
 		/* * Prose /*
 		/* Imitates Tailwind's Typography plugin without all the extra stuff */
-		& ul {
+		ul {
 			@apply mb-10 list-disc pl-8 text-base last:mb-0 lg:text-lg;
 		}
-		& ol {
+		ol {
 			@apply mb-10 list-decimal pl-8 text-base last:mb-0 lg:text-lg;
 		}
-		& li {
+		li {
 			@apply mb-2;
 		}
-		& hr {
+		hr {
 			@apply mb-4 border border-neutral-400 last:mb-0;
 		}
-		& .table {
+		.table {
 			@apply mb-4 w-full table-auto border-collapse;
 		}
-		& table {
+		table {
 			@apply mb-4 w-full table-auto border-collapse;
 		}
-		& table td {
+		table td {
 			@apply border border-neutral-300 p-2;
 		}
-		& table th {
+		table th {
 			@apply border border-neutral-300 p-2;
 		}
-		& table th {
+		table th {
 			@apply bg-neutral-100;
 		}
-		& blockquote {
+		blockquote {
 			@apply mb-5 border-l-4 pl-4 italic;
+		}
+		a {
+			@apply underline;
 		}
 	}
 

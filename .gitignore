@@ -10,9 +10,6 @@
 /public/uploads/*
 /web/uploads/*
 
-# UPLOADS
-/web/uploads/*
-
 # BUILD FILES
 /bower_components/*
 /node_modules/*

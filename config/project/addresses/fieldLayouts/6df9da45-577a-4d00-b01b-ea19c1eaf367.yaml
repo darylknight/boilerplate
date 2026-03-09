@@ -1,3 +1,6 @@
+cardThumbAlignment: end
+cardView:
+  - 'layoutElement:7adc3fa9-a090-4ad3-b9e5-5cff4b844188'
 tabs:
   -
     elementCondition: null
@@ -11,7 +14,6 @@ tabs:
         disabled: false
         elementCondition: null
         id: null
-        includeInCards: false
         inputType: null
         instructions: null
         label: null
@@ -20,9 +22,8 @@ tabs:
         name: null
         orientation: null
         placeholder: null
-        providesThumbs: false
         readonly: false
-        requirable: false
+        required: true
         size: null
         step: null
         tip: null
@@ -37,11 +38,9 @@ tabs:
         dateAdded: '2025-02-10T11:06:02+00:00'
         elementCondition: null
         id: null
-        includeInCards: false
         instructions: null
         label: null
         orientation: null
-        providesThumbs: false
         requirable: false
         tip: null
         type: craft\fieldlayoutelements\addresses\CountryCodeField
@@ -52,10 +51,8 @@ tabs:
       -
         dateAdded: '2025-02-10T11:06:02+00:00'
         elementCondition: null
-        includeInCards: true
         instructions: null
         label: null
-        providesThumbs: false
         required: false
         tip: null
         type: craft\fieldlayoutelements\addresses\AddressField
@@ -65,3 +62,4 @@ tabs:
     name: Content
     uid: bb69d4fc-8634-422b-8df4-82f747e4f3de
     userCondition: null
+thumbFieldKey: null

@@ -6,11 +6,12 @@ searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
-  maxRelations: 1
-  minRelations: 1
+  maxRelations: null
+  minRelations: null
   selectionLabel: null
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   sources: '*'
   targetSiteId: null

@@ -1,44 +1,46 @@
 fieldLayouts:
   0647ea85-6ad1-48ad-8d63-5524839e47c6:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-02-10T11:06:02+00:00'
+            dateAdded: '2026-03-09T08:25:24+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 0defd9a0-66bd-4509-aa52-57274feb18d7 # 404 Heading
-            handle: null
-            includeInCards: false
+            elementEditCondition: null
+            fieldUid: 1757808b-bb6a-4160-bdc2-94215eb2b6f9 # Plain Text
+            handle: heading
             instructions: null
-            label: null
-            providesThumbs: false
-            required: true
+            label: Heading
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9a52d592-806c-4803-b0e3-343287617c8f
+            uid: 843160a8-f7ce-4f42-a272-eaa4d69a7063
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-02-10T11:06:02+00:00'
+            dateAdded: '2026-03-09T08:25:24+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 0468bb2b-6b23-493c-9867-c8e7fb7f4431 # 404 Text
+            elementEditCondition: null
+            fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Text
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9a0f2b63-1bc1-43fd-9f64-17565bbe0b19
+            uid: b4aadc8a-e601-4c60-a941-7aabfa588af7
             userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 772352b9-f4fd-4f06-b4dd-2ff5a7c41ee9
         userCondition: null
+    thumbFieldKey: null
 handle: error404
 name: '404 Error'
 sortOrder: 2
