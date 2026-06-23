@@ -14,8 +14,6 @@ hooks:
       - exec: npm install
       - exec: npm run build
       - exec: composer install
-upload_dirs:
-   - uploads
 webimage_extra_packages: [build-essential]
 use_dns_when_possible: true
 composer_version: '2'
