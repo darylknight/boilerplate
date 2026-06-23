@@ -1,15 +1,22 @@
 {# This macro requires an asset and a transform #}
-{% macro image(asset, transform, class) %}
+{% macro image(asset, transform, class, loading) %}
 	{% if asset %}
-		<img
-			src="{{ asset.url(transform) }}"
-			class="{{ class ? class }}"
-			width="{{ transform ? transform.width|default('auto') }}"
-			height="{{ transform ? transform.height|default('auto') }}"
-			loading="lazy"
-			style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
-			alt="{{ asset.alt }}"
-		/>
+		{% if asset.extension == 'svg' %}
+			<img src="{{ asset.url }}"
+				class="{{ class ? class }}"
+				loading="{{ loading|default('lazy') }}"
+				alt="{{ asset.alt }}" />
+		{% else %}
+			{% set webpTransform = transform is iterable ? transform|merge({format: 'webp'}) : {handle: transform, format: 'webp'} %}
+			<picture>
+				<source srcset="{{ asset.url(webpTransform) }}" type="image/webp">
+				<img src="{{ asset.url(transform) }}"
+					class="{{ class ? class }}"
+					loading="{{ loading|default('lazy') }}"
+					style="object-position: {{ asset.focalPoint.x * 100 ~ '% ' ~ asset.focalPoint.y * 100 ~ '%;' }}"
+					alt="{{ asset.alt }}" />
+			</picture>
+		{% endif %}
 	{% endif %}
 {% endmacro %}
 

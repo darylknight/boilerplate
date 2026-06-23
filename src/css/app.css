@@ -7,6 +7,7 @@
 @theme {
 	--font-*: initial;
 	--font-sans: Unbounded;
+	--font-mono: 'JetBrains Mono', monospace;
 }
 
 /* ? See https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer for details on why these are split into base/components/utilities */
@@ -50,6 +51,10 @@
 	button:not(:disabled),
 	[role='button']:not(:disabled) {
 		cursor: pointer;
+	}
+
+	code {
+		@apply rounded-md border border-gray-200 bg-gray-100 px-1.5 py-0.5 font-mono text-sm text-rose-600;
 	}
 }
 

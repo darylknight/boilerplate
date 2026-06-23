@@ -1,4 +1,4 @@
-dateModified: 1773052537
+dateModified: 1782204439
 elementSources:
   craft\elements\Asset:
     -
@@ -221,7 +221,6 @@ meta:
     4e8528d9-c0c1-45d4-affa-da3b37001b13: 'Site Admin' # Site Admin
     6b6bbbe4-2628-4f6e-9c4c-f5be79037ddd: SEO # SEO
     08d0227a-6f2b-43f5-a49d-c43fc178a53a: Files # Files
-    9fe340a7-dd9d-4faa-aec7-4baf08fa91da: 'Rich Text - Simple' # Rich Text - Simple
     17c63dc5-a8a5-4077-84e6-6f5d5baa1e46: 'Alert Bar - Date' # Alert Bar - Date
     30ba6aa9-32c2-4356-8811-0ba5fe3b2171: 'Block: Image' # Block: Image
     33af4157-ab80-44a3-b036-006aac36eacf: Images # Images
@@ -253,10 +252,14 @@ plugins:
     enabled: true
     schemaVersion: 3.1.0
     settings:
-      customCss: "admin-bar {\r\n    position: fixed;\r\n    top: auto;\r\n    bottom: 0;\r\n    z-index: 999;\r\n}\r\nbody {\r\n    padding-bottom: 43px;\r\n}"
+      autoRender: true
+      customCss: "admin-bar {\r\n    position: fixed;\r\n    top: auto;\r\n    bottom: 0;\r\n    z-index: 999;\r\n    width: 100%;\r\n    margin: 0;\r\n}\r\nbody {\r\n    padding-bottom: 43px;\r\n}"
       customLinks:
         -
           __assoc__:
+            -
+              - icon
+              - ''
             -
               - linkLabel
               - ''
@@ -266,17 +269,15 @@ plugins:
             -
               - adminOnly
               - ''
-      displayDashboardLink: false
-      displayDefaultEditSection: false
-      displayGreeting: true
-      displayGuideLink: true
-      displayLogout: true
-      displaySettingsLink: false
-      displayUtilitiesLink: true
+      customWidgets: ''
+      mobileMode: true
+      theme: default
+      toolbarToggle: true
+      toolbarToggleDraggable: false
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 5.0.0.1
+    schemaVersion: 5.6.0.0
   dashboard-begone:
     edition: standard
     enabled: true
@@ -528,5 +529,5 @@ system:
   live: $SYSTEM_STATUS
   name: $SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.10.0.0
   timeZone: Europe/London

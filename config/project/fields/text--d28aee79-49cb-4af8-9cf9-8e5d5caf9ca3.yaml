@@ -9,6 +9,7 @@ settings:
   availableVolumes: '*'
   characterLimit: null
   css: ".ck .table {\r\n  width: 100%;\r\n}"
+  cssFile: null
   defaultTransform: null
   defaultUploadLocationSubpath: null
   defaultUploadLocationVolume: null
@@ -23,6 +24,7 @@ settings:
   imageFieldUid: null
   imageMode: img
   js: null
+  jsFile: null
   options:
     __assoc__:
       -
@@ -63,6 +65,7 @@ settings:
     - horizontalLine
     - insertTable
     - blockQuote
+    - code
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

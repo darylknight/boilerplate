@@ -38,18 +38,18 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2026-03-09T08:30:45+00:00'
+            dateAdded: '2026-06-23T08:47:05+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 9fe340a7-dd9d-4faa-aec7-4baf08fa91da # Rich Text - Simple
-            handle: text
+            fieldUid: d28aee79-49cb-4af8-9cf9-8e5d5caf9ca3 # Text
+            handle: null
             instructions: null
-            label: Text
-            required: false
+            label: null
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d4f060c9-8586-4daf-87ed-44df6b2204bc
+            uid: aa594167-8e0c-4681-b440-fb72aa1c7f24
             userCondition: null
             warning: null
             width: 100
