@@ -1,4 +1,4 @@
-dateModified: 1782204439
+dateModified: 1794211942
 elementSources:
   craft\elements\Asset:
     -
@@ -286,7 +286,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_FORMIE
-    schemaVersion: 3.4.12
+    schemaVersion: 3.4.13
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -461,6 +461,84 @@ plugins:
       useQueueForIntegrations: false
       useQueueForNotifications: false
       validateCustomTemplates: true
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      assetSourceSettings:
+        __assoc__:
+          -
+            - 1
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+                -
+                  - imageWidth
+                  - ''
+                -
+                  - imageHeight
+                  - ''
+                -
+                  - imageQuality
+                  - ''
+          -
+            - 2
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+                -
+                  - imageWidth
+                  - ''
+                -
+                  - imageHeight
+                  - ''
+                -
+                  - imageQuality
+                  - ''
+          -
+            - 4
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+                -
+                  - imageWidth
+                  - ''
+                -
+                  - imageHeight
+                  - ''
+                -
+                  - imageQuality
+                  - ''
+          -
+            - 3
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+                -
+                  - imageWidth
+                  - ''
+                -
+                  - imageHeight
+                  - ''
+                -
+                  - imageQuality
+                  - ''
+      enabled: true
+      imageHeight: 1440
+      imageQuality: 100
+      imageWidth: 2560
+      nonDestructiveResize: false
+      skipLarger: true
+      useGlobalSettings: true
   retcon:
     edition: standard
     enabled: true
@@ -529,5 +607,5 @@ system:
   live: $SYSTEM_STATUS
   name: $SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 5.10.0.0
+  schemaVersion: 5.12.0.1
   timeZone: Europe/London

@@ -10,6 +10,19 @@ Alpine.plugin(focus)
 Alpine.start()
 //
 
+// init.js scans the document for registered selectors and lazy-loads
+// the matching module from ./modules/ only when its elements are found on the page.
+import init from './init'
+;((ready) => {
+	if (document.readyState !== 'loading') {
+		ready()
+	} else {
+		document.addEventListener('DOMContentLoaded', ready)
+	}
+})(() => {
+	init(document)
+})
+
 /**
  * Accept HMR as per: https://vitejs.dev/guide/api-hmr.html & https://nystudio107.com/docs/vite/
  */

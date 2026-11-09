@@ -66,6 +66,7 @@ fieldLayouts:
 fs: seo
 handle: seo
 name: SEO
+propagationMethod: custom
 sortOrder: 3
 subpath: ''
 titleTranslationKeyFormat: null
