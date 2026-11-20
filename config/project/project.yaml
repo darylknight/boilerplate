@@ -1,4 +1,4 @@
-dateModified: 1794211942
+dateModified: 1795166217
 elementSources:
   craft\elements\Asset:
     -
@@ -286,7 +286,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: $PLUGIN_FORMIE
-    schemaVersion: 3.4.13
+    schemaVersion: 3.4.14
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -607,5 +607,5 @@ system:
   live: $SYSTEM_STATUS
   name: $SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 5.12.0.1
+  schemaVersion: 5.12.0.2
   timeZone: Europe/London

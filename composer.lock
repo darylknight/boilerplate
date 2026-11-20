@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73c01ac1ea074cddfe8b467d16cf3bfe",
+    "content-hash": "08bbb4770e292cf5a9e322d8ec2d94b4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -246,16 +246,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v2.3.2",
+            "version": "v2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "e3ce66714cfa181b848533d926e8583261253c9e"
+                "reference": "390ebd12f93cb1c12b0f89d2bf0d6d67c29e5e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/e3ce66714cfa181b848533d926e8583261253c9e",
-                "reference": "e3ce66714cfa181b848533d926e8583261253c9e",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/390ebd12f93cb1c12b0f89d2bf0d6d67c29e5e99",
+                "reference": "390ebd12f93cb1c12b0f89d2bf0d6d67c29e5e99",
                 "shasum": ""
             },
             "require": {
@@ -304,9 +304,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v2.3.2"
+                "source": "https://github.com/commerceguys/addressing/tree/v2.3.3"
             },
-            "time": "2026-10-09T10:50:35+00:00"
+            "time": "2026-11-17T19:39:57+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -588,11 +588,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.12.0.1",
+            "version": "5.12.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/f84281b3fe29a890e9903df9260b659fc32d0aa0",
-                "reference": "f84281b3fe29a890e9903df9260b659fc32d0aa0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/dc4734d0a4ec3eef7cbf9379909048c46c74ea16",
+                "reference": "dc4734d0a4ec3eef7cbf9379909048c46c74ea16",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +620,7 @@
                 "illuminate/support": "^10.49",
                 "league/oauth2-server": "^9.0",
                 "league/uri": "^7.0",
-                "mcp/sdk": "0.8.1",
+                "mcp/sdk": "~0.9.0",
                 "mikehaertl/php-shellcommand": "^1.6.3",
                 "moneyphp/money": "^4.0",
                 "monolog/monolog": "^3.0",
@@ -695,7 +695,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2026-11-03T21:02:22+00:00"
+            "time": "2026-11-10T11:41:53+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1143,20 +1143,20 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.6",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca"
+                "reference": "d2e16653a734c8784c1851ad68b02f997b53ca82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
-                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/d2e16653a734c8784c1851ad68b02f997b53ca82",
+                "reference": "d2e16653a734c8784c1851ad68b02f997b53ca82",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.4 || ^8.0"
             },
             "conflict": {
                 "phpunit/phpunit": "<=7.5 || >=14"
@@ -1185,9 +1185,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.6"
+                "source": "https://github.com/doctrine/deprecations/tree/1.2.0"
             },
-            "time": "2026-02-07T07:09:04+00:00"
+            "time": "2026-11-11T10:04:49+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1851,16 +1851,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v7.2.1",
+            "version": "v7.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/php-jwt.git",
-                "reference": "0501f5729b9e2448516674aff07c7d1727869b8e"
+                "reference": "99efeb17d6def8c0295777f2d45b07ff4fdb4e40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/php-jwt/zipball/0501f5729b9e2448516674aff07c7d1727869b8e",
-                "reference": "0501f5729b9e2448516674aff07c7d1727869b8e",
+                "url": "https://api.github.com/repos/googleapis/php-jwt/zipball/99efeb17d6def8c0295777f2d45b07ff4fdb4e40",
+                "reference": "99efeb17d6def8c0295777f2d45b07ff4fdb4e40",
                 "shasum": ""
             },
             "require": {
@@ -1919,9 +1919,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/php-jwt/issues",
-                "source": "https://github.com/googleapis/php-jwt/tree/v7.2.1"
+                "source": "https://github.com/googleapis/php-jwt/tree/v7.2.2"
             },
-            "time": "2026-09-28T17:51:46+00:00"
+            "time": "2026-11-17T00:25:19+00:00"
         },
         {
             "name": "giggsey/libphonenumber-for-php",
@@ -2122,22 +2122,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.16.1",
+            "version": "7.16.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "81755d989b3007ca7f88a069857553cd08e7dc2e"
+                "reference": "c88a78082757dd5a0c44191651535259fcb6e605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/81755d989b3007ca7f88a069857553cd08e7dc2e",
-                "reference": "81755d989b3007ca7f88a069857553cd08e7dc2e",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c88a78082757dd5a0c44191651535259fcb6e605",
+                "reference": "c88a78082757dd5a0c44191651535259fcb6e605",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^2.6",
-                "guzzlehttp/psr7": "^2.13.2",
+                "guzzlehttp/psr7": "^2.13.4",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -2230,7 +2230,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.16.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.16.3"
             },
             "funding": [
                 {
@@ -2246,20 +2246,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-25T21:35:21+00:00"
+            "time": "2026-11-17T16:23:09+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154"
+                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/3d88c829bd5f13d13847b39067dbf09a60af2154",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a1b6aceb39165acd5c421239e6abfa1b83dbe224",
+                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224",
                 "shasum": ""
             },
             "require": {
@@ -2314,7 +2314,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.6.0"
+                "source": "https://github.com/guzzle/promises/tree/2.6.1"
             },
             "funding": [
                 {
@@ -2330,20 +2330,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-18T12:46:59+00:00"
+            "time": "2026-11-20T00:03:12+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.13.2",
+            "version": "2.13.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "adee536f95101929f262b8c59e8a61472f347d58"
+                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
-                "reference": "adee536f95101929f262b8c59e8a61472f347d58",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5aa00c5418afbe3f435910af0e98cb03d659c49d",
+                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d",
                 "shasum": ""
             },
             "require": {
@@ -2433,7 +2433,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.2"
+                "source": "https://github.com/guzzle/psr7/tree/2.13.5"
             },
             "funding": [
                 {
@@ -2449,7 +2449,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-17T23:49:46+00:00"
+            "time": "2026-11-19T20:34:53+00:00"
         },
         {
             "name": "html2text/html2text",
@@ -2804,16 +2804,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "482760068e5a55a9045feddb3e2fc3f878cbd577"
+                "reference": "5e82acfd2b5944dd9a43c59690fb3dc3563d1c87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/482760068e5a55a9045feddb3e2fc3f878cbd577",
-                "reference": "482760068e5a55a9045feddb3e2fc3f878cbd577",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/5e82acfd2b5944dd9a43c59690fb3dc3563d1c87",
+                "reference": "5e82acfd2b5944dd9a43c59690fb3dc3563d1c87",
                 "shasum": ""
             },
             "require": {
@@ -2861,7 +2861,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/5.6.1"
+                "source": "https://github.com/lcobucci/jwt/tree/5.6.2"
             },
             "funding": [
                 {
@@ -2873,7 +2873,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-10-10T09:42:14+00:00"
+            "time": "2026-11-19T17:12:02+00:00"
         },
         {
             "name": "league/csv",
@@ -3818,16 +3818,16 @@
         },
         {
             "name": "mcp/sdk",
-            "version": "v0.8.1",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/modelcontextprotocol/php-sdk.git",
-                "reference": "c5dbfb64e5a2a30872ec3927b4cf13a2eb05e10e"
+                "reference": "be71c78bc3bce25f50d6a7e592017b8af6a2120f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/modelcontextprotocol/php-sdk/zipball/c5dbfb64e5a2a30872ec3927b4cf13a2eb05e10e",
-                "reference": "c5dbfb64e5a2a30872ec3927b4cf13a2eb05e10e",
+                "url": "https://api.github.com/repos/modelcontextprotocol/php-sdk/zipball/be71c78bc3bce25f50d6a7e592017b8af6a2120f",
+                "reference": "be71c78bc3bce25f50d6a7e592017b8af6a2120f",
                 "shasum": ""
             },
             "require": {
@@ -3848,6 +3848,9 @@
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
                 "symfony/uid": "^5.4 || ^6.4 || ^7.3 || ^8.0"
             },
+            "conflict": {
+                "phpstan/phpstan": "2.3.0"
+            },
             "require-dev": {
                 "composer/semver": "^3.0",
                 "ext-openssl": "*",
@@ -3860,15 +3863,20 @@
                 "phpdocumentor/shim": "^3",
                 "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^10.5",
+                "psr/cache": "^1.0 || ^2.0 || ^3.0",
                 "psr/simple-cache": "^2.0 || ^3.0",
                 "symfony/cache": "^5.4 || ^6.4 || ^7.3 || ^8.0",
                 "symfony/console": "^5.4 || ^6.4 || ^7.3 || ^8.0",
                 "symfony/finder": "^5.4 || ^6.4 || ^7.3 || ^8.0",
                 "symfony/http-client": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+                "symfony/lock": "^5.4 || ^6.4 || ^7.3 || ^8.0",
                 "symfony/process": "^5.4 || ^6.4 || ^7.3 || ^8.0"
             },
             "suggest": {
-                "symfony/finder": "Required for file-based discovery."
+                "firebase/php-jwt": "Required for the JwtTokenValidator.",
+                "psr/cache-implementation": "Required for JwtTokenValidator::fromIssuer() to cache metadata and keys.",
+                "symfony/finder": "Required for file-based discovery.",
+                "symfony/lock": "Required for the SymfonyLockSessionLock."
             },
             "type": "library",
             "autoload": {
@@ -3897,9 +3905,9 @@
             "description": "Model Context Protocol SDK for Client and Server applications in PHP",
             "support": {
                 "issues": "https://github.com/modelcontextprotocol/php-sdk/issues",
-                "source": "https://github.com/modelcontextprotocol/php-sdk/tree/v0.8.1"
+                "source": "https://github.com/modelcontextprotocol/php-sdk/tree/v0.9.0"
             },
-            "time": "2026-08-29T23:10:56+00:00"
+            "time": "2026-10-18T14:29:29+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -4253,16 +4261,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "3.12.1",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "d7059e4c691d05ea1222b5124bed0f961be46e15"
+                "reference": "1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d7059e4c691d05ea1222b5124bed0f961be46e15",
-                "reference": "d7059e4c691d05ea1222b5124bed0f961be46e15",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac",
+                "reference": "1f5f55bb4a9a230ff6d8a4ceccea31d10b0142ac",
                 "shasum": ""
             },
             "require": {
@@ -4342,7 +4350,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/3.12.1"
+                "source": "https://github.com/Seldaek/monolog/tree/3.13.0"
             },
             "funding": [
                 {
@@ -4354,7 +4362,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-29T19:21:12+00:00"
+            "time": "2026-11-16T10:43:05+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -4797,16 +4805,16 @@
         },
         {
             "name": "opis/json-schema",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/json-schema.git",
-                "reference": "7d8685a78db131eb6a1571cc7b4db8f4b59e8628"
+                "reference": "b87b424da3fbeaab09567910fda48dc88d9dcbd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/json-schema/zipball/7d8685a78db131eb6a1571cc7b4db8f4b59e8628",
-                "reference": "7d8685a78db131eb6a1571cc7b4db8f4b59e8628",
+                "url": "https://api.github.com/repos/opis/json-schema/zipball/b87b424da3fbeaab09567910fda48dc88d9dcbd8",
+                "reference": "b87b424da3fbeaab09567910fda48dc88d9dcbd8",
                 "shasum": ""
             },
             "require": {
@@ -4856,9 +4864,9 @@
             ],
             "support": {
                 "issues": "https://github.com/opis/json-schema/issues",
-                "source": "https://github.com/opis/json-schema/tree/2.6.1"
+                "source": "https://github.com/opis/json-schema/tree/2.6.2"
             },
-            "time": "2026-11-06T04:25:16+00:00"
+            "time": "2026-11-08T08:09:42+00:00"
         },
         {
             "name": "opis/string",
@@ -5025,16 +5033,16 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v3.1.4",
+            "version": "v3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "5efef6e6cb43e088ccab7d0c1e2f2ab25b9e8b54"
+                "reference": "ceed38ba49d98b85808edfc4f04750ff61eb9739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/5efef6e6cb43e088ccab7d0c1e2f2ab25b9e8b54",
-                "reference": "5efef6e6cb43e088ccab7d0c1e2f2ab25b9e8b54",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/ceed38ba49d98b85808edfc4f04750ff61eb9739",
+                "reference": "ceed38ba49d98b85808edfc4f04750ff61eb9739",
                 "shasum": ""
             },
             "require": {
@@ -5090,7 +5098,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "time": "2026-11-06T20:31:19+00:00"
+            "time": "2026-11-18T13:55:22+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -10466,16 +10474,16 @@
         },
         {
             "name": "verbb/base",
-            "version": "3.0.21",
+            "version": "3.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/verbb-base.git",
-                "reference": "53320faafc3cb9590513c857cea9f68efa6043f7"
+                "reference": "1a944ee1a123b3e4ed4f0e702af78d9da80b3b24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/53320faafc3cb9590513c857cea9f68efa6043f7",
-                "reference": "53320faafc3cb9590513c857cea9f68efa6043f7",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/1a944ee1a123b3e4ed4f0e702af78d9da80b3b24",
+                "reference": "1a944ee1a123b3e4ed4f0e702af78d9da80b3b24",
                 "shasum": ""
             },
             "require": {
@@ -10512,15 +10520,15 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-01T10:54:30+00:00"
+            "time": "2026-11-17T04:55:18+00:00"
         },
         {
             "name": "verbb/formie",
-            "version": "3.1.50",
+            "version": "3.1.51",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/15d76aabc2b52f1399d1068f8ef1afa46f8547a2",
-                "reference": "15d76aabc2b52f1399d1068f8ef1afa46f8547a2",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/8f6fcc7dd5bbfae74cdf4d741ef8218aca0afb36",
+                "reference": "8f6fcc7dd5bbfae74cdf4d741ef8218aca0afb36",
                 "shasum": ""
             },
             "require": {
@@ -10538,7 +10546,7 @@
                 "stripe/stripe-php": "^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0 || ^14.0 || ^15.0 || ^16.0",
                 "symfony/expression-language": "^5.0 || ^6.0 || ^7.0",
                 "theiconic/name-parser": "^1.0",
-                "verbb/auth": "^2.0.55",
+                "verbb/auth": "^2.0.56",
                 "verbb/base": "^3.0.20"
             },
             "type": "craft-plugin",
@@ -10577,7 +10585,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2026-10-22T04:23:52+00:00"
+            "time": "2026-11-09T22:20:29+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -10792,11 +10800,11 @@
         },
         {
             "name": "wbrowar/craft-admin-bar",
-            "version": "5.8.2",
+            "version": "5.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wbrowar/craft-admin-bar/zipball/fe42ec8609a35bee02a7e14cd8166aac05429bfc",
-                "reference": "fe42ec8609a35bee02a7e14cd8166aac05429bfc",
+                "url": "https://api.github.com/repos/wbrowar/craft-admin-bar/zipball/312b97814f023dabc0b3334d2e38f1dedd436cfa",
+                "reference": "312b97814f023dabc0b3334d2e38f1dedd436cfa",
                 "shasum": ""
             },
             "require": {
@@ -10846,7 +10854,7 @@
                 "docs": "https://raw.githubusercontent.com/wbrowar/craft-admin-bar/main/README.md",
                 "issues": "https://github.com/wbrowar/craft-admin-bar/issues"
             },
-            "time": "2026-09-08T11:47:57+00:00"
+            "time": "2026-11-12T13:00:42+00:00"
         },
         {
             "name": "web-auth/cose-lib",
@@ -10925,16 +10933,16 @@
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "5.3.12",
+            "version": "5.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/webauthn-lib.git",
-                "reference": "c7aeeb1d35e39b7d32ab5146cce4b668f271a68e"
+                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/c7aeeb1d35e39b7d32ab5146cce4b668f271a68e",
-                "reference": "c7aeeb1d35e39b7d32ab5146cce4b668f271a68e",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/768fb8cf7bebaad8a08b3015e206dda95e3320fa",
+                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa",
                 "shasum": ""
             },
             "require": {
@@ -10995,7 +11003,7 @@
                 "webauthn"
             ],
             "support": {
-                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.12"
+                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.15"
             },
             "funding": [
                 {
@@ -11007,20 +11015,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-11-03T09:21:08+00:00"
+            "time": "2026-11-18T16:46:55+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "8a163706bbcac613733dba03f51e13b5eb1bb819"
+                "reference": "e578132c01bd0c64108386ab20d8217cd175ddec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/8a163706bbcac613733dba03f51e13b5eb1bb819",
-                "reference": "8a163706bbcac613733dba03f51e13b5eb1bb819",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/e578132c01bd0c64108386ab20d8217cd175ddec",
+                "reference": "e578132c01bd0c64108386ab20d8217cd175ddec",
                 "shasum": ""
             },
             "require": {
@@ -11071,9 +11079,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/2.5.0"
+                "source": "https://github.com/webmozarts/assert/tree/2.5.1"
             },
-            "time": "2026-10-05T23:14:19+00:00"
+            "time": "2026-11-15T13:41:13+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -11355,35 +11363,34 @@
         },
         {
             "name": "yiisoft/yii2-queue",
-            "version": "2.3.8",
+            "version": "2.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "e0f935e5b868d53347acfb14ec19faaf16085005"
+                "reference": "4b38cb61fe31631aa9bcf48ee90eb0c3132dc85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/e0f935e5b868d53347acfb14ec19faaf16085005",
-                "reference": "e0f935e5b868d53347acfb14ec19faaf16085005",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/4b38cb61fe31631aa9bcf48ee90eb0c3132dc85b",
+                "reference": "4b38cb61fe31631aa9bcf48ee90eb0c3132dc85b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "symfony/process": "^3.3||^4.0||^5.0||^6.0||^7.0",
+                "symfony/process": "^3.3||^4.0||^5.0||^6.0||^7.0||^8.0",
                 "yiisoft/yii2": "~2.0.14"
             },
             "require-dev": {
                 "aws/aws-sdk-php": ">=2.4",
-                "cweagans/composer-patches": "^1.7",
                 "enqueue/amqp-lib": "^0.8||^0.9.10||^0.10.0",
-                "enqueue/stomp": "^0.8.39||0.10.19",
+                "enqueue/stomp": "^0.8.39||^0.10.19",
                 "opis/closure": "*",
                 "pda/pheanstalk": "~3.2.1",
                 "php-amqplib/php-amqplib": "^2.8.0||^3.0.0",
-                "phpunit/phpunit": "4.8.34",
+                "phpunit/phpunit": "^9.5",
                 "yiisoft/yii2-debug": "~2.1.0",
                 "yiisoft/yii2-gii": "~2.2.0",
-                "yiisoft/yii2-redis": "2.0.19"
+                "yiisoft/yii2-redis": "~2.0.19"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Need for aws SQS.",
@@ -11396,21 +11403,6 @@
                 "yiisoft/yii2-redis": "Need for Redis queue."
             },
             "type": "yii2-extension",
-            "extra": {
-                "patches": {
-                    "phpunit/phpunit": {
-                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
-                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
-                    },
-                    "phpunit/phpunit-mock-objects": {
-                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
-                    }
-                },
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                },
-                "composer-exit-on-patch-failure": true
-            },
             "autoload": {
                 "psr-4": {
                     "yii\\queue\\": "src",
@@ -11468,7 +11460,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-08T07:52:05+00:00"
+            "time": "2026-11-15T13:15:21+00:00"
         },
         {
             "name": "yiisoft/yii2-symfonymailer",
@@ -11825,10 +11817,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "verbb/formie": 10,
-        "wbrowar/craft-admin-bar": 10
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
