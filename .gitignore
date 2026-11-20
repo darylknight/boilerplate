@@ -20,3 +20,5 @@
 .cache
 .DS_Store
 /config/license.key
+# Windows download markers
+*Zone.Identifier
